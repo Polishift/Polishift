@@ -8,9 +8,9 @@ namespace Assets.Scripts.Camera
     {
         private CameraLogicController cameraLogicController;
 
-        private float minimumHeight; //this will be determined by the proximity to terrain
+        private float minimumHeight;
         private const float MINIMUM_HEIGHT_BUFFER = 10f; //The distance from any terrain that is always kept
-        private const float MAXIMUM_HEIGHT = 50f;
+        private const float MAXIMUM_HEIGHT = 65f;
 
         private const float startingAngle = 89f; //Watch out for rounding
         private const float FLATTEST_ANGLE = 50f;
@@ -21,18 +21,42 @@ namespace Assets.Scripts.Camera
         {
             this.cameraLogicController = new CameraLogicController();
 
-            //we implemented all three interfaces here, so this is legal
             cameraLogicController.SetCameraMovementController(this);
             cameraLogicController.SetCameraTiltController(this);
         }
 
         void Update()
         {
-            this.minimumHeight = MAXIMUM_HEIGHT - (this.GetDistanceToMainTerrain() + MINIMUM_HEIGHT_BUFFER);
-            Debug.Log("this.minimumHeight = " + this.minimumHeight);
+            this.minimumHeight = DetermineNewMinimumHeight();
 
             cameraLogicController.UpdateForwardTilt();
             cameraLogicController.UpdateCameraPosition();
+        }
+
+
+        /*
+          Determining minimumHeight according to terrain proximity
+        */
+
+        private float DetermineNewMinimumHeight()
+        {
+            var distanceToClosestTerrain = GetDistanceToClosestTerrain();
+            var currentCameraHeight = this.transform.position.y;
+            
+            var heightOfClosestTerrain = currentCameraHeight - distanceToClosestTerrain;
+
+            return heightOfClosestTerrain + MINIMUM_HEIGHT_BUFFER;
+        }
+
+        private float GetDistanceToClosestTerrain()
+        {
+            //TODO: Define the tag somewhere else so it's synced. Also, create separate terrains/colliders.
+            //Since otherwise, mainTerrainCollider.ClosestPointOnBounds will just take the highest peak instead of local peaks.
+
+            var mainTerrainCollider = GameObject.FindGameObjectWithTag("MainTerrain").GetComponent<TerrainCollider>();
+            var closestNonFlatPoint = mainTerrainCollider.ClosestPointOnBounds(this.transform.position);
+
+            return Vector3.Distance(this.transform.position, closestNonFlatPoint);
         }
 
 
@@ -78,15 +102,5 @@ namespace Assets.Scripts.Camera
             this.transform.eulerAngles = this.transform.eulerAngles + (Vector3.right * 2);
         }
         #endregion
-
-        
-        private float GetDistanceToMainTerrain()
-        {
-            //TODO: Define the tag somewhere else so it's synced.
-            var mainTerrainCollider = GameObject.FindGameObjectWithTag("MainTerrain").GetComponent<TerrainCollider>();
-            var closestPoint = mainTerrainCollider.ClosestPointOnBounds(this.transform.position);
-
-            return Vector3.Distance(this.transform.position, closestPoint);
-        }
     }
 }
