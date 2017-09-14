@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Scripts.Camera
 {
-    public interface ICameraTiltController //Interface so we can mock these methods and provide differing implementations
+    public interface ICameraTiltController 
     {
         bool canTiltFurtherBackward();
         bool canTiltFurtherForward();

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Scripts.Camera
 {
-    public interface ICameraMovementController //Interface so we can mock these methods and provide differing implementations
+    public interface ICameraMovementController 
     {
         bool canScrollFurtherForward();
         bool canScrollFurtherBackward();

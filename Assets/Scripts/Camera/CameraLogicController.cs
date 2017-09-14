@@ -38,6 +38,10 @@ namespace Assets.Scripts.Camera
         }
 
 
+        /*
+            Setters
+        */  
+
         public void SetCameraMovementController(ICameraMovementController cameraMovementController)
         {
             this.cameraMovementController = cameraMovementController;
