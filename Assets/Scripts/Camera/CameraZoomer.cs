@@ -42,7 +42,6 @@ namespace Assets.Scripts.Camera
         {
             var distanceToClosestTerrain = GetDistanceToClosestTerrain();
             var currentCameraHeight = this.transform.position.y;
-            
             var heightOfClosestTerrain = currentCameraHeight - distanceToClosestTerrain;
 
             return heightOfClosestTerrain + MINIMUM_HEIGHT_BUFFER;

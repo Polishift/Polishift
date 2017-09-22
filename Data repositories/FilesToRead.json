@@ -1,0 +1,51 @@
+﻿{
+  "FilesToRead": [
+    //Political
+    {
+      "name": "Elections",
+      "location": ""
+    },
+    {
+      "name": "Party classification",
+      "location": ""
+    },
+    {
+      "name": "Turnout",
+      "location": ""
+    },
+    {
+      "name": "War",
+      "location": ""
+    },
+    //Economics
+    {
+      "name": "GDP",
+      "location": ""
+    },
+    {
+      "name": "GDP Per Head",
+      "location": ""
+    },
+    {
+      "name": "Population",
+      "location": ""
+    },
+    //Social
+    {
+      "name": "Households with television",
+      "location": ""
+    },
+    {
+      "name": "Interest",
+      "location": ""
+    },
+    {
+      "name": "Religion",
+      "location": ""
+    },
+    {
+      "name": "Unemployment",
+      "location": ""
+    }
+  ]
+}
