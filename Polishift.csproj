@@ -82,18 +82,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Data\Repositories\IRepository.cs" />
-    <Compile Include="Assets\Data\CsvParsing\LiteCsvReader.cs" />
+    <Compile Include="Assets\Data accessing\Factories\ConstituencyElectionModelFactory.cs" />
+    <Compile Include="Assets\Data accessing\Factories\AbstractElectionEntityFactory.cs" />
+    <Compile Include="Assets\Data accessing\Factories\DefaultElectionEntityFactory.cs" />
+    <Compile Include="Assets\Data accessing\Factories\IModelFactory.cs" />
+    <Compile Include="Assets\Data accessing\Repositories\ElectionsRepository.cs" />
+    <Compile Include="Assets\Data accessing\Repositories\IRepository.cs" />
+    <Compile Include="Assets\Dataprocessing\CsvParsing\JsonReader.cs" />
+    <Compile Include="Assets\Dataprocessing\CsvParsing\LiteCsvReader.cs" />
+    <Compile Include="Assets\Datamodels\ConstituencyElectionModel.cs" />
+    <Compile Include="Assets\Datamodels\IModel.cs" />
+    <Compile Include="Assets\Dataprocessing\Entities\ElectionEntity.cs" />
+    <Compile Include="Assets\Dataprocessing\Processers\ElectionsProcesser.cs" />
+    <Compile Include="Assets\Dataprocessing\Processers\IDataProcesser.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraLogicController.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraZoomer.cs" />
     <Compile Include="Assets\Scripts\Camera\ICameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Camera\ICameraTiltController.cs" />
+    <Compile Include="Assets\Scripts\Simulation Logic\Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="External Libraries\Newtonsoft\Newtonsoft.Json\Newtonsoft.Json.csproj">
       <Project>{a97a4cb3-51ad-4605-ba9f-d6861e582c85}</Project>
       <Name>Newtonsoft.Json</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Data\Processed\" />
+    <Folder Include="Assets\Data\Raw\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
