@@ -1,0 +1,186 @@
+********************************************************************************
+*                    Monday, September 25, 2017 4:25:37 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-e2b4782c7acbf764299b668b7a43d4db 
+Exit code: 1
+Elapsed time: 5.05 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (11 lines):
+0: Assets\Demo\Scripts\C# 6 Tests\ExceptionFiltersTest.cs(4,10): warning CS1030: #warning: 'IL2CPP may fail this test'
+1: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(119,9): error CS0246: The type or namespace name 'JArray' could not be found (are you missing a using directive or an assembly reference?)
+2: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(119,28): error CS0246: The type or namespace name 'JArray' could not be found (are you missing a using directive or an assembly reference?)
+3: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(123,9): error CS0246: The type or namespace name 'JObject' could not be found (are you missing a using directive or an assembly reference?)
+4: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(123,25): error CS0246: The type or namespace name 'JObject' could not be found (are you missing a using directive or an assembly reference?)
+5: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(15,13): error CS0246: The type or namespace name 'JArray' could not be found (are you missing a using directive or an assembly reference?)
+6: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(15,41): error CS0103: The name 'rootObject' does not exist in the current context
+7: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(15,33): error CS0246: The type or namespace name 'JArray' could not be found (are you missing a using directive or an assembly reference?)
+8: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(134,17): error CS0103: The name 'JObject' does not exist in the current context
+9: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(165,9): error CS0246: The type or namespace name 'JToken' could not be found (are you missing a using directive or an assembly reference?)
+10: Assets\UnityPackages\JsonNetSample\JsonNetSample.cs(168,21): error CS0246: The type or namespace name 'JToken' could not be found (are you missing a using directive or an assembly reference?)
+********************************************************************************
+*                    Monday, September 25, 2017 4:28:06 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-e8d76bb75add1304bb4f762c02c78949 
+Exit code: 1
+Elapsed time: 1.10 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (1 line):
+0: error CS2001: Source file 'C:\Users\robert\Projects\Datascience Minor Project\Polishift\Assets/UnityPackages/JsonNetSample/JsonNetSample.cs' could not be found.
+********************************************************************************
+*                    Monday, September 25, 2017 4:28:08 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-d7cd38628fe6b3b438ce62cd09448e21 
+Exit code: 1
+Elapsed time: 3.96 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (4 lines):
+0: Assets\Demo\Scripts\C# 6 Tests\ExceptionFiltersTest.cs(4,10): warning CS1030: #warning: 'IL2CPP may fail this test'
+1: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(1,7): error CS0246: The type or namespace name 'Newtonsoft' could not be found (are you missing a using directive or an assembly reference?)
+2: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(7,7): error CS0246: The type or namespace name 'Newtonsoft' could not be found (are you missing a using directive or an assembly reference?)
+3: Assets\Polishift\Dataprocessing\Processers\ElectionsProcesser.cs(4,7): error CS0246: The type or namespace name 'Newtonsoft' could not be found (are you missing a using directive or an assembly reference?)
+********************************************************************************
+*                    Monday, September 25, 2017 4:29:18 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-dd43f578c11fa8f459d7eb3d631e74df 
+Exit code: 1
+Elapsed time: 5.26 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (2 lines):
+0: Assets\Demo\Scripts\C# 6 Tests\ExceptionFiltersTest.cs(4,10): warning CS1030: #warning: 'IL2CPP may fail this test'
+1: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(15,41): error CS0103: The name 'rootObject' does not exist in the current context
+********************************************************************************
+*                    Monday, September 25, 2017 4:29:24 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-4c408d818cb7db64dbd295b6a4a38fcf 
+Exit code: 1
+Elapsed time: 4.69 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (2 lines):
+0: Assets\Demo\Scripts\C# 6 Tests\ExceptionFiltersTest.cs(4,10): warning CS1030: #warning: 'IL2CPP may fail this test'
+1: Assets\Polishift\Dataprocessing\Parsing\JsonReader.cs(15,41): error CS0103: The name 'rootObject' does not exist in the current context
+********************************************************************************
+*                    Monday, September 25, 2017 4:30:55 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-b42a5a48b23b769479b13f70519a4ee7 
+Exit code: 0
+Elapsed time: 7.46 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (1 line):
+0: Assets\Demo\Scripts\C# 6 Tests\ExceptionFiltersTest.cs(4,10): warning CS1030: #warning: 'IL2CPP may fail this test'
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0.39 sec
+
+- pdb2mdb.exe output (0 lines):
+********************************************************************************
+*                    Monday, September 25, 2017 4:31:03 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.0.3.30
+Platform: Windows
+Target assembly: Assembly-CSharp-Editor.dll
+Project directory: C:\Users\robert\Projects\Datascience Minor Project\Polishift
+Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-c1b8aa567725cae4f8df26415fa3c6a3 
+Exit code: 0
+Elapsed time: 4.99 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: C:\Users\robert\Projects\Datascience Minor Project\Polishift\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp-Editor.dll
+Exit code: 0
+Elapsed time: 0.15 sec
+
+- pdb2mdb.exe output (0 lines):
