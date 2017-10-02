@@ -102,19 +102,6 @@
     <Compile Include="Assets\CSharp vNext Support\TupleBridge\TupleElementNamesAttribute.cs" />
     <Compile Include="Assets\CSharp vNext Support\TupleBridge\TupleExtensions.cs" />
     <Compile Include="Assets\CSharp vNext Support\TupleBridge\ValueTuple.cs" />
-    <Compile Include="Assets\Data accessing\Factories\AbstractElectionEntityFactory.cs" />
-    <Compile Include="Assets\Data accessing\Factories\ConstituencyElectionModelFactory.cs" />
-    <Compile Include="Assets\Data accessing\Factories\DefaultElectionEntityFactory.cs" />
-    <Compile Include="Assets\Data accessing\Factories\IModelFactory.cs" />
-    <Compile Include="Assets\Data accessing\Repositories\ElectionsRepository.cs" />
-    <Compile Include="Assets\Data accessing\Repositories\IRepository.cs" />
-    <Compile Include="Assets\Datamodels\ConstituencyElectionModel.cs" />
-    <Compile Include="Assets\Datamodels\IModel.cs" />
-    <Compile Include="Assets\Dataprocessing\CsvParsing\JsonReader.cs" />
-    <Compile Include="Assets\Dataprocessing\CsvParsing\LiteCsvReader.cs" />
-    <Compile Include="Assets\Dataprocessing\Entities\ElectionEntity.cs" />
-    <Compile Include="Assets\Dataprocessing\Processers\ElectionsProcesser.cs" />
-    <Compile Include="Assets\Dataprocessing\Processers\IDataProcesser.cs" />
     <Compile Include="Assets\Demo\Scripts\AsyncInEditor.cs" />
     <Compile Include="Assets\Demo\Scripts\AsyncOperationAwaiterTest.cs" />
     <Compile Include="Assets\Demo\Scripts\C# 5 Tests\AsyncAwaitTest.cs" />
@@ -146,7 +133,6 @@
     <Compile Include="Assets\Scripts\Camera\CameraZoomer.cs" />
     <Compile Include="Assets\Scripts\Camera\ICameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Camera\ICameraTiltController.cs" />
-    <Compile Include="Assets\Scripts\Simulation Logic\Startup.cs" />
     <Compile Include="Assets\UnityPackages\JsonNetSample\JsonNetSample.cs" />
   </ItemGroup>
   <ItemGroup>
