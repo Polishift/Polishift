@@ -12,6 +12,7 @@ using Dataformatter.Dataprocessing.Entities;
 using Dataformatter.Dataprocessing.Parsing;
 using Dataformatter.Dataprocessing.Processors;
 
+
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))] //later add things instead
 public class CountryMeshesGenerator : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class CountryMeshesGenerator : MonoBehaviour
 
     private CountryBordersRepository countryBordersRepository;
     private MeshCreator meshCreator = new MeshCreator();
-    private List<Vector3> vertices;
+    private List<Vector3> vertices = new List<Vector3>();
+    private List<Triangle> triangles;
 
     void Awake()
     {
@@ -41,19 +43,38 @@ public class CountryMeshesGenerator : MonoBehaviour
            JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(countryBorderDirectory, 
                                                                    countryGeoModelFactory, "*.geo.json");
         processor.SerializeDataToJson(allCountryGeoModels);
-        */
-
+    
         MeshCreator meshCreator = new MeshCreator();
         countryBordersRepository = new CountryBordersRepository();
 
         var netherlandsBordersEntity = countryBordersRepository.GetByCountry("NLD");
         this.vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
-        testMesh.vertices = this.vertices.ToArray();
+    */
+
+        var testPoints = new List<XYPoint>
+        {
+            new XYPoint { X = 5, Y = 10 },
+            new XYPoint { X = 10, Y = 2.5f },
+            new XYPoint { X = 15, Y = 12.5f },
+            new XYPoint { X = 20, Y =  2.5f },
+            new XYPoint { X = 25, Y = 10 },
+        };
+
+        for (int i = 0; i < testPoints.Count; i++)
+        {
+            vertices.Add(new Vector3(testPoints[i].X, testPoints[i].Y));
+        }
+
+        var algo = new BowyerAlgorithm(testPoints);
+        triangles = algo.ComputeFinalTriangulation().ToList();
+
+        Debug.Log("Amount of triangles = " + triangles.Count);
     }
 
 
     private void OnDrawGizmos()
     {
+
         if (vertices == null)
         {
             return;
@@ -62,7 +83,23 @@ public class CountryMeshesGenerator : MonoBehaviour
         Gizmos.color = Color.black;
         for (int i = 0; i < vertices.Count; i++)
         {
-            Gizmos.DrawSphere(vertices[i], 0.035f);
+            Gizmos.DrawSphere(vertices[i], 0.4f);
+        }
+
+
+        for (int j = 0; j < triangles.Count; j++)
+        {
+            for (int k = 0; k < triangles[j].Edges.Count; k++)
+            {
+
+                var currentEdge = triangles[j].Edges[k];
+                var startVector3 = new Vector3(currentEdge.startPoint.X, currentEdge.startPoint.Y);
+                var endVector3 = new Vector3(currentEdge.endPoint.X, currentEdge.endPoint.Y);
+
+                Debug.Log("Im supposed to write a line from " + startVector3 + " to " + endVector3);
+
+                Gizmos.DrawLine(startVector3, endVector3);
+            }
         }
     }
 }
