@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 using Dataformatter.Data_accessing.Factories.ModelFactories;
@@ -58,6 +59,16 @@ public class Triangle
         }
         return false;
     }
+
+    public override string ToString()
+    {
+        string result = " | ";
+        foreach (var edge in Edges)
+            result += edge.ToString() + " ";
+
+        result += " | ";
+        return result;
+    } 
     /*
     private double ComputeCircumCircleRadius()
     {
