@@ -11,21 +11,6 @@ public class Triangle
     private double CircumCircleRadius;
 
     public List<Edge> Edges = new List<Edge>();
-    /*
-    public List<Edge> Edges //not sure if just using points would be better
-    {
-        get { return Edges; }
-        set
-        {
-            //if (value.Count == 3)
-            //{
-                Edges = value;
-                //CircumCircleRadius = ComputeCircumCircleRadius(); //Optimization
-            //}
-            //else
-                //throw new Exception("A triangle can't have more than, or less than 3 edges!");
-        }
-    } */
 
     public bool IsWithinCircumCircle(XYPoint point)
     {

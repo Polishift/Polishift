@@ -30,8 +30,7 @@ public class BowyerAlgorithm
         int counter = 0;
         foreach (var currentPoint in inputPoints)
         {
-            Debug.Log("Current point: " + counter);
-            
+            Debug.Log("Current point: " + counter + ": " + currentPoint.ToString());
             counter++;
 
             List<Triangle> badTriangles = DetermineBadTriangles(currentPoint);

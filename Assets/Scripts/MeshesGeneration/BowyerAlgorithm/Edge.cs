@@ -70,16 +70,16 @@ public class Edge
         var interSectionPoint = GetIntersectionPoint(anotherEdge);
         var distanceToIntersectionPoint = this.startPoint.EuclideanDistance(interSectionPoint);
 
-        Debug.Log("interSectionPoint = " + interSectionPoint.ToString());
-        Debug.Log("distanceToIntersectionPoint = " + distanceToIntersectionPoint);
-        Debug.Log("this.Length = " + this.Length);        
+        //Debug.Log("interSectionPoint = " + interSectionPoint.ToString());
+        //Debug.Log("distanceToIntersectionPoint = " + distanceToIntersectionPoint);
+        //Debug.Log("this.Length = " + this.Length);        
 
-        if(distanceToIntersectionPoint <= 0)
-            Debug.Log("distanceToIntersectionPoint <= 0");
+        //if(distanceToIntersectionPoint <= 0)
+            //Debug.Log("distanceToIntersectionPoint <= 0");
 
 
-        return !(distanceToIntersectionPoint <= 0)
-              && distanceToIntersectionPoint < this.Length;
+        return distanceToIntersectionPoint > 0
+               && distanceToIntersectionPoint < this.Length;
     }
 
     private XYPoint GetIntersectionPoint(Edge anotherEdge)
