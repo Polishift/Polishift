@@ -63,7 +63,7 @@ public class CountryMeshesGenerator : MonoBehaviour
         };
         for (int i = 0; i < testPoints.Count; i++)
         {
-            vertices.Add(new Vector3(testPoints[i].X, testPoints[i].Y));
+            vertices.Add(new Vector3((float) testPoints[i].X, (float) testPoints[i].Y));
         }
          /*
 
@@ -100,8 +100,8 @@ public class CountryMeshesGenerator : MonoBehaviour
             for (int k = 0; k < triangles[j].Edges.Count; k++)
             {
                 var currentEdge = triangles[j].Edges[k];
-                var startVector3 = new Vector3(currentEdge.startPoint.X, currentEdge.startPoint.Y);
-                var endVector3 = new Vector3(currentEdge.endPoint.X, currentEdge.endPoint.Y);
+                var startVector3 = new Vector3( (float) currentEdge.startPoint.X,(float)  currentEdge.startPoint.Y);
+                var endVector3 = new Vector3((float) currentEdge.endPoint.X,(float)  currentEdge.endPoint.Y);
 
                 Gizmos.DrawLine(startVector3, endVector3);
             }

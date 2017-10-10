@@ -20,7 +20,10 @@ public class Edge
 
     public bool CrossesThrough(Edge anotherEdge)
     {
-        return Intersects(anotherEdge) && LineGoesThroughEdge();
+        if(Intersects(anotherEdge))
+            return LineGoesThroughEdge(anotherEdge);
+        else
+            return false;
     }
 
     public override bool Equals(object obj)
@@ -46,7 +49,6 @@ public class Edge
         return startPoint.ToString() + " to " + endPoint.ToString();
     }
 
-    /*
     private bool Intersects(Edge anotherEdge)
     {
         var a = this.startPoint;
@@ -61,15 +63,50 @@ public class Edge
 
         return aSide != bSide && cSide != dSide;
     }
-    */
+
+    private bool LineGoesThroughEdge(Edge anotherEdge)
+    {
+        //if length of originating line > length from starting point to intersection point
+        var interSectionPoint = GetIntersectionPoint(anotherEdge);
+        var distanceToIntersectionPoint = this.startPoint.EuclideanDistance(interSectionPoint);
+
+        Debug.Log("interSectionPoint = " + interSectionPoint.ToString());
+        Debug.Log("distanceToIntersectionPoint = " + distanceToIntersectionPoint);
+        Debug.Log("this.Length = " + this.Length);        
+
+        if(distanceToIntersectionPoint <= 0)
+            Debug.Log("distanceToIntersectionPoint <= 0");
+
+
+        return !(distanceToIntersectionPoint <= 0)
+              && distanceToIntersectionPoint < this.Length;
+    }
 
     private XYPoint GetIntersectionPoint(Edge anotherEdge)
     {
+        var xOne = this.startPoint.X;
+        var yOne = this.startPoint.Y;
+        var xTwo = this.endPoint.X;
+        var yTwo = this.endPoint.Y;
         
-    }
+        var xThree = anotherEdge.startPoint.X;
+        var yThree = anotherEdge.startPoint.Y;
+        var xFour = anotherEdge.endPoint.X;
+        var yFour = anotherEdge.endPoint.Y;
 
-    private bool LineGoesThroughEdge()
-    {
-        //if length of originating line > length from starting point to intersection point
+        var xDividend = (((xTwo*yOne) - (xOne*yTwo)) * (xFour - xThree)) - 
+                        (((xFour*yThree) - (xThree*yFour)) * (xTwo - xOne));
+
+        var xDivisor = ((xTwo - xOne) * (yFour - yThree)) - 
+                       ((xFour - xThree) * (yTwo - yOne));
+
+        var yDividend = (((xTwo*yOne) - (xOne*yTwo)) * (yFour - yThree)) - 
+                        (((xFour*yThree) - (xThree*yFour)) * (yTwo - yOne));
+
+        var yDivisor = ((xTwo - xOne) * (yFour - yThree)) - 
+                       ((xFour - xThree) * (yTwo - yOne));
+        
+
+        return new XYPoint { X = xDividend/xDivisor, Y = yDividend/yDivisor};
     }
 }

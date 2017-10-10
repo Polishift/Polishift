@@ -30,7 +30,7 @@ public class MeshCreator
             for (int j = 0; j < currentPolygon.Points.Count; j++)
             {
                 var currentPoint = currentPolygon.Points[j];
-                verticesList.Add(new Vector3(currentPoint.X, currentPoint.Y));
+                verticesList.Add(new Vector3((float) currentPoint.X,(float)  currentPoint.Y));
             }
         }
         return verticesList;
