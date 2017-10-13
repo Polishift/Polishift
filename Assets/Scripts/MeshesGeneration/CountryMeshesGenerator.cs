@@ -38,7 +38,7 @@ public class CountryMeshesGenerator : MonoBehaviour
 
     private void TestGenerate()
     {
-        /*
+        
         const string countryBorderDirectory = "Assets/External Libraries/Dataformatter/ProcessedData/CountryInformation/";
         IJsonModelFactory<CountryGeoModel> countryGeoModelFactory = new CountryGeoModelFactory();
         var processor = new CountryBordersProcessor();
@@ -53,10 +53,10 @@ public class CountryMeshesGenerator : MonoBehaviour
         
         countryBordersRepository = new CountryBordersRepository();
 
-        var netherlandsBordersEntity = countryBordersRepository.GetByCountry("BEL");
-        //this.vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
-        */
-
+        var netherlandsBordersEntity = countryBordersRepository.GetByCountry("NLD").First();
+        this.vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
+       
+/*
         var testPointsOne = new List<XYPoint>
           {
               new XYPoint { X = 0, Y = 45 },
@@ -64,13 +64,14 @@ public class CountryMeshesGenerator : MonoBehaviour
               new XYPoint { X = 51, Y = 100 },
               new XYPoint { X = 90, Y =  10 },
               new XYPoint { X = 100, Y = 55 },
-          };
-        for (int i = 0; i < testPointsOne.Count; i++)
+          };*/
+        var testPoints = new List<XYPoint>();
+        for (int i = 0; i < vertices.Count; i++)
         {
-            vertices.Add(new Vector3((float)testPointsOne[i].X, (float)testPointsOne[i].Y));
+            testPoints.Add(new XYPoint(){X = vertices[i].x/10000, Y = vertices[i].y/10000});
         }
-
-        var algo = new BowyerAlgorithm(testPointsOne);
+ 
+        var algo = new BowyerAlgorithm(testPoints);
         triangles = algo.ComputeFinalTriangulation().ToList();
 
         //The current point is 45,10, so the edge to it oughta be removed next iteration.
