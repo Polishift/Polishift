@@ -30,8 +30,13 @@ public class BowyerAlgorithm
         int counter = 0;
         foreach (var currentPoint in inputPoints)
         {
+            //debug
             Debug.Log("Current point: " + counter + ": " + currentPoint.ToString());
+            Debug.Log("we have triangles: ");
+            currentTriangles.ForEach(t => Debug.Log(t.ToString()));
+
             counter++;
+            //end debug
 
             List<Triangle> badTriangles = DetermineBadTriangles(currentPoint);
             Dictionary<Triangle, List<Edge>> polygonsWithOriginalTriangles = DeterminePolygons(badTriangles);
@@ -39,15 +44,15 @@ public class BowyerAlgorithm
             RemoveBadTrianglesFromTriangulation(badTriangles);
             CreateNewTriangles(currentPoint, polygonsWithOriginalTriangles);
 
-            if(counter >= 2)
-                break;
+            //if(counter >= 3)
+                //break;
         }
-        //RemoveSuperTriangleVertices(superTriangle);
+        RemoveSuperTriangleVertices(superTriangle);
 
         return this.triangulation;
     }
 
-
+    //TODO: Change these points to be float min max's
     private void CreateSuperTriangle()
     {
         var lowerLeftCorner = new XYPoint { X = -100, Y = -20 };
@@ -73,13 +78,10 @@ public class BowyerAlgorithm
     {
         var badTriangles = new List<Triangle>();
 
-        foreach (var triangle in triangulation)
+        foreach (var triangle in currentTriangles)
         {
             if (triangle.IsWithinCircumCircle(currentPoint))
-            {
-                Debug.Log("Point is within range of " + triangle);
                 badTriangles.Add(triangle);
-            }
         }
         return badTriangles;
     }
@@ -95,11 +97,11 @@ public class BowyerAlgorithm
             foreach (var edge in badTriangle.Edges)
             {
                 var edgeIsSharedWithOtherBadTriangles = badTriangles.Where(bt => bt.HasEdge(edge)).Count() > 1;
+                RemoveIntersectingEdges(edge);
 
                 if (edgeIsSharedWithOtherBadTriangles == false)
                     polygonEdgesWithOriginalTriangles[badTriangle].Add(edge);
 
-                RemoveIntersectingEdges(edge);
             }
         }
         return polygonEdgesWithOriginalTriangles;
@@ -111,9 +113,8 @@ public class BowyerAlgorithm
         {
             var currentBadTriangle = badTriangles[i];
 
-            if (triangulation.Contains(currentBadTriangle))
+            if (currentTriangles.Contains(currentBadTriangle))
             {
-                Debug.Log("Removing bad triangle " + currentBadTriangle.ToString());
                 triangulation.Remove(currentBadTriangle);
                 currentTriangles.Remove(currentBadTriangle);
             }
@@ -165,7 +166,7 @@ public class BowyerAlgorithm
     {
         var guiltyTrianglesAndEdges = new Dictionary<Triangle, List<int>>();
 
-        foreach (var triangle in triangulation)
+        foreach (var triangle in currentTriangles)
         {
             guiltyTrianglesAndEdges.Add(triangle, new List<int>());
 
@@ -173,7 +174,7 @@ public class BowyerAlgorithm
             {
                 var currEdge = triangle.Edges[i];
 
-                if(currEdge.CrossesThrough(e)) //if target isnt
+                if(currEdge.CrossesThrough(e))
                 {
                     Debug.Log("We'll remove " + currEdge.ToString() + " since it intersects with " + e.ToString());
                     guiltyTrianglesAndEdges[triangle].Add(i);
@@ -181,12 +182,15 @@ public class BowyerAlgorithm
             }
         }
 
+        //TODO: Actually remove these edges, and we'll be golden :)
+        /*
         foreach (var triangle in triangulation)
         {
             for(int i = 0; i < guiltyTrianglesAndEdges[triangle].Count; i++)
             {
-                //triangle.Edges.RemoveAt(guiltyTrianglesAndEdges[triangle][i]);
+                triangle.Edges.RemoveAt(guiltyTrianglesAndEdges[triangle][i]);
             }
         }
+         */
     }
 }

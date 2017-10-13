@@ -26,6 +26,14 @@ public class Edge
             return false;
     }
 
+    public XYPoint GetMidPoint()
+    {
+        var firstPointDivision = (startPoint.X + startPoint.Y) / 2;
+        var secondPointDivision = (endPoint.X + endPoint.Y) / 2; 
+         
+        return new XYPoint() { X = firstPointDivision, Y = secondPointDivision };
+    }
+
     public override bool Equals(object obj)
     {
         // If parameter is null return false.
@@ -66,23 +74,14 @@ public class Edge
 
     private bool LineGoesThroughEdge(Edge anotherEdge)
     {
-        //if length of originating line > length from starting point to intersection point
         var interSectionPoint = GetIntersectionPoint(anotherEdge);
         var distanceToIntersectionPoint = this.startPoint.EuclideanDistance(interSectionPoint);
-
-        //Debug.Log("interSectionPoint = " + interSectionPoint.ToString());
-        //Debug.Log("distanceToIntersectionPoint = " + distanceToIntersectionPoint);
-        //Debug.Log("this.Length = " + this.Length);        
-
-        //if(distanceToIntersectionPoint <= 0)
-            //Debug.Log("distanceToIntersectionPoint <= 0");
-
 
         return distanceToIntersectionPoint > 0
                && distanceToIntersectionPoint < this.Length;
     }
 
-    private XYPoint GetIntersectionPoint(Edge anotherEdge)
+    public XYPoint GetIntersectionPoint(Edge anotherEdge)
     {
         var xOne = this.startPoint.X;
         var yOne = this.startPoint.Y;

@@ -27,7 +27,7 @@ public class CountryMeshesGenerator : MonoBehaviour
     private List<Vector3> vertices = new List<Vector3>();
     private List<Triangle> triangles = new List<Triangle>();
 
-    //temp
+    //testEdges
     private List<Edge> testEdges = new List<Edge>();
 
 
@@ -49,17 +49,18 @@ public class CountryMeshesGenerator : MonoBehaviour
         processor.SerializeDataToJson(allCountryGeoModels);
       
         MeshCreator meshCreator = new MeshCreator();
-      */
+      
+        
         countryBordersRepository = new CountryBordersRepository();
 
         var netherlandsBordersEntity = countryBordersRepository.GetByCountry("BEL");
         //this.vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
-
+        */
 
         var testPointsOne = new List<XYPoint>
           {
               new XYPoint { X = 0, Y = 45 },
-              new XYPoint { X = 45, Y = 40 },
+              new XYPoint { X = 45, Y = 10 },
               new XYPoint { X = 51, Y = 100 },
               new XYPoint { X = 90, Y =  10 },
               new XYPoint { X = 100, Y = 55 },
@@ -72,21 +73,58 @@ public class CountryMeshesGenerator : MonoBehaviour
         var algo = new BowyerAlgorithm(testPointsOne);
         triangles = algo.ComputeFinalTriangulation().ToList();
 
-        /*
-        var lineOnePointOne = new XYPoint { X = 1, Y = 2 };
-        var lineOnePointTwo = new XYPoint { X = 2, Y = 1 };
+        //The current point is 45,10, so the edge to it oughta be removed next iteration.
+        //Since its not seen yet
 
-        var lineTwoPointOne = new XYPoint { X = 10, Y = 10 };
-        var lineTwoPointTwo = new XYPoint { X = 50, Y = 30 };
+
+        //Debug
+        /*
+        var lineOnePointOne = new XYPoint { X = 0, Y = 45 };
+        var lineOnePointTwo = new XYPoint { X = 300, Y = -20 };
+
+        var lineTwoPointOne = new XYPoint { X = 0, Y = 45 };
+        var lineTwoPointTwo = new XYPoint { X = 100, Y = 200 };
+
+        var lineThreePointOne = new XYPoint { X = 300, Y = -20 };
+        var lineThreePointTwo = new XYPoint { X = 0, Y = 45 };
+
 
         var edgeOne = new Edge(lineOnePointOne, lineOnePointTwo);
         var edgeTwo = new Edge(lineTwoPointOne, lineTwoPointTwo);
 
-        testEdges = new List<Edge>() { edgeOne, edgeTwo };
+        Debug.Log("Does testEdgeOne intersect testEdgeTwo = " + edgeOne.CrossesThrough(edgeTwo));
+        testEdges.Add(edgeOne);
+        testEdges.Add(edgeTwo);
 
-        Debug.Log("Does e1 cross through e2: " + edgeOne.CrossesThrough(edgeTwo));
-        Debug.Log("Does e2 cross through e1: " + edgeTwo.CrossesThrough(edgeOne));
-         */
+
+
+        
+        var loosePoint = new XYPoint { X = 45, Y = 10 };
+
+        var lineOnePointOne = new XYPoint { X = 0, Y = 45 };
+        var lineOnePointTwo = new XYPoint { X = 100, Y = 200 };
+
+        var lineTwoPointOne = new XYPoint { X = 100, Y = 200 };
+        var lineTwoPointTwo = new XYPoint { X = 300, Y = -20 };
+
+        var lineThreePointOne = new XYPoint { X = 300, Y = -20 };
+        var lineThreePointTwo = new XYPoint { X = 0, Y = 45 };
+
+
+        var edgeOne = new Edge(lineOnePointOne, lineOnePointTwo);
+        var edgeTwo = new Edge(lineTwoPointOne, lineTwoPointTwo);
+        var edgeThree = new Edge(lineThreePointOne, lineThreePointTwo);
+        
+
+        List<Edge> testTriangleEdges = new List<Edge>() { edgeOne, edgeTwo, edgeThree };
+        Triangle testTriangle = new Triangle() { Edges = testTriangleEdges };
+
+        triangles.Add(testTriangle);
+        vertices.Add(new Vector3((float) loosePoint.X, (float) loosePoint.Y));
+
+        Debug.Log("Is loosePoint ( " + loosePoint.ToString() + " ) in triangle ( "
+                  + testTriangle.ToString() + " ): " + testTriangle.IsWithinCircumCircle(loosePoint));
+        */
     }
 
 
@@ -104,18 +142,18 @@ public class CountryMeshesGenerator : MonoBehaviour
             Gizmos.DrawSphere(vertices[i], 1.44f);
         }
 
-        //temp
-        for (int z = 0; z < testEdges.Count; z++)
+         /*
+        for (int j = 0; j < testEdges.Count; j++)
         {
-            var currentEdge = testEdges[z];
+            var currentEdge = testEdges[j];
             var startVector3 = new Vector3((float)currentEdge.startPoint.X, (float)currentEdge.startPoint.Y);
             var endVector3 = new Vector3((float)currentEdge.endPoint.X, (float)currentEdge.endPoint.Y);
 
             Gizmos.DrawLine(startVector3, endVector3);
         }
+        */
 
-
-
+       
         for (int j = 0; j < triangles.Count; j++)
         {
             for (int k = 0; k < triangles[j].Edges.Count; k++)
@@ -126,6 +164,6 @@ public class CountryMeshesGenerator : MonoBehaviour
 
                 Gizmos.DrawLine(startVector3, endVector3);
             }
-        }
+        } 
     }
 }

@@ -9,8 +9,10 @@ using Dataformatter.Datamodels;
 public class Triangle
 {
     private double CircumCircleRadius;
+    private XYPoint CircumCenter;
 
     public List<Edge> Edges = new List<Edge>();
+
 
     public bool IsWithinCircumCircle(XYPoint point)
     {
@@ -24,14 +26,14 @@ public class Triangle
         var cY = Edges[1].endPoint.Y - point.Y;
 
         var det = (
-                    (aX * aX + aY * aY) * (bX * cY - cX * bY) -
-                    (bX * bX + bY * bY) * (aX * cY - cX * aY) +
-                    (cX * cX + cY * cY) * (aX * bY - bX * aY)
+                    ((aX * aX) + (aY * aY)) * ((bX * cY) - (cX * bY)) -
+                    ((bX * bX) + (bY * bY)) * ((aX * cY) - (cX * aY)) +
+                    ((cX * cX) + (cY * cY)) * ((aX * bY) - (bX * aY))
                   );
 
         //God knows why this works            
         return det < 0;
-    }
+    } 
 
     public bool HasEdge(Edge anotherEdge)
     {
@@ -54,19 +56,4 @@ public class Triangle
         result += " | ";
         return result;
     } 
-    /*
-    private double ComputeCircumCircleRadius()
-    {
-        var a = edges[0].EuclideanDistance(edges[1]);
-        var b = edges[1].EuclideanDistance(edges[2]);
-        var c = edges[2].EuclideanDistance(edges[0]);
-
-        var s = (a + b + c) / 2;
-
-        var radiusDividend = (a * b) * c;
-        var radiusDivisor = 4 * Math.Sqrt((s * (s - a)) * (s - b) * (s - c));
-
-        return radiusDividend / radiusDivisor;
-    }
-    */
 }
