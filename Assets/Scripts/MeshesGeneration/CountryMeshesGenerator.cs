@@ -156,6 +156,11 @@ namespace MeshesGeneration
                     var startVector3 = new Vector3((float)currentEdge.StartPoint.X, (float)currentEdge.StartPoint.Y);
                     var endVector3 = new Vector3((float)currentEdge.EndPoint.X, (float)currentEdge.EndPoint.Y);
 
+                    if(currentEdge.IS_BAD)
+                        Gizmos.color = Color.red;
+                    else
+                        Gizmos.color = Color.black;
+
                     Gizmos.DrawLine(startVector3, endVector3);
                 }
             } 

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Dataformatter;
 using Dataformatter.Datamodels;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace MeshesGeneration.BowyerAlgorithm
     {
         private Triangle _superTriangle;
         private List<XYPoint> _inputPoints;
+        private List<Triangle> _newTrianglesForCurrentIteration = new List<Triangle>();
         private readonly HashSet<Triangle> _triangulation = new HashSet<Triangle>();
         private readonly List<Triangle> _currentTriangles = new List<Triangle>();
 
@@ -20,9 +22,8 @@ namespace MeshesGeneration.BowyerAlgorithm
 
         /*
         Todo:
-
-        Keep a hashset of new triangles per iteration.
-        Exempt these from edge intersection checks, so only check bad triangles.
+        If a new edge crosses through an existing edge,
+        remove the existing edge.
         */
 
 
@@ -37,10 +38,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             foreach (var currentPoint in _inputPoints)
             {
                 //debug
-                Debug.Log("Current point: " + counter + ": " + currentPoint);
-                Debug.Log("we have triangles: ");
-                _currentTriangles.ForEach(t => Debug.Log(t.ToString()));
-
+                Debug.Log("Current point: " + currentPoint.ToString());
                 counter++;
                 //end debug
 
@@ -50,8 +48,19 @@ namespace MeshesGeneration.BowyerAlgorithm
                 RemoveBadTrianglesFromTriangulation(badTriangles);
                 CreateNewTriangles(currentPoint, polygonsWithOriginalTriangles);
 
-                //if(counter >= 3)
-                //break;
+
+                //debug
+                for (int i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
+                {
+                    for (int j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
+                        RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j]);
+                }
+                //end debug
+
+                _newTrianglesForCurrentIteration.Clear();
+
+                if(counter == 4)
+                    break;
             }
             RemoveSuperTriangleVertices(superTriangle);
 
@@ -61,8 +70,8 @@ namespace MeshesGeneration.BowyerAlgorithm
         //TODO: Change these points to be float min max's
         private void CreateSuperTriangle()
         {
-            var lowerLeftCorner = new XYPoint {X = -100, Y = -20};
-            var lowerRightCorner = new XYPoint {X = 300, Y = -20};
+            var lowerLeftCorner = new XYPoint { X = -100, Y = -20 };
+            var lowerRightCorner = new XYPoint { X = 300, Y = -20 };
             var pyramidTop = new XYPoint
             {
                 X = 100,
@@ -72,7 +81,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             var a = new Edge(lowerLeftCorner, pyramidTop);
             var b = new Edge(pyramidTop, lowerRightCorner);
             var c = new Edge(lowerRightCorner, lowerLeftCorner);
-            var superTriangle = new Triangle {Edges = new List<Edge> {a, b, c}};
+            var superTriangle = new Triangle { Edges = new List<Edge> { a, b, c } };
 
             _superTriangle = superTriangle;
             _currentTriangles.Add(superTriangle);
@@ -102,7 +111,6 @@ namespace MeshesGeneration.BowyerAlgorithm
                 foreach (var edge in badTriangle.Edges)
                 {
                     var edgeIsSharedWithOtherBadTriangles = badTriangles.Where(bt => bt.HasEdge(edge)).Count() > 1;
-                    RemoveIntersectingEdges(edge);
 
                     if (edgeIsSharedWithOtherBadTriangles == false)
                         polygonEdgesWithOriginalTriangles[badTriangle].Add(edge);
@@ -136,8 +144,9 @@ namespace MeshesGeneration.BowyerAlgorithm
                     var b = new Edge(currentPoint, edge.EndPoint);
                     var c = new Edge(edge.EndPoint, edge.StartPoint);
 
-                    var newTriangle = new Triangle {Edges = new List<Edge> {a, b, c}};
+                    var newTriangle = new Triangle { Edges = new List<Edge> { a, b, c } };
 
+                    _newTrianglesForCurrentIteration.Add(newTriangle);
                     _currentTriangles.Add(newTriangle);
                     _triangulation.Add(newTriangle);
                 }
@@ -169,36 +178,50 @@ namespace MeshesGeneration.BowyerAlgorithm
             trianglesToBeRemoved.ForEach(t => _triangulation.Remove(t));
         }
 
-        private void RemoveIntersectingEdges(Edge e)
-        {
-            var guiltyTrianglesAndEdges = new Dictionary<Triangle, List<int>>();
 
-            foreach (var triangle in _currentTriangles)
+
+        /*
+        Replace an intersecter with the Edge that it intersects (?)
+        */
+
+
+        private void RemoveIntersectingEdges(List<Triangle> trianglesToCheck, Edge subjectEdge)
+        {
+            var guiltyTrianglesAndEdgesWithTheirReplacements = new Dictionary<Triangle, List<Tuple<int, Edge>>>();
+
+            foreach (var triangle in trianglesToCheck)
             {
-                guiltyTrianglesAndEdges.Add(triangle, new List<int>());
+                guiltyTrianglesAndEdgesWithTheirReplacements.Add(triangle, new List<Tuple<int, Edge>>());
 
                 for (var i = 0; i < triangle.Edges.Count; i++)
                 {
                     var currEdge = triangle.Edges[i];
 
-                    if (currEdge.CrossesThrough(e))
+                    if (currEdge.CrossesThrough(subjectEdge))
                     {
-                        Debug.Log("We'll remove " + currEdge + " since it intersects with " + e);
-                        guiltyTrianglesAndEdges[triangle].Add(i);
+                        Debug.Log("We'll replace " + currEdge + " with " + subjectEdge + " since it intersects with " + subjectEdge);
+                        currEdge.IS_BAD = true;
+                        guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Add(new Tuple<int,Edge>(i, subjectEdge));
                     }
                 }
             }
 
-            //TODO: Actually remove these edges, and we'll be golden :)
-            /*
-        foreach (var triangle in triangulation)
-        {
-            for(int i = 0; i < guiltyTrianglesAndEdges[triangle].Count; i++)
+            //Replacing the edges
+            foreach (var triangle in _triangulation)
             {
-                triangle.Edges.RemoveAt(guiltyTrianglesAndEdges[triangle][i]);
+                if (guiltyTrianglesAndEdgesWithTheirReplacements.ContainsKey(triangle))
+                {
+                    for (int i = 0; i < guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Count; i++)
+                    {
+                        var guiltyEdgeForThisTriangle = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1; 
+                        var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2; 
+
+                        replacingEdge.IS_BAD = false;
+                        triangle.Edges.RemoveAt(guiltyEdgeForThisTriangle);
+                        triangle.Edges.Add(replacingEdge);          
+                    }
+                }
             }
-        }
-         */
         }
     }
 }
