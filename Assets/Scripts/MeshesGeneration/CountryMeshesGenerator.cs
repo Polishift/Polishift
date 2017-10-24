@@ -54,10 +54,10 @@ namespace MeshesGeneration
             var testPointsOne = new List<XYPoint>
             {
                 new XYPoint { X = 0, Y = 45 },
-                new XYPoint { X = 45, Y = 10 },
-                new XYPoint { X = 51, Y = 100 },
+                new XYPoint { X = 45, Y = 0 },
+                new XYPoint { X = 55, Y = 100 },
                 new XYPoint { X = 90, Y =  10 },
-                new XYPoint { X = 100, Y = 55 },
+                new XYPoint { X = 110, Y = 55 },
             };
             for (var i = 0; i < testPointsOne.Count; i++)
             {
@@ -124,7 +124,6 @@ namespace MeshesGeneration
 
         private void OnDrawGizmos()
         {
-
             if (_vertices == null)
             {
                 return;
@@ -136,34 +135,30 @@ namespace MeshesGeneration
                 Gizmos.DrawSphere(_vertices[i], 1.44f);
             }
 
-            /*
-        for (int j = 0; j < testEdges.Count; j++)
-        {
-            var currentEdge = testEdges[j];
-            var startVector3 = new Vector3((float)currentEdge.startPoint.X, (float)currentEdge.startPoint.Y);
-            var endVector3 = new Vector3((float)currentEdge.endPoint.X, (float)currentEdge.endPoint.Y);
 
-            Gizmos.DrawLine(startVector3, endVector3);
-        }
-        */
-
-       
             for (int j = 0; j < _triangles.Count; j++)
             {
+                //draw circumcircles
+                var circumCircle = _triangles[j].getCircumCircle();
+                var transparentYellowColor = new Color(1, 0.92f, 0.016f, 0.25f);
+
+                //Gizmos.color = transparentYellowColor;
+                //Gizmos.DrawSphere(circumCircle.Center, circumCircle.Radius);
+
                 for (int k = 0; k < _triangles[j].Edges.Count; k++)
                 {
                     var currentEdge = _triangles[j].Edges[k];
                     var startVector3 = new Vector3((float)currentEdge.StartPoint.X, (float)currentEdge.StartPoint.Y);
                     var endVector3 = new Vector3((float)currentEdge.EndPoint.X, (float)currentEdge.EndPoint.Y);
 
-                    if(currentEdge.IS_BAD)
+                    if (currentEdge.IS_BAD)
                         Gizmos.color = Color.red;
                     else
                         Gizmos.color = Color.black;
 
                     Gizmos.DrawLine(startVector3, endVector3);
                 }
-            } 
+            }
         }
     }
 }

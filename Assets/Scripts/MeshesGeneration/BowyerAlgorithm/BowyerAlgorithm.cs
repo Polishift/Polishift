@@ -38,7 +38,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             foreach (var currentPoint in _inputPoints)
             {
                 //debug
-                Debug.Log("Current point: " + currentPoint.ToString());
+                Debug.Log("Point no " + counter + ": " + currentPoint.ToString());
                 counter++;
                 //end debug
 
@@ -48,21 +48,30 @@ namespace MeshesGeneration.BowyerAlgorithm
                 RemoveBadTrianglesFromTriangulation(badTriangles);
                 CreateNewTriangles(currentPoint, polygonsWithOriginalTriangles);
 
+                foreach (var item in _currentTriangles)
+                    Debug.Log("BEFORE INTERSECT: Triangle " + item.ToString());
+
 
                 //debug
                 for (int i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
                 {
                     for (int j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
-                        RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j]);
+                        RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j], currentPoint);
                 }
                 //end debug
 
+                foreach (var item in _currentTriangles)
+                    Debug.Log("AFTER INTERSECT: Triangle " + item.ToString());
+
+
                 _newTrianglesForCurrentIteration.Clear();
 
-                if(counter == 4)
+
+                //1, 2, Are good and their tri's are good. 3 However seems to do the circumcircle detection wrong...
+                if (counter == 2)
                     break;
             }
-            RemoveSuperTriangleVertices(superTriangle);
+            //RemoveSuperTriangleVertices(superTriangle);
 
             return _triangulation;
         }
@@ -71,10 +80,10 @@ namespace MeshesGeneration.BowyerAlgorithm
         private void CreateSuperTriangle()
         {
             var lowerLeftCorner = new XYPoint { X = -100, Y = -20 };
-            var lowerRightCorner = new XYPoint { X = 300, Y = -20 };
+            var lowerRightCorner = new XYPoint { X = 220, Y = -20 };
             var pyramidTop = new XYPoint
             {
-                X = 100,
+                X = 55,
                 Y = 200
             };
 
@@ -95,7 +104,13 @@ namespace MeshesGeneration.BowyerAlgorithm
             foreach (var triangle in _currentTriangles)
             {
                 if (triangle.IsWithinCircumCircle(currentPoint))
+                {
+                    Debug.Log(currentPoint.ToString() + " is within circumcircle of " + triangle.ToString());
                     badTriangles.Add(triangle);
+                }
+                else
+                    Debug.Log(currentPoint.ToString() + " is NOT within circumcircle of " + triangle.ToString());
+
             }
             return badTriangles;
         }
@@ -181,11 +196,10 @@ namespace MeshesGeneration.BowyerAlgorithm
 
 
         /*
-        Replace an intersecter with the Edge that it intersects (?)
+        Replace an intersecters endpoint with the current point
         */
 
-
-        private void RemoveIntersectingEdges(List<Triangle> trianglesToCheck, Edge subjectEdge)
+        private void RemoveIntersectingEdges(List<Triangle> trianglesToCheck, Edge subjectEdge, XYPoint currentPoint) //eww so many arguments
         {
             var guiltyTrianglesAndEdgesWithTheirReplacements = new Dictionary<Triangle, List<Tuple<int, Edge>>>();
 
@@ -199,9 +213,10 @@ namespace MeshesGeneration.BowyerAlgorithm
 
                     if (currEdge.CrossesThrough(subjectEdge))
                     {
-                        Debug.Log("We'll replace " + currEdge + " with " + subjectEdge + " since it intersects with " + subjectEdge);
+                        var replacementEdge = CreateReplacingEdge(currEdge, currentPoint); 
+
                         currEdge.IS_BAD = true;
-                        guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Add(new Tuple<int,Edge>(i, subjectEdge));
+                        guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Add(new Tuple<int, Edge>(i, replacementEdge));
                     }
                 }
             }
@@ -213,15 +228,30 @@ namespace MeshesGeneration.BowyerAlgorithm
                 {
                     for (int i = 0; i < guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Count; i++)
                     {
-                        var guiltyEdgeForThisTriangle = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1; 
-                        var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2; 
+                        var guiltyEdgeForThisTriangleIndex = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1;
+                        var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2;
 
                         replacingEdge.IS_BAD = false;
-                        triangle.Edges.RemoveAt(guiltyEdgeForThisTriangle);
-                        triangle.Edges.Add(replacingEdge);          
+                        Debug.Log("Triangle " + triangle.ToString() + " is going to replace edge " + triangle.Edges[guiltyEdgeForThisTriangleIndex] + " with edge " + replacingEdge.ToString());
+
+                        triangle.ReplaceEdge(replacingEdge, guiltyEdgeForThisTriangleIndex);
                     }
                 }
             }
+        }
+
+        private Edge CreateReplacingEdge(Edge edgeToReplace, XYPoint currentPoint)
+        {
+            //Making sure supertriangle points are never replaced
+
+            if(_superTriangle.Edges.Any(e => e.StartPoint == edgeToReplace.EndPoint 
+                                        || e.EndPoint == edgeToReplace.EndPoint))
+            {
+                return new Edge(currentPoint, edgeToReplace.EndPoint);
+            }
+            else
+                return new Edge(edgeToReplace.StartPoint, currentPoint);
+            
         }
     }
 }

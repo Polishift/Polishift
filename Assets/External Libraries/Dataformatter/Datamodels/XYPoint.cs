@@ -1,5 +1,7 @@
 using System;
 
+using UnityEngine;
+
 namespace Dataformatter.Datamodels
 {
     public class XYPoint : IPoint
@@ -15,6 +17,11 @@ namespace Dataformatter.Datamodels
         public override string ToString()
         {
             return X + " <> " + Y;
+        }
+
+        public Vector3 ToVector3()
+        {
+            return new Vector3 { x = this.X, y = this.Y };
         }
     }
 }
