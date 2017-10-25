@@ -12,6 +12,7 @@ namespace MeshesGeneration.BowyerAlgorithm
 
         public bool IsWithinCircumCircle(XYPoint point)
         {
+            /* 
             var aX = Edges[0].StartPoint.X - point.X;
             var aY = Edges[0].StartPoint.Y - point.Y;
 
@@ -26,52 +27,20 @@ namespace MeshesGeneration.BowyerAlgorithm
                     (bX * bX + bY * bY) * (aX * cY - cX * aY) +
                     (cX * cX + cY * cY) * (aX * bY - bX * aY);
 
-            //God knows why this works            
+            //God knows why this works OMG OMG MAYBE ITS THE COUNTERCLOCKWISE THING       
             return det < 0;
+            */
+            var currentCircumCircle = this.GetCircumCircle();
+            
+            var circumcenterX = currentCircumCircle.Center.x;
+            var circumcenterY = currentCircumCircle.Center.y; 
+             
+
+            return Math.Pow((point.X - circumcenterX), 2) + Math.Pow((point.Y - circumcenterY), 2) 
+                   < Math.Pow(currentCircumCircle.Radius, 2);
         }
 
-        public bool HasEdge(Edge anotherEdge)
-        {
-            for (var i = 0; i < Edges.Count; i++)
-            {
-                var currentEdge = Edges[i];
-
-                if (currentEdge.Equals(anotherEdge))
-                    return true;
-            }
-            return false;
-        }
-
-        public void ReplaceEdge(Edge newEdge, int insertionIndex)
-        {
-            this.Edges[insertionIndex] = newEdge;
-        }
-
-        /*
-        public override string ToString()
-        {
-            var A = this.Edges[0].StartPoint.ToString();
-            var B = this.Edges[0].EndPoint.ToString();
-            var C = this.Edges[1].EndPoint.ToString();
-
-            return A + " to " + B + " to " + C;
-        } */
-        public override string ToString()
-        {
-            var result = " | ";
-            foreach (var edge in Edges)
-                result += edge + " ";
-
-            result += " | ";
-            return result;
-        }
-
-
-        /**
-            DEBUGGGGGGG
-        */
-
-        public Circle getCircumCircle()
+        public Circle GetCircumCircle()
         {
             // lines from a to b and a to c
             var A = this.Edges[0].StartPoint.ToVector3();
@@ -107,6 +76,33 @@ namespace MeshesGeneration.BowyerAlgorithm
             return new Circle() { Center = center, Radius = radius };
         }
 
+        public bool HasEdge(Edge anotherEdge)
+        {
+            for (var i = 0; i < Edges.Count; i++)
+            {
+                var currentEdge = Edges[i];
+
+                if (currentEdge.Equals(anotherEdge))
+                    return true;
+            }
+            return false;
+        }
+
+        public void ReplaceEdge(Edge newEdge, int insertionIndex)
+        {
+            this.Edges[insertionIndex] = newEdge;
+        }
+
+        public override string ToString()
+        {
+            var result = " | ";
+            foreach (var edge in Edges)
+                result += edge + " ";
+
+            result += " | ";
+            return result;
+        }
+
         private Vector3 LineLineIntersection(Vector3 originD, Vector3 directionD, Vector3 originE, Vector3 directionE)
         {
             directionD.Normalize();
@@ -131,9 +127,5 @@ namespace MeshesGeneration.BowyerAlgorithm
             }
             return originD - t * directionD;
         }
-
-        /**
-            END DEBUGGGGGGG
-        */
     }
 }

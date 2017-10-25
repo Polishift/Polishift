@@ -46,7 +46,9 @@ namespace MeshesGeneration.BowyerAlgorithm
                 return false;
             }
 
-            return edge.StartPoint.Equals(StartPoint) && edge.EndPoint.Equals(EndPoint);
+            return (edge.StartPoint.Equals(StartPoint) && edge.EndPoint.Equals(EndPoint))
+                    ||
+                   (edge.StartPoint.Equals(EndPoint) && edge.EndPoint.Equals(StartPoint));
         }
 
         public override string ToString()
