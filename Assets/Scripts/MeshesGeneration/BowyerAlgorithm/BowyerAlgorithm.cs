@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Dataformatter;
 using Dataformatter.Datamodels;
+using Dataformatter.Misc;
 using UnityEngine;
 
 namespace MeshesGeneration.BowyerAlgorithm
@@ -50,9 +51,9 @@ namespace MeshesGeneration.BowyerAlgorithm
 
 
                 //debug
-                for (int i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
+                for (var i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
                 {
-                    for (int j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
+                    for (var j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
                         RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j]);
                 }
                 //end debug
@@ -211,7 +212,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             {
                 if (guiltyTrianglesAndEdgesWithTheirReplacements.ContainsKey(triangle))
                 {
-                    for (int i = 0; i < guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Count; i++)
+                    for (var i = 0; i < guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Count; i++)
                     {
                         var guiltyEdgeForThisTriangle = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1; 
                         var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2; 

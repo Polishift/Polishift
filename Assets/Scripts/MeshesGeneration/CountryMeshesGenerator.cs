@@ -131,7 +131,7 @@ namespace MeshesGeneration
             }
 
             Gizmos.color = Color.black;
-            for (int i = 0; i < _vertices.Count; i++)
+            for (var i = 0; i < _vertices.Count; i++)
             {
                 Gizmos.DrawSphere(_vertices[i], 1.44f);
             }
@@ -148,13 +148,13 @@ namespace MeshesGeneration
         */
 
        
-            for (int j = 0; j < _triangles.Count; j++)
+            for (var j = 0; j < _triangles.Count; j++)
             {
-                for (int k = 0; k < _triangles[j].Edges.Count; k++)
+                for (var k = 0; k < _triangles[j].Edges.Count; k++)
                 {
                     var currentEdge = _triangles[j].Edges[k];
-                    var startVector3 = new Vector3((float)currentEdge.StartPoint.X, (float)currentEdge.StartPoint.Y);
-                    var endVector3 = new Vector3((float)currentEdge.EndPoint.X, (float)currentEdge.EndPoint.Y);
+                    var startVector3 = new Vector3(currentEdge.StartPoint.X, currentEdge.StartPoint.Y);
+                    var endVector3 = new Vector3(currentEdge.EndPoint.X, currentEdge.EndPoint.Y);
 
                     if(currentEdge.IS_BAD)
                         Gizmos.color = Color.red;
