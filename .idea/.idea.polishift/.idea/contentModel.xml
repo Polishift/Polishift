@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Kraaijeveld\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_polishift.-507998281.00" t="ExcludeRecursive" />
+    <e p="E:\Hogeschool\Polishift Organization\polishift" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraLogicController.cs" t="Include" />
+            <e p="CameraZoomer.cs" t="Include" />
+            <e p="ICameraMovementController.cs" t="Include" />
+            <e p="ICameraTiltController.cs" t="Include" />
+          </e>
+          <e p="MeshesGeneration" t="Include">
+            <e p="BowyerAlgorithm" t="Include">
+              <e p="BowyerAlgorithm.cs" t="Include" />
+              <e p="Circle.cs" t="Include" />
+              <e p="Edge.cs" t="Include" />
+              <e p="Triangle.cs" t="Include" />
+            </e>
+            <e p="CountryMeshesGenerator.cs" t="Include" />
+            <e p="MeshCreator.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UnityPackages" t="Include">
+          <e p="JsonNetSample" t="Include">
+            <e p="JsonNetSample.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="polishift.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

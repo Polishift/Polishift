@@ -1,0 +1,259 @@
+[
+    {
+        "CountryCode": "NLD",
+        "PartyName": "anti-revolutionaire partij",
+        "Abbreviation": "arp",
+        "Classification": "Confessional"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "communistische partij nederland",
+        "Abbreviation": "cpn",
+        "Classification": "Radical Left"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "katholieke volkspartij",
+        "Abbreviation": "kvp",
+        "Classification": "Confessional"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "sociaal-democratische arbeiders partij",
+        "Abbreviation": "sdap",
+        "Classification": "Socialist"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "volkspartij voor vrijheid en democratie",
+        "Abbreviation": "vvd",
+        "Classification": "liberal"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "katholieke nationale partij",
+        "Abbreviation": "knp",
+        "Classification": "Confessional"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "pacifistisch-socialistische partij",
+        "Abbreviation": "psp",
+        "Classification": "Socialist"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "boerenpartij",
+        "Abbreviation": "boerenpartij",
+        "Classification": "Agrarian/Center"
+    }, { "CountryCode": "NLD", "PartyName": "democraten '66", "Abbreviation": "d66", "Classification": "liberal" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "democratische socialisten '70",
+        "Abbreviation": "ds70",
+        "Classification": "Socialist"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "politieke partij radicalen",
+        "Abbreviation": "ppr",
+        "Classification": "Green"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "algemeen ouderen verbond",
+        "Abbreviation": "aov",
+        "Classification": "No family"
+    }, { "CountryCode": "NLD", "PartyName": "centrumdemocraten", "Abbreviation": "cd", "Classification": "rad right" },
+    { "CountryCode": "NLD", "PartyName": "groenlinks", "Abbreviation": "gl", "Classification": "green" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "christen-democratisch app�l",
+        "Abbreviation": "cda",
+        "Classification": "christdem"
+    },
+    { "CountryCode": "NLD", "PartyName": "christenunie", "Abbreviation": "cu", "Classification": "confessional" },
+    { "CountryCode": "NLD", "PartyName": "democraten 66", "Abbreviation": "d66", "Classification": "liberal" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "duurzaam nederland",
+        "Abbreviation": "duurzaamnederland",
+        "Classification": "Green"
+    }, { "CountryCode": "NLD", "PartyName": "leefbaar nederland", "Abbreviation": "ln", "Classification": "Liberal" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "nieuwe midden partij",
+        "Abbreviation": "nmp",
+        "Classification": "Agrarian/Center"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "partij van de toekomst",
+        "Abbreviation": "pvdt",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "republikeinse volkspartij",
+        "Abbreviation": "rvp",
+        "Classification": "Liberal"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "verenigde senioren partij",
+        "Abbreviation": "vsp",
+        "Classification": "Agrarian/Center"
+    },
+    { "CountryCode": "NLD", "PartyName": "vrije indische partij", "Abbreviation": "vip", "Classification": "Liberal" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "alliante voor vernieuwing en democratie",
+        "Abbreviation": "avd",
+        "Classification": "Radical Right"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "de conservatieven.nl",
+        "Abbreviation": "deconservatieven.nl",
+        "Classification": "Radical Right"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst ratelband",
+        "Abbreviation": "lijstratelband",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst veldhoen",
+        "Abbreviation": "lijstveldhoen",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "nieuwe communistische partij nederland",
+        "Abbreviation": "ncpn",
+        "Classification": "Radical Left"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "vooruitstrevende integratie partij",
+        "Abbreviation": "vooruitstrevendeintegratiepartij",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "ad bos collectief",
+        "Abbreviation": "abc",
+        "Classification": "Agrarian/Center"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "continue directe democratie partij",
+        "Abbreviation": "cddp",
+        "Classification": "Liberal"
+    }, { "CountryCode": "NLD", "PartyName": "e�nnl", "Abbreviation": "1nl", "Classification": "Radical Right" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "groen vrij internet partij",
+        "Abbreviation": "gvip",
+        "Classification": "Green"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "liberaal democratische partij",
+        "Abbreviation": "LibDem",
+        "Classification": "LibDem"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst poortman (blanco lijst)",
+        "Abbreviation": "lijstpoortman",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst potmis (islam democraten)",
+        "Abbreviation": "lijstpotmis",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst vijf fortuyn (lijst pim fortuyn)",
+        "Abbreviation": "lpf",
+        "Classification": "rad right"
+    },
+    { "CountryCode": "NLD", "PartyName": "lrvp - het zeteltje", "Abbreviation": "lrvp", "Classification": "No family" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "nederland transparant",
+        "Abbreviation": "nederlandtransparant",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "partij voor de vrijheid",
+        "Abbreviation": "pvv",
+        "Classification": "rad right"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "partij voor nederland",
+        "Abbreviation": "pvn",
+        "Classification": "Radical Right"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "solide multiculturele partij",
+        "Abbreviation": "smp",
+        "Classification": "Radical Left"
+    },
+    { "CountryCode": "NLD", "PartyName": "tamara's open partij", "Abbreviation": "top", "Classification": "No family" },
+    { "CountryCode": "NLD", "PartyName": "heelnl", "Abbreviation": "", "Classification": "No family" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst feijen (lijst 17)",
+        "Abbreviation": "lijstfeijen",
+        "Classification": "Liberal"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "lijst lacl� (evangelische partij nederland)",
+        "Abbreviation": "epn",
+        "Classification": "Confessional"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "nieuw nederland",
+        "Abbreviation": "nieuwnederland",
+        "Classification": "No family"
+    },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "partij voor mens en spirit",
+        "Abbreviation": "mens",
+        "Classification": "No family"
+    }, { "CountryCode": "NLD", "PartyName": "partij ��n", "Abbreviation": "partijeen", "Classification": "No family" },
+    { "CountryCode": "NLD", "PartyName": "piratenpartij", "Abbreviation": "pp", "Classification": "Liberal" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "trots op nederland lijst rita verdonk",
+        "Abbreviation": "trots",
+        "Classification": "Radical Right"
+    }, { "CountryCode": "NLD", "PartyName": "50plus", "Abbreviation": "50+", "Classification": "Agrarian/Center" },
+    { "CountryCode": "NLD", "PartyName": "anti europa partij", "Abbreviation": "aeup", "Classification": "No family" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "democratisch politiek keerpunt",
+        "Abbreviation": "dpk",
+        "Classification": "Radical Right"
+    }, { "CountryCode": "NLD", "PartyName": "libertarische partij", "Abbreviation": "lp", "Classification": "Liberal" },
+    { "CountryCode": "NLD", "PartyName": "nederland lokaal", "Abbreviation": "nl", "Classification": "Regionalist" },
+    { "CountryCode": "NLD", "PartyName": "politieke partij nxd", "Abbreviation": "nxd", "Classification": "No family" },
+    {
+        "CountryCode": "NLD",
+        "PartyName": "soeverein onafhankelijke pioniers nederland",
+        "Abbreviation": "sopn",
+        "Classification": "No family"
+    }
+]

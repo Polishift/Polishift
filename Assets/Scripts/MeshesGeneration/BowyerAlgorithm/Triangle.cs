@@ -12,24 +12,6 @@ namespace MeshesGeneration.BowyerAlgorithm
 
         public bool IsWithinCircumCircle(XYPoint point)
         {
-            /* 
-            var aX = Edges[0].StartPoint.X - point.X;
-            var aY = Edges[0].StartPoint.Y - point.Y;
-
-            var bX = Edges[0].EndPoint.X - point.X;
-            var bY = Edges[0].EndPoint.Y - point.Y;
-
-            var cX = Edges[1].EndPoint.X - point.X;
-            var cY = Edges[1].EndPoint.Y - point.Y;
-
-            var det =
-                    (aX * aX + aY * aY) * (bX * cY - cX * bY) -
-                    (bX * bX + bY * bY) * (aX * cY - cX * aY) +
-                    (cX * cX + cY * cY) * (aX * bY - bX * aY);
-
-            //God knows why this works OMG OMG MAYBE ITS THE COUNTERCLOCKWISE THING       
-            return det < 0;
-            */
             var currentCircumCircle = this.GetCircumCircle();
             
             var circumcenterX = currentCircumCircle.Center.x;
@@ -61,13 +43,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             var perpAB = Vector3.Cross(AB, N);
             var perpAC = Vector3.Cross(AC, N);
 
-            // find intersection between the two lines
-            // D: halfAB + t*perpAB
-            // E: halfAC + s*perpAC
-
-
             var center = LineLineIntersection(halfAB, perpAB, halfAC, perpAC);
-
 
             // the radius is the distance between center and any point
             // distance(A, B) = length(A-B)

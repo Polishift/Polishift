@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dataformatter;
+using Dataformatter.Misc;
 using Dataformatter.Datamodels;
 using UnityEngine;
 
@@ -42,16 +43,18 @@ namespace MeshesGeneration.BowyerAlgorithm
                 RemoveBadTrianglesFromTriangulation(badTriangles);
                 CreateNewTriangles(currentPoint, polygonsWithOriginalTriangles);
 
-                //Removing intersecting triangles
+
+                //debug
                 for (int i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
                 {
                     for (int j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
-                        RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j], currentPoint);
+                        RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j]);
                 }
+                //end debug
 
                 _newTrianglesForCurrentIteration.Clear();
             }
-            RemoveSuperTriangleVertices(superTriangle);
+            //RemoveSuperTriangleVertices(superTriangle);
 
             return _triangulation;
         }
@@ -60,10 +63,10 @@ namespace MeshesGeneration.BowyerAlgorithm
         private void CreateSuperTriangle()
         {
             var lowerLeftCorner = new XYPoint { X = -100, Y = -20 };
-            var lowerRightCorner = new XYPoint { X = 220, Y = -20 };
+            var lowerRightCorner = new XYPoint { X = 300, Y = -20 };
             var pyramidTop = new XYPoint
             {
-                X = 55,
+                X = 100,
                 Y = 200
             };
 
@@ -84,10 +87,7 @@ namespace MeshesGeneration.BowyerAlgorithm
             foreach (var triangle in _currentTriangles)
             {
                 if (triangle.IsWithinCircumCircle(currentPoint))
-                {
-                    Debug.Log("Triangle " + triangle + " is bad");
                     badTriangles.Add(triangle);
-                }
             }
             return badTriangles;
         }
@@ -172,28 +172,23 @@ namespace MeshesGeneration.BowyerAlgorithm
 
 
 
-        /*
-        Replace an intersecters endpoint with the current point
-        */
-
-        private void RemoveIntersectingEdges(List<Triangle> trianglesToCheck, Edge subjectEdge, XYPoint currentPoint) //eww so many arguments
+        private void RemoveIntersectingEdges(List<Triangle> trianglesToCheck, Edge subjectEdge)
         {
-            var guiltyTrianglesAndEdgesWithTheirReplacements = new Dictionary<Triangle, Triangle>();
+            var guiltyTrianglesAndEdgesWithTheirReplacements = new Dictionary<Triangle, List<Tuple<int, Edge>>>();
 
             foreach (var triangle in trianglesToCheck)
             {
+                guiltyTrianglesAndEdgesWithTheirReplacements.Add(triangle, new List<Tuple<int, Edge>>());
+
                 for (var i = 0; i < triangle.Edges.Count; i++)
                 {
                     var currEdge = triangle.Edges[i];
 
                     if (currEdge.CrossesThrough(subjectEdge))
                     {
-                        var replacingTriangle = CreateReplacingTriangle(triangle, currentPoint);
-                        guiltyTrianglesAndEdgesWithTheirReplacements[triangle] = replacingTriangle;
-
-                        Debug.Log("Triangle no. " + i + "'s (" + triangle + ") edge " + currEdge + " intersects " + subjectEdge);
-                        break; //Going to check next triangle now; 
-                               //since we get a complete replacment triangle there's no need to check the other edges.
+                        Debug.Log("We'll replace " + currEdge + " with " + subjectEdge + " since it intersects with " + subjectEdge);
+                        currEdge.IS_BAD = true;
+                        guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Add(new Tuple<int,Edge>(i, subjectEdge));
                     }
                 }
             }
@@ -203,35 +198,17 @@ namespace MeshesGeneration.BowyerAlgorithm
             {
                 if (guiltyTrianglesAndEdgesWithTheirReplacements.ContainsKey(triangle))
                 {
-                    var replacingTrianglesEdges = guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Edges;
-                    triangle.Edges = replacingTrianglesEdges;
+                    for (int i = 0; i < guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Count; i++)
+                    {
+                        var guiltyEdgeForThisTriangle = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1; 
+                        var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2; 
+
+                        replacingEdge.IS_BAD = false;
+                        triangle.Edges.RemoveAt(guiltyEdgeForThisTriangle);
+                        triangle.Edges.Add(replacingEdge);          
+                    }
                 }
             }
-        }
-
-        private Triangle CreateReplacingTriangle(Triangle triangleToReplace, XYPoint currentPoint)
-        {
-            //Making sure supertriangle points are never replaced,
-            //and any non-supertriangle points are set to be the currentPoint.
-            var replacementTriangle = new Triangle() { Edges = new List<Edge>() };
-
-            foreach (var edgeToReplace in triangleToReplace.Edges)
-            {
-                if (_superTriangle.Edges.Any(e => e.Equals(edgeToReplace)))
-                {
-                    //Both points of this edge are supertriangle edges, so we leave the edge be.
-                    replacementTriangle.Edges.Add(new Edge(edgeToReplace.StartPoint, edgeToReplace.EndPoint));
-                }
-                else if (_superTriangle.Edges.Any(e => e.StartPoint == edgeToReplace.EndPoint
-                                         || e.EndPoint == edgeToReplace.EndPoint))
-                {
-                    replacementTriangle.Edges.Add(new Edge(currentPoint, edgeToReplace.EndPoint));
-                }
-                else
-                    replacementTriangle.Edges.Add(new Edge(edgeToReplace.StartPoint, currentPoint));
-            }
-
-            return replacementTriangle;
         }
     }
 }
