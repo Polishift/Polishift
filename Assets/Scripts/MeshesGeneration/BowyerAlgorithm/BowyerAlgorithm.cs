@@ -10,15 +10,16 @@ namespace MeshesGeneration.BowyerAlgorithm
     public class BowyerAlgorithm
     {
         private Triangle _superTriangle;
-        private List<XYPoint> _inputPoints;
+        private List<XYPoint> _inputPoints = new List<XYPoint>();
         private List<Triangle> _newTrianglesForCurrentIteration = new List<Triangle>();
         private readonly HashSet<Triangle> _triangulation = new HashSet<Triangle>();
         private readonly List<Triangle> _currentTriangles = new List<Triangle>();
 
 
-        public BowyerAlgorithm(List<XYPoint> inputPoints)
+        public BowyerAlgorithm(List<Vector3> inputPoints)
         {
-            _inputPoints = inputPoints;
+            foreach(var vector in inputPoints)
+                _inputPoints.Add(new XYPoint() {X = vector.x, Y = vector.y});
         }
 
         /*

@@ -39,30 +39,7 @@ namespace MeshesGeneration
 
         private void TestGenerate()
         {
-            /*
-             const string countryBorderDirectory = "Assets/External Libraries/Dataformatter/ProcessedData/CountryInformation/";
-             IJsonModelFactory<CountryGeoModel> countryGeoModelFactory = new CountryGeoModelFactory();
-             var processor = new CountryBordersProcessor();
-
-            var allCountryGeoModels =
-                JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(countryBorderDirectory,
-                                                                       countryGeoModelFactory, "*.geo.json");
-            processor.SerializeDataToJson(allCountryGeoModels);
-
-            MeshCreator meshCreator = new MeshCreator();
-
-
-            _countryBordersRepository = new CountryBordersRepository();
-
-            var netherlandsBordersEntity = _countryBordersRepository.GetByCountry("AFG").First();
-            this._vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
-            
-            var verticesAsPoints = new List<XYPoint>();
-            foreach (var vert in this._vertices)
-                verticesAsPoints.Add(new XYPoint(){X = vert.x, Y = vert.y});
-            */
-
-            
+            /*          
             var testPointsOne = new List<XYPoint>
             {
                 new XYPoint { X = 0, Y = 45 },
@@ -78,8 +55,29 @@ namespace MeshesGeneration
             {
                 _vertices.Add(new Vector3(testPointsOne[i].X, testPointsOne[i].Y));
             }
+            */
+            Dataformatter.Paths.SetProcessedDataFolder(@"E:\Hogeschool\Polishift Organization\polishift\Assets\ProcessedData");
+            Dataformatter.Paths.SetRawDataFolder(@"E:\Hogeschool\Polishift Organization\Datasources");
 
-             var algo = new BowyerAlgorithm.BowyerAlgorithm(testPointsOne);
+            var geoModelFactory = new CountryGeoModelFactory();
+            var countryGeoJsonPath = Dataformatter.Paths.RawDataFolder;// + @"\CountryInformation";
+            var countryBorderModels = JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(countryGeoJsonPath,
+                                                                                           geoModelFactory, 
+                                                                                           "*.geo.json");
+
+            var countryBordersProcessor = new CountryBordersProcessor();
+            countryBordersProcessor.SerializeDataToJson(countryBorderModels);
+
+            Debug.Log("Done parsing country borders from LL to XY");
+
+
+            var countryBordersRepo = new CountryBordersRepository();
+            var testCountryBorders = countryBordersRepo.GetByCountry("NLD").First();
+
+            MeshCreator meshCreator = new MeshCreator();
+            this._vertices = meshCreator.GetVerticesForCountryBorders(testCountryBorders);
+
+            var algo = new BowyerAlgorithm.BowyerAlgorithm(this._vertices);
             _triangles = algo.ComputeFinalTriangulation().ToList();
         }
 
@@ -91,14 +89,11 @@ namespace MeshesGeneration
                 return;
             }
 
-            Debug.Log(_vertices.Count);
             Gizmos.color = Color.black;
             for (int i = 0; i < _vertices.Count; i++)
             {
-                //Debug.Log("Drawing vert at " + _vertices[i]);
-                Gizmos.DrawSphere(_vertices[i], 0.74f);
+                Gizmos.DrawSphere(_vertices[i], 1f);
             }
-
 
             for (int j = 0; j < _triangles.Count; j++)
             {
