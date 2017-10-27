@@ -16,10 +16,10 @@ namespace MeshesGeneration.BowyerAlgorithm
         private readonly List<Triangle> _currentTriangles = new List<Triangle>();
 
 
-        public BowyerAlgorithm(List<Vector3> inputPoints)
+        public BowyerAlgorithm(List<Vector3> vectors)
         {
-            foreach(var vector in inputPoints)
-                _inputPoints.Add(new XYPoint() {X = vector.x, Y = vector.y});
+            foreach (var v in vectors)
+                _inputPoints.Add(new XYPoint(){ X = v.x, Y = v.y });
         }
 
         /*
@@ -45,17 +45,15 @@ namespace MeshesGeneration.BowyerAlgorithm
                 CreateNewTriangles(currentPoint, polygonsWithOriginalTriangles);
 
 
-                //debug
                 for (int i = 0; i < _newTrianglesForCurrentIteration.Count(); i++)
                 {
                     for (int j = 0; j < _newTrianglesForCurrentIteration[i].Edges.Count(); j++)
                         RemoveIntersectingEdges(_currentTriangles, _newTrianglesForCurrentIteration[i].Edges[j]);
                 }
-                //end debug
 
                 _newTrianglesForCurrentIteration.Clear();
             }
-            //RemoveSuperTriangleVertices(superTriangle);
+            RemoveSuperTriangleVertices(superTriangle);
 
             return _triangulation;
         }
@@ -187,8 +185,6 @@ namespace MeshesGeneration.BowyerAlgorithm
 
                     if (currEdge.CrossesThrough(subjectEdge))
                     {
-                        Debug.Log("We'll replace " + currEdge + " with " + subjectEdge + " since it intersects with " + subjectEdge);
-                        currEdge.IS_BAD = true;
                         guiltyTrianglesAndEdgesWithTheirReplacements[triangle].Add(new Tuple<int,Edge>(i, subjectEdge));
                     }
                 }
@@ -204,7 +200,6 @@ namespace MeshesGeneration.BowyerAlgorithm
                         var guiltyEdgeForThisTriangle = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item1; 
                         var replacingEdge = guiltyTrianglesAndEdgesWithTheirReplacements[triangle][i].Item2; 
 
-                        replacingEdge.IS_BAD = false;
                         triangle.Edges.RemoveAt(guiltyEdgeForThisTriangle);
                         triangle.Edges.Add(replacingEdge);          
                     }

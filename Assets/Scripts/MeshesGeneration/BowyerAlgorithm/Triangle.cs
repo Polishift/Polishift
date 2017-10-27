@@ -25,9 +25,9 @@ namespace MeshesGeneration.BowyerAlgorithm
         public Circle GetCircumCircle()
         {
             // lines from a to b and a to c
-            var A = new Vector3() { x = this.Edges[0].StartPoint.X, y = this.Edges[0].StartPoint.Y };
-            var B = new Vector3() { x = this.Edges[0].EndPoint.X, y = this.Edges[0].EndPoint.Y }; 
-            var C = new Vector3() { x = this.Edges[1].EndPoint.X, y = this.Edges[1].EndPoint.Y };
+            var A = new Vector3(this.Edges[0].StartPoint.X, this.Edges[0].StartPoint.Y); 
+            var B = new Vector3(this.Edges[0].EndPoint.X, this.Edges[0].EndPoint.Y);
+            var C = new Vector3(this.Edges[1].EndPoint.X, this.Edges[1].EndPoint.Y);
 
             var AB = B - A;
             var AC = C - A;

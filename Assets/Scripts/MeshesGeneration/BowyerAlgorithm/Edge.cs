@@ -4,9 +4,6 @@ namespace MeshesGeneration.BowyerAlgorithm
 {
     public class Edge
     {
-        public bool IS_BAD; //TEMP
-
-
         private double Length { get; set; }
         public XYPoint StartPoint { get; set; }
         public XYPoint EndPoint { get; set; }
