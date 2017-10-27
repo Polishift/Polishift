@@ -22,7 +22,7 @@ namespace MeshesGeneration
                 for (var j = 0; j < currentPolygon.Points.Count; j++)
                 {
                     var currentPoint = currentPolygon.Points[j];
-                    verticesList.Add(new Vector3(currentPoint.X / 1000, currentPoint.Y / 1000));
+                    verticesList.Add(new Vector3(currentPoint.X * 1000, currentPoint.Y * 1000));
                 }
             }
             return verticesList;

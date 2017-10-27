@@ -39,13 +39,14 @@ namespace MeshesGeneration
 
         private void TestGenerate()
         {
-            /*
-             const string countryBorderDirectory = "Assets/External Libraries/Dataformatter/ProcessedData/CountryInformation/";
-             IJsonModelFactory<CountryGeoModel> countryGeoModelFactory = new CountryGeoModelFactory();
-             var processor = new CountryBordersProcessor();
+            Dataformatter.Paths.SetRawDataFolder(@"C:\Users\robert\Projects\Project code\ProcessedData\CountryInformation\");
+            Dataformatter.Paths.SetProcessedDataFolder(@"C:\Users\robert\Projects\Project code\ProcessedData\");
+
+            IJsonModelFactory<CountryGeoModel> countryGeoModelFactory = new CountryGeoModelFactory();
+            var processor = new CountryBordersProcessor();
 
             var allCountryGeoModels =
-                JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(countryBorderDirectory,
+                JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(Dataformatter.Paths.RawDataFolder,
                                                                        countryGeoModelFactory, "*.geo.json");
             processor.SerializeDataToJson(allCountryGeoModels);
 
@@ -54,15 +55,15 @@ namespace MeshesGeneration
 
             _countryBordersRepository = new CountryBordersRepository();
 
-            var netherlandsBordersEntity = _countryBordersRepository.GetByCountry("AFG").First();
-            this._vertices = meshCreator.GetVerticesForCountryBorders(netherlandsBordersEntity);
-            
-            var verticesAsPoints = new List<XYPoint>();
-            foreach (var vert in this._vertices)
-                verticesAsPoints.Add(new XYPoint(){X = vert.x, Y = vert.y});
-            */
+            var testCountryBordersEntity = _countryBordersRepository.GetByCountry("NLD").First();
 
-            
+
+            this._vertices = meshCreator.GetVerticesForCountryBorders(testCountryBordersEntity);
+
+            var algo = new BowyerAlgorithm.BowyerAlgorithm(this._vertices);
+            _triangles = algo.ComputeFinalTriangulation().ToList();
+
+            /*
             var testPointsOne = new List<XYPoint>
             {
                 new XYPoint { X = 0, Y = 45 },
@@ -71,16 +72,19 @@ namespace MeshesGeneration
                 new XYPoint { X = 90, Y =  10 },
                 new XYPoint { X = 150, Y = 55 },
                 new XYPoint { X = 120, Y = -50 },
+
+                new XYPoint { X = 12, Y = -10 },
+                new XYPoint { X = 100, Y = -15 },
+                new XYPoint { X = 130, Y = 50 },
+                new XYPoint { X = 13, Y = 50 },
+                
                 new XYPoint { X = 180, Y = 155 },
                 
             };
             for (var i = 0; i < testPointsOne.Count; i++)
             {
                 _vertices.Add(new Vector3(testPointsOne[i].X, testPointsOne[i].Y));
-            }
-
-             var algo = new BowyerAlgorithm.BowyerAlgorithm(testPointsOne);
-            _triangles = algo.ComputeFinalTriangulation().ToList();
+            }*/
         }
 
 
@@ -91,12 +95,11 @@ namespace MeshesGeneration
                 return;
             }
 
-            Debug.Log(_vertices.Count);
             Gizmos.color = Color.black;
             for (int i = 0; i < _vertices.Count; i++)
             {
-                //Debug.Log("Drawing vert at " + _vertices[i]);
-                Gizmos.DrawSphere(_vertices[i], 0.74f);
+                Debug.Log(_vertices[i]);
+                Gizmos.DrawSphere(_vertices[i], 15.44f);
             }
 
 
