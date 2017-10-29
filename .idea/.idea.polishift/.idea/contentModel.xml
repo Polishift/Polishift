@@ -31,11 +31,6 @@
             <e p="MeshCreator.cs" t="Include" />
           </e>
         </e>
-        <e p="UnityPackages" t="Include">
-          <e p="JsonNetSample" t="Include">
-            <e p="JsonNetSample.cs" t="Include" />
-          </e>
-        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

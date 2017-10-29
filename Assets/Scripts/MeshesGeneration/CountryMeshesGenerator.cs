@@ -39,52 +39,60 @@ namespace MeshesGeneration
 
         private void TestGenerate()
         {
-            Dataformatter.Paths.SetRawDataFolder(@"C:\Users\robert\Projects\Project code\ProcessedData\CountryInformation\");
-            Dataformatter.Paths.SetProcessedDataFolder(@"C:\Users\robert\Projects\Project code\ProcessedData\");
+            /*
+            Dataformatter.Paths.SetProcessedDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\");
+            Dataformatter.Paths.SetRawDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\CountryInformation");
 
-            IJsonModelFactory<CountryGeoModel> countryGeoModelFactory = new CountryGeoModelFactory();
-            var processor = new CountryBordersProcessor();
+            var geoModelFactory = new CountryGeoModelFactory();
+            var countryGeoJsonPath = Dataformatter.Paths.RawDataFolder;
+            var countryBorderModels = JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(countryGeoJsonPath,
+                                                                                           geoModelFactory, 
+                                                                                           "*.geo.json");
+            var countryBordersProcessor = new CountryBordersProcessor();
+            countryBordersProcessor.SerializeDataToJson(countryBorderModels);
 
-            var allCountryGeoModels =
-                JsonToModel<CountryGeoModel>.ParseJsonDirectoryToModels(Dataformatter.Paths.RawDataFolder,
-                                                                       countryGeoModelFactory, "*.geo.json");
-            processor.SerializeDataToJson(allCountryGeoModels);
-
+            //Debugging from here on out
+            var countryBordersRepo = new CountryBordersRepository();
+            var testCountryBordersTwo = countryBordersRepo.GetByCountry("BEL").First();
+            
             MeshCreator meshCreator = new MeshCreator();
+            this._vertices.AddRange(meshCreator.GetVerticesForCountryBorders(testCountryBordersTwo));
+            */                           
+                           
+            
+            this._vertices = new List<Vector3>()
+            {
+                //left
+                new Vector3(11f, 10),
+                new Vector3(11f, 20),
+                new Vector3(12f, 30),
+                new Vector3(13.5f, 70),
+                new Vector3(13.5f, -10),
 
+                //up 
+                new Vector3(11, 40),
+                new Vector3(11, 30),
+                new Vector3(22, 40),
+                new Vector3(33, 40),
+                new Vector3(44, 40),
 
-            _countryBordersRepository = new CountryBordersRepository();
+                //below
+                new Vector3(11, 10),
+                new Vector3(22, 10),
+                new Vector3(33, 10),
+                new Vector3(44, 10),
+                
+                //right
+                new Vector3(40, 10),
+                new Vector3(40, 20),
+                new Vector3(40, 30),
+                new Vector3(40, 40),
+            }; 
 
-            var testCountryBordersEntity = _countryBordersRepository.GetByCountry("NLD").First();
-
-
-            this._vertices = meshCreator.GetVerticesForCountryBorders(testCountryBordersEntity);
-
+            //Algo doesnt like points that are very close (< 1 on X or Y) together.
+            //Also, investigate what kind of supertriangle you need. (not float min max)
             var algo = new BowyerAlgorithm.BowyerAlgorithm(this._vertices);
             _triangles = algo.ComputeFinalTriangulation().ToList();
-
-            /*
-            var testPointsOne = new List<XYPoint>
-            {
-                new XYPoint { X = 0, Y = 45 },
-                new XYPoint { X = 45, Y = 0 },
-                new XYPoint { X = 55, Y = 100 },
-                new XYPoint { X = 90, Y =  10 },
-                new XYPoint { X = 150, Y = 55 },
-                new XYPoint { X = 120, Y = -50 },
-
-                new XYPoint { X = 12, Y = -10 },
-                new XYPoint { X = 100, Y = -15 },
-                new XYPoint { X = 130, Y = 50 },
-                new XYPoint { X = 13, Y = 50 },
-                
-                new XYPoint { X = 180, Y = 155 },
-                
-            };
-            for (var i = 0; i < testPointsOne.Count; i++)
-            {
-                _vertices.Add(new Vector3(testPointsOne[i].X, testPointsOne[i].Y));
-            }*/
         }
 
 
@@ -98,10 +106,9 @@ namespace MeshesGeneration
             Gizmos.color = Color.black;
             for (int i = 0; i < _vertices.Count; i++)
             {
-                Debug.Log(_vertices[i]);
-                Gizmos.DrawSphere(_vertices[i], 15.44f);
+                //Debug.Log(_vertices[i]);
+                Gizmos.DrawSphere(_vertices[i], 0.44f);
             }
-
 
             for (int j = 0; j < _triangles.Count; j++)
             {

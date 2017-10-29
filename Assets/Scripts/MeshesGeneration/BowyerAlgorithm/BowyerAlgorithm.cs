@@ -54,19 +54,19 @@ namespace MeshesGeneration.BowyerAlgorithm
                 _newTrianglesForCurrentIteration.Clear();
             }
             RemoveSuperTriangleVertices(superTriangle);
-
+ 
             return _triangulation;
         }
 
         //TODO: Change these points to be float min max's
         private void CreateSuperTriangle()
         {
-            var lowerLeftCorner = new XYPoint { X = -100, Y = -20 };
-            var lowerRightCorner = new XYPoint { X = 300, Y = -20 };
+            var lowerLeftCorner = new XYPoint { X = float.MinValue, Y = float.MinValue };
+            var lowerRightCorner = new XYPoint { X = float.MaxValue, Y = float.MinValue };
             var pyramidTop = new XYPoint
             {
-                X = 100,
-                Y = 200
+                X = float.MaxValue / 2,
+                Y = float.MaxValue
             };
 
             var a = new Edge(lowerLeftCorner, pyramidTop);
