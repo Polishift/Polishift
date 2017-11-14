@@ -20,15 +20,21 @@
             <e p="ICameraMovementController.cs" t="Include" />
             <e p="ICameraTiltController.cs" t="Include" />
           </e>
-          <e p="MeshesGeneration" t="Include">
-            <e p="BowyerAlgorithm" t="Include">
-              <e p="BowyerAlgorithm.cs" t="Include" />
-              <e p="Circle.cs" t="Include" />
-              <e p="Edge.cs" t="Include" />
-              <e p="Triangle.cs" t="Include" />
+          <e p="Map Displaying" t="Include">
+            <e p="Country Meshes Generation" t="Include">
+              <e p="MeshCreator.cs" t="Include" />
+              <e p="MeshesGenerator.cs" t="Include" />
+              <e p="NaiveTriangulator.cs" t="Include" />
             </e>
-            <e p="CountryMeshesGenerator.cs" t="Include" />
-            <e p="MeshCreator.cs" t="Include" />
+            <e p="Reference Scripts" t="Include">
+              <e p="CountryInformationReference.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Repository" t="Include">
+            <e p="RepositoryHub.cs" t="Include" />
+          </e>
+          <e p="Startup Scripts" t="Include">
+            <e p="CreateCountries.cs" t="Include" />
           </e>
         </e>
       </e>
