@@ -2,11 +2,12 @@
 
 using Dataformatter.Dataprocessing.Entities;
 using Dataformatter.Data_accessing.Repositories;
+using Map_Displaying.Reference_Scripts;
 
 
 namespace MeshesGeneration
 {
-    [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))] //, typeof(CountryEntity)
+    [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
     public class MeshesGenerator : MonoBehaviour
     {
         private Mesh _testMesh;
@@ -21,7 +22,9 @@ namespace MeshesGeneration
         private void GenerateMesh()
         {
             MeshCreator meshCreator = new MeshCreator();
-            var testMesh = meshCreator.GetMeshPerPolygon(gameObject.GetComponent<CountryEntity>())[0];
+            
+            //Expand this to all polygons per country
+            var testMesh = meshCreator.GetMeshPerPolygon(gameObject.GetComponent<CountryInformationReference>())[0];
 
             //Set up game object with mesh;
             gameObject.GetComponent<MeshFilter>().mesh = testMesh;

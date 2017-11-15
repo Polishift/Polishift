@@ -26,6 +26,9 @@
               <e p="MeshesGenerator.cs" t="Include" />
               <e p="NaiveTriangulator.cs" t="Include" />
             </e>
+            <e p="Handlers" t="Include">
+              <e p="OnClickHandler.cs" t="Include" />
+            </e>
             <e p="Reference Scripts" t="Include">
               <e p="CountryInformationReference.cs" t="Include" />
             </e>
@@ -33,8 +36,9 @@
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />
           </e>
-          <e p="Startup Scripts" t="Include">
-            <e p="CreateCountries.cs" t="Include" />
+          <e p="Startup" t="Include">
+            <e p="CountriesSpawner.cs" t="Include" />
+            <e p="CountryPrefab.cs" t="Include" />
           </e>
         </e>
       </e>
