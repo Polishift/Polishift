@@ -19,43 +19,57 @@ namespace MeshesGeneration
             MeshCreator meshCreator = new MeshCreator();
 
             var meshesForOurCountrysPolygons = meshCreator.GetMeshPerPolygon(GetComponent<CountryInformationReference>());
-
-            foreach (var mesh in meshesForOurCountrysPolygons)
+            
+            
+            for(int i = 0; i < meshesForOurCountrysPolygons.Count; i++)
             {
+                var mesh = meshesForOurCountrysPolygons[i];
                 AddChildMesh(mesh);
             }
             CombineChildMeshes();
         }
 
-        
         private void AddChildMesh(Mesh childMesh)
         {
+            /*
+            * DEBUGGING
+              - Combining or not doesnt matter 
+              - Index of the polygon being meshified doesnt matter
+              - Reversing the tri's only flips
+            */
+
+
             GameObject newChildObject = new GameObject {name = "Child mesh"};
             newChildObject.transform.parent = gameObject.transform;
 
             newChildObject.AddComponent<MeshFilter>();
+            newChildObject.AddComponent<MeshRenderer>();
+
             newChildObject.GetComponent<MeshFilter>().mesh = childMesh;
         }
+
 
         private void CombineChildMeshes()
         {
             MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>();
             CombineInstance[] combine = new CombineInstance[meshFilters.Length];
-            
+
             int i = 0;
             while (i < meshFilters.Length)
             {
                 combine[i].mesh = meshFilters[i].sharedMesh;
                 combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
-                
+
                 meshFilters[i].gameObject.active = false;
-                
+
                 i++;
             }
-            
+
             transform.GetComponent<MeshFilter>().mesh = new Mesh();
             transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
             transform.gameObject.active = true;
+
+            GetComponent<MeshRenderer>().material = new Material(Shader.Find("Diffuse"));
         }
     }
 }

@@ -24,7 +24,13 @@
             <e p="Country Meshes Generation" t="Include">
               <e p="MeshCreator.cs" t="Include" />
               <e p="MeshesGenerator.cs" t="Include" />
-              <e p="NaiveTriangulator.cs" t="Include" />
+              <e p="Triangulator" t="Include">
+                <e p="AlternativeTriangulator.cs" t="Include" />
+                <e p="CustomMeshBuilder.cs" t="Include" />
+                <e p="Polygon2D.cs" t="Include" />
+                <e p="PSLG.cs" t="Include" />
+                <e p="TriangulatorAPI.cs" t="Include" />
+              </e>
             </e>
             <e p="Handlers" t="Include">
               <e p="OnClickHandler.cs" t="Include" />

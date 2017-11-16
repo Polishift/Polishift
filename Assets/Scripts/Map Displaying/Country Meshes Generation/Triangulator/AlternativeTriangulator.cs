@@ -1,30 +1,26 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-namespace MeshesGeneration
+namespace MeshesGeneration.Triangulator
 {
-    /*
-    * Source: http://wiki.unity3d.com/index.php?title=Triangulator 
-    */
-
-    public class NaiveTriangulator
+    public class AlternativeTriangulator
     {
-        private readonly List<Vector3> _mPoints;
+        private List<Vector2> m_points = new List<Vector2>();
 
-        public NaiveTriangulator(List<Vector3> points)
+        public AlternativeTriangulator(List<Vector2> points)
         {
-            _mPoints = points;
+            m_points = new List<Vector2>(points);
         }
 
         public int[] Triangulate()
         {
             List<int> indices = new List<int>();
 
-            int n = _mPoints.Count;
+            int n = m_points.Count;
             if (n < 3)
                 return indices.ToArray();
 
-            int[]V  = new int[n];
+            int[] V = new int[n];
             if (Area() > 0)
             {
                 for (int v = 0; v < n; v++)
@@ -76,12 +72,12 @@ namespace MeshesGeneration
 
         private float Area()
         {
-            int n = _mPoints.Count;
+            int n = m_points.Count;
             float A = 0.0f;
             for (int p = n - 1, q = 0; q < n; p = q++)
             {
-                Vector3 pval = _mPoints[p];
-                Vector3 qval = _mPoints[q];
+                Vector2 pval = m_points[p];
+                Vector2 qval = m_points[q];
                 A += pval.x * qval.y - qval.x * pval.y;
             }
             return (A * 0.5f);
@@ -90,23 +86,23 @@ namespace MeshesGeneration
         private bool Snip(int u, int v, int w, int n, int[] V)
         {
             int p;
-            Vector3 A = _mPoints[V[u]];
-            Vector3 B = _mPoints[V[v]];
-            Vector3 C = _mPoints[V[w]];
+            Vector2 A = m_points[V[u]];
+            Vector2 B = m_points[V[v]];
+            Vector2 C = m_points[V[w]];
             if (Mathf.Epsilon > (((B.x - A.x) * (C.y - A.y)) - ((B.y - A.y) * (C.x - A.x))))
                 return false;
             for (p = 0; p < n; p++)
             {
                 if ((p == u) || (p == v) || (p == w))
                     continue;
-                Vector3 P = _mPoints[V[p]];
+                Vector2 P = m_points[V[p]];
                 if (InsideTriangle(A, B, C, P))
                     return false;
             }
             return true;
         }
 
-        private bool InsideTriangle(Vector3 A, Vector3 B, Vector3 C, Vector3 P)
+        private bool InsideTriangle(Vector2 A, Vector2 B, Vector2 C, Vector2 P)
         {
             float ax, ay, bx, by, cx, cy, apx, apy, bpx, bpy, cpx, cpy;
             float cCROSSap, bCROSScp, aCROSSbp;
