@@ -4,7 +4,6 @@ using System.Linq;
 using Dataformatter.Datamodels;
 using Dataformatter.Dataprocessing.Entities;
 using Map_Displaying.Reference_Scripts;
-using MeshesGeneration.Triangulator;
 using Repository;
 using UnityEngine;
 
@@ -28,10 +27,11 @@ namespace MeshesGeneration
                 var countryBordersPolygon = countryBorders.Polygons[j];
                 var currentPolygonPointsAsVectors = PolygonTo2DVectorArray(countryBordersPolygon); 
 
+                Poly2Mesh.Polygon poly = new Poly2Mesh.Polygon();
+                poly.outside = currentPolygonPointsAsVectors;
                 
-                //todo DEBUUGGGING TO SEE IF NORMAL TRIANGULATOR WORKS NOW FOR SOME REASON HAHAHAHAH
-                if (0 == 0)
-                {
+                meshPerPolygon.Add(Poly2Mesh.CreateMesh(poly));
+                /*
                     // Use the triangulator to get indices for creating triangles
                     AlternativeTriangulator tr = new AlternativeTriangulator(currentPolygonPointsAsVectors);
                     int[] indices = tr.Triangulate();
@@ -50,42 +50,18 @@ namespace MeshesGeneration
                     msh.RecalculateBounds();
                     
                     meshPerPolygon.Add(msh);
-                }
-                else
-                {
-                    PSLG planarStraightLineGraph = new PSLG();
-                    planarStraightLineGraph.AddVertexLoop(currentPolygonPointsAsVectors);
-                
-                    TriangleAPI triangle = new TriangleAPI();
-                    Polygon2D polygon = triangle.Triangulate(planarStraightLineGraph);
-                
-
-                    CustomMeshBuilder builder = new CustomMeshBuilder();
-
-                    for (int i = 0; i < polygon.triangles.Length; i += 3)
-                    {
-                        int[] indices = { polygon.triangles[i], polygon.triangles[i + 1], polygon.triangles[i + 2] };
-                        Vector3[] tri = { polygon.vertices[indices[0]], polygon.vertices[indices[1]], polygon.vertices[indices[2]] };
-                        Vector3 normal = new Plane(tri[0], tri[1], tri[2]).normal;
-                        Vector3[] normals = { normal, normal, normal };
-                        Vector2[] uvs = { tri[0], tri[1], tri[2] };
-                        builder.AddTriangleToMesh(tri, normals, uvs);
-                    }
-
-                    Mesh meshForThisPolygon = builder.Build();
-                    meshPerPolygon.Add(meshForThisPolygon);
-                }
+                 */
             }
             return meshPerPolygon;
         }
 
-        private List<Vector2> PolygonTo2DVectorArray(Polygon<XYPoint> polygon)
+        private List<Vector3> PolygonTo2DVectorArray(Polygon<XYPoint> polygon)
         {
-            var verticesList = new List<Vector2>();
+            var verticesList = new List<Vector3>();
 
             foreach (var currentPoint in polygon.Points)
             {
-                var potentialNewVertice = new Vector2(currentPoint.X * VECTOR_ENLARGEMENT_FACTOR, 
+                var potentialNewVertice = new Vector3(currentPoint.X * VECTOR_ENLARGEMENT_FACTOR, 
                                                       currentPoint.Y * VECTOR_ENLARGEMENT_FACTOR);
                 
                 verticesList.Add(potentialNewVertice);

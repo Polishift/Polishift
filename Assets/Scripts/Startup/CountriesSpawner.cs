@@ -16,15 +16,13 @@ namespace Startup_Scripts
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                if (currentCountry.Alpha3 == "ITA")
-                {
-                    CountryPrefab cloneForCurrentCountry = (CountryPrefab) Instantiate(_originalCountryPrefab,
-                                                                                       transform.position,
-                                                                                       transform.rotation);
+                CountryPrefab cloneForCurrentCountry = (CountryPrefab) Instantiate(_originalCountryPrefab,
+                                                                                    transform.position,
+                                                                                    transform.rotation);
 
-                    CountryInformationReference countryInformationReference = new CountryInformationReference(currentCountry);
-                    cloneForCurrentCountry.Init(countryInformationReference);
-                }
+                CountryInformationReference countryInformationReference =
+                    new CountryInformationReference(currentCountry);
+                cloneForCurrentCountry.Init(countryInformationReference);
             }
         }
     }
