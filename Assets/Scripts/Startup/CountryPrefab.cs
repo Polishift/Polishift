@@ -20,18 +20,12 @@ namespace Startup_Scripts
         public void Init(CountryInformationReference spawnersCountryInfo)
         {
             gameObject.name = spawnersCountryInfo.Iso3166Country.Name;
-            
-            //Adding mesh filter/renderer for the meshesGenerator to use
-            gameObject.AddComponent<MeshRenderer>();
-            gameObject.AddComponent<MeshFilter>();
-            
-            
-            gameObject.AddComponent<MeshesGenerator>();
-            gameObject.AddComponent<OnClickHandler>();
 
             //Setting this prefabs' country information to be that which the spawner assigned it.
-            gameObject.AddComponent<CountryInformationReference>();
             gameObject.GetComponent<CountryInformationReference>().Iso3166Country = spawnersCountryInfo.Iso3166Country;
+            
+            //Meshes can only be generated after the Country Information is known, obviously
+            gameObject.GetComponent<MeshesGenerator>().GenerateMeshes();
         }
     }
 }

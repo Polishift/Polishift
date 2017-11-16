@@ -20,7 +20,8 @@ namespace MeshesGeneration
             var meshPerPolygon = new List<Mesh>();
 
             var countryAlpha3 = countryInformationReference.Iso3166Country.Alpha3;
-            var countryBorders = RepositoryHub.CountryBordersRepository.GetByCountry(countryAlpha3).FirstOrDefault();
+            Debug.Log("Gonna generate a mesh for |" + countryAlpha3 + "|");
+            var countryBorders = RepositoryHub.CountryBordersRepository.GetByCountry(countryAlpha3).First();
             
             foreach (var polygon in countryBorders.Polygons)
             {
@@ -42,8 +43,7 @@ namespace MeshesGeneration
             return meshPerPolygon;
         }
 
-        //todo make this private later
-        public List<Vector3> PolygonToVector3List(Polygon<XYPoint> polygon)
+        private List<Vector3> PolygonToVector3List(Polygon<XYPoint> polygon)
         {
             var verticesList = new List<Vector3>();
 

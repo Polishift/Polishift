@@ -70,7 +70,7 @@ namespace MeshesGeneration
                 }
             }
 
-            indices.Reverse();
+            //indices.Reverse();
             return indices.ToArray();
         }
 
