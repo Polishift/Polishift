@@ -4,7 +4,6 @@ using System.Linq;
 using Dataformatter.Datamodels;
 using Dataformatter.Dataprocessing.Entities;
 using Map_Displaying.Reference_Scripts;
-using Repository;
 using UnityEngine;
 
 
@@ -31,26 +30,6 @@ namespace MeshesGeneration
                 poly.outside = currentPolygonPointsAsVectors;
                 
                 meshPerPolygon.Add(Poly2Mesh.CreateMesh(poly));
-                /*
-                    // Use the triangulator to get indices for creating triangles
-                    AlternativeTriangulator tr = new AlternativeTriangulator(currentPolygonPointsAsVectors);
-                    int[] indices = tr.Triangulate();
- 
-                    // Create the Vector3 vertices
-                    Vector3[] vertices = new Vector3[currentPolygonPointsAsVectors.Count];
-                    for (int i=0; i<vertices.Length; i++) {
-                        vertices[i] = new Vector3(currentPolygonPointsAsVectors[i].x, currentPolygonPointsAsVectors[i].y, 0);
-                    }
- 
-                    // Create the mesh
-                    Mesh msh = new Mesh();
-                    msh.vertices = vertices;
-                    msh.triangles = indices;
-                    msh.RecalculateNormals();
-                    msh.RecalculateBounds();
-                    
-                    meshPerPolygon.Add(msh);
-                 */
             }
             return meshPerPolygon;
         }

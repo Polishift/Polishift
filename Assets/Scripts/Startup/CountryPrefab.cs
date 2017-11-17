@@ -1,11 +1,10 @@
-﻿using Map_Displaying.Handlers;
-using Map_Displaying.Reference_Scripts;
+﻿using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
 using UnityEngine;
 
 namespace Startup_Scripts
 {
-    [RequireComponent(typeof(CountryInformationReference), typeof(MeshesGenerator), typeof(OnClickHandler))]
+    [RequireComponent(typeof(CountryInformationReference), typeof(MeshesGenerator))]
     public class CountryPrefab : MonoBehaviour
     {
         private void Awake()
