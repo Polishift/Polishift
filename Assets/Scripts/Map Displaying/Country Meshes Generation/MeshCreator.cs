@@ -9,12 +9,12 @@ using UnityEngine;
 
 namespace MeshesGeneration
 {
-    public class MeshCreator
+    public static class MeshCreator
     {
         private static readonly int VECTOR_ENLARGEMENT_FACTOR = 1000;
 
 
-        public List<Mesh> GetMeshPerPolygon(CountryInformationReference countryInformationReference)
+        public static List<Mesh> GetMeshPerPolygon(CountryInformationReference countryInformationReference)
         {
             var meshPerPolygon = new List<Mesh>();
 
@@ -34,7 +34,29 @@ namespace MeshesGeneration
             return meshPerPolygon;
         }
 
-        private List<Vector3> PolygonTo2DVectorArray(Polygon<XYPoint> polygon)
+        public static Mesh GetScaledMesh(Mesh mesh, float scale)
+        {
+            Vector3[] _baseVertices;
+            _baseVertices = mesh.vertices;
+
+            var vertices = new Vector3[_baseVertices.Length];
+            for (var i = 0; i < vertices.Length; i++)
+            {
+                var vertex = _baseVertices[i];
+                vertex.x = vertex.x * scale;
+                vertex.y = vertex.y * scale;
+                vertex.z = vertex.z * scale;
+                vertices[i] = vertex;
+            }
+            mesh.vertices = vertices;
+
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+
+            return mesh;
+        }
+
+        private static List<Vector3> PolygonTo2DVectorArray(Polygon<XYPoint> polygon)
         {
             var verticesList = new List<Vector3>();
 
