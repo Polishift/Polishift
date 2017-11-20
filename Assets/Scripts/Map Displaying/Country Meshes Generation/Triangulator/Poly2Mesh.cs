@@ -15,11 +15,10 @@
 //		5. Pass it to Poly2Mesh.CreateMesh, or Poly2Mesh.CreateGameObject.
 
 using UnityEngine;
-using UnityEngine.Events;
 using System.Collections.Generic;
-using Poly2Tri;
 using System.Linq;
-using UnityEngine.Profiling;
+using Poly2Tri;
+
 
 public static class Poly2Mesh {
 
@@ -230,7 +229,7 @@ public static class Poly2Mesh {
 		msh.uv = uv;
 		msh.RecalculateNormals();
 		msh.RecalculateBounds();
-		
+
 		return msh;
 	}
 

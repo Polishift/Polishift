@@ -1,55 +1,47 @@
 ﻿using UnityEngine;
-using Dataformatter.Dataprocessing.Entities;
+
 using Dataformatter.Data_accessing.Repositories;
 using Map_Displaying.Reference_Scripts;
 
 
 namespace MeshesGeneration
 {
-    [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+    //todo make all this static so it doesnt need a gameObj
     public class MeshesGenerator : MonoBehaviour
     {
-        private Mesh _testMesh;
-
         private CountryBordersRepository _countryBordersRepository;
-
 
         public void GenerateMeshes()
         {
-            MeshCreator meshCreator = new MeshCreator();
-
-            var meshesForOurCountrysPolygons = meshCreator.GetMeshPerPolygon(GetComponent<CountryInformationReference>());
+            var meshesForOurCountrysPolygons =
+                MeshCreator.GetMeshPerPolygon(GetComponent<CountryInformationReference>());
             
-            
-            for(int i = 0; i < meshesForOurCountrysPolygons.Count; i++)
+            for (int i = 0; i < meshesForOurCountrysPolygons.Count; i++)
             {
                 var mesh = meshesForOurCountrysPolygons[i];
-                AddChildMesh(mesh);
+                AddChildGameObjectWithMesh(mesh, "Child Polygon Mesh");
             }
-            CombineChildMeshes();
+            CombineChildMeshesIntoOne();
+            RemoveChildren();
+
+            AddMeshCollider();
+
+            //gameObject.GetComponent<MeshFilter>().mesh = meshesForOurCountrysPolygons[0];
+            //gameObject.AddComponent<TestChildCreator>();*/
         }
 
-        private void AddChildMesh(Mesh childMesh)
+        private void AddChildGameObjectWithMesh(Mesh mesh, string gameObjectName)
         {
-            /*
-            * DEBUGGING
-              - Combining or not doesnt matter 
-              - Index of the polygon being meshified doesnt matter
-              - Reversing the tri's only flips
-            */
-
-
-            GameObject newChildObject = new GameObject {name = "Child mesh"};
+            GameObject newChildObject = new GameObject() {name = gameObjectName};
             newChildObject.transform.parent = gameObject.transform;
 
             newChildObject.AddComponent<MeshFilter>();
             newChildObject.AddComponent<MeshRenderer>();
 
-            newChildObject.GetComponent<MeshFilter>().mesh = childMesh;
+            newChildObject.GetComponent<MeshFilter>().mesh = mesh;
         }
 
-
-        private void CombineChildMeshes()
+        private void CombineChildMeshesIntoOne()
         {
             MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>();
             CombineInstance[] combine = new CombineInstance[meshFilters.Length];
@@ -64,12 +56,25 @@ namespace MeshesGeneration
 
                 i++;
             }
-
             transform.GetComponent<MeshFilter>().mesh = new Mesh();
             transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
             transform.gameObject.active = true;
 
             GetComponent<MeshRenderer>().material = new Material(Shader.Find("Diffuse"));
+        }
+
+        private void RemoveChildren()
+        {
+            foreach (Transform child in gameObject.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        private void AddMeshCollider()
+        {
+            gameObject.GetComponent<MeshCollider>().sharedMesh = gameObject.GetComponent<MeshFilter>().mesh;
+            gameObject.GetComponent<MeshCollider>().name = gameObject.name;
         }
     }
 }

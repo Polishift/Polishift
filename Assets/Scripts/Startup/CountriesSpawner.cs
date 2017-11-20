@@ -1,4 +1,6 @@
-﻿using Map_Displaying.Reference_Scripts;
+﻿using DefaultNamespace;
+using Map_Displaying.Reference_Scripts;
+using MeshesGeneration;
 using Repository;
 using UnityEngine;
 
@@ -16,14 +18,45 @@ namespace Startup_Scripts
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                CountryPrefab cloneForCurrentCountry = (CountryPrefab) Instantiate(_originalCountryPrefab,
-                                                                                    transform.position,
-                                                                                    transform.rotation);
+                if (currentCountry.Alpha3 == "BEL")
+                {
+                    CountryInformationReference countryInformationReference =
+                        new CountryInformationReference(currentCountry);
 
-                CountryInformationReference countryInformationReference =
-                    new CountryInformationReference(currentCountry);
-                cloneForCurrentCountry.Init(countryInformationReference);
+                    var baseMesh = CreateBaseMesh(countryInformationReference);
+                    
+                    
+                    //TODO: Set this transform.position to be that of the mesh
+                    CountryPrefab cloneForCurrentCountry = (CountryPrefab) Instantiate(_originalCountryPrefab,
+                                                                                       baseMesh.bounds.center,
+                                                                                       transform.rotation);
+
+
+                    cloneForCurrentCountry.gameObject.AddComponent<MeshFilter>();
+                    cloneForCurrentCountry.gameObject.AddComponent<MeshRenderer>();
+                    cloneForCurrentCountry.gameObject.GetComponent<MeshRenderer>().material = new Material(Shader.Find("Diffuse"));
+
+                    cloneForCurrentCountry.gameObject.GetComponent<MeshFilter>().mesh = baseMesh;
+
+                    cloneForCurrentCountry.gameObject.AddComponent<PivotOffsetter>();
+
+                    //cloneForCurrentCountry.Init(countryInformationReference);
+                }
             }
+        }
+    
+        //todo: Needs to combine as well
+        private Mesh CreateBaseMesh(CountryInformationReference spawnersCountryInfo)
+        {
+            var meshesForOurCountrysPolygons = MeshCreator.GetMeshPerPolygon(spawnersCountryInfo);
+            var mesh = meshesForOurCountrysPolygons[0];
+
+            return mesh;
+        }
+        
+        private Mesh CreateOutlineMesh(Mesh originalMesh)
+        {
+            return null;
         }
     }
 }

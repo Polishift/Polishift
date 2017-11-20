@@ -11,7 +11,7 @@ namespace Repository
         public static CountryBordersRepository CountryBordersRepository;
         public static Iso3166Country[] Iso3166Countries;
         
-        //todo Again, no call-guarantee
+
         public static void Init()
         {
             //Parsing
@@ -23,7 +23,6 @@ namespace Repository
             CountryBordersRepository = new CountryBordersRepository();
             Iso3166Countries = Iso3166Repository.GetCollection();
         }
-
 
         private static void SetDataPaths()
         {

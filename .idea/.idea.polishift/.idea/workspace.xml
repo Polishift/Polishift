@@ -2,7 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="255786c6-9e2e-4e85-9c6a-402b9c818cf7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/OnClickHandler.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/OnClickHandler.cs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/Default Country Prefab.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/Default Country Prefab.prefab.meta" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs.meta" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/MainScene.unity" afterPath="$PROJECT_DIR$/Assets/MainScene.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/AUTHORS.txt.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/AUTHORS.txt.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/LICENSE.txt.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/LICENSE.txt.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/DelaunayTriangle.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/DelaunayTriangle.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFront.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFront.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFrontNode.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/AdvancingFrontNode.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweep.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweep.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepBasin.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepBasin.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepConstraint.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepConstraint.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepContext.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepContext.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepDebugContext.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepDebugContext.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepEdgeEvent.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepEdgeEvent.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepPointComparator.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepPointComparator.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/PointOnEdgeException.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Delaunay/Sweep/PointOnEdgeException.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/ITriangulatable.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/ITriangulatable.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Orientation.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Orientation.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/Contour.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/Contour.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/Polygon.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/Polygon.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonPoint.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonPoint.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonSet.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonSet.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonUtil.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Polygon/PolygonUtil.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets/ConstrainedPointSet.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets/ConstrainedPointSet.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets/PointSet.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Sets/PointSet.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationAlgorithm.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationAlgorithm.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationConstraint.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationConstraint.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationContext.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationContext.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationDebugContext.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationDebugContext.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationMode.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationMode.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationPoint.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/TriangulationPoint.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/PointGenerator.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/PointGenerator.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/PolygonGenerator.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/PolygonGenerator.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/TriangulationUtil.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Triangulation/Util/TriangulationUtil.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/FixedArray3.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/FixedArray3.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/FixedBitArray3.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/FixedBitArray3.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/MathUtil.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/MathUtil.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Point2D.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Point2D.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Point2DList.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Point2DList.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Rect2D.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Tri/Utility/Rect2D.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,135 +88,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CountryPrefab.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-              <folding>
-                <marker date="1510928965618" expanded="true" signature="6:113" ph="..." />
-                <marker date="1510928965618" expanded="true" signature="140:1057" ph="{...}" />
-                <marker date="1510928965618" expanded="true" signature="298:1055" ph="{...}" />
-                <marker date="1510928965618" expanded="true" signature="333:353" ph="{...}" />
-                <marker date="1510928965618" expanded="true" signature="384:404" ph="{...}" />
-                <marker date="1510928965618" expanded="true" signature="560:1049" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnClickHandler.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding>
-                <marker date="1510871180102" expanded="true" signature="103:610" ph="{...}" />
-                <marker date="1510871180102" expanded="true" signature="139:604" ph="{...}" />
-                <marker date="1510871180102" expanded="true" signature="194:594" ph="{...}" />
-                <marker date="1510871180102" expanded="true" signature="437:580" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountriesSpawner.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CountriesSpawner.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="576">
+              <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
-                <marker date="1510869761039" expanded="false" signature="6:76" ph="..." />
-                <marker date="1510869761039" expanded="true" signature="156:1019" ph="{...}" />
-                <marker date="1510869761039" expanded="true" signature="245:1013" ph="{...}" />
-                <marker date="1510869761039" expanded="true" signature="441:1003" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="6:124" ph="..." />
+                <marker date="1511214505122" expanded="true" signature="152:2317" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="204:2315" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="293:1865" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="489:1855" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="555:1841" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="1996:2197" ph="{...}" />
+                <marker date="1511214505122" expanded="true" signature="2264:2309" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PivotOffsetter.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+              <folding>
+                <marker date="1511214456674" expanded="true" signature="6:37" ph="..." />
+                <marker date="1511214456674" expanded="true" signature="65:1399" ph="{...}" />
+                <marker date="1511214456674" expanded="true" signature="115:1397" ph="{...}" />
+                <marker date="1511214456674" expanded="true" signature="149:1391" ph="{...}" />
+                <marker date="1511214456674" expanded="true" signature="501:575" ph="{...}" />
+                <marker date="1511214456674" expanded="true" signature="843:913" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountryPrefab.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+              <folding>
+                <marker date="1511212557936" expanded="false" signature="6:82" ph="..." />
+                <marker date="1511212557936" expanded="true" signature="109:1666" ph="{...}" />
+                <marker date="1511212557936" expanded="true" signature="243:1664" ph="{...}" />
+                <marker date="1511212557936" expanded="true" signature="278:298" ph="{...}" />
+                <marker date="1511212557936" expanded="true" signature="329:349" ph="{...}" />
+                <marker date="1511212557936" expanded="true" signature="505:1658" ph="{...}" />
+                <marker date="1511212557936" expanded="true" signature="528:711" ph="/* Meshes can only be generated after the Country Information is known, obviously ... */" />
+                <marker date="1511212557936" expanded="true" signature="941:1648" ph="/* var meshesForOurCountrysPolygons = MeshCreator.GetMeshPerPolygon(GetComponent&lt;CountryInformationReference&gt;()); ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MeshesGenerator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="47" column="71" lean-forward="false" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+            <state relative-caret-position="80">
+              <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
-                <marker date="1510928965616" expanded="true" signature="2339:2351" ph="{...}" />
-                <marker date="1510928965616" expanded="true" signature="2339:2357" ph="{...}" />
+                <marker date="1511212951661" expanded="false" signature="6:108" ph="..." />
+                <marker date="1511212951661" expanded="true" signature="137:2736" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="248:2734" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="360:1022" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="595:755" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="872:1012" ph="/* gameObject.GetComponent&lt;MeshFilter&gt;().mesh = meshesForOurCountrysPolygons[0]; ... */" />
+                <marker date="1511212951661" expanded="true" signature="1105:1456" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="1506:2291" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="1742:1996" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="2330:2483" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="2402:2473" ph="{...}" />
+                <marker date="1511212951661" expanded="true" signature="2523:2728" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeshCreator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
+      <file leaf-file-name="TestChildCreator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/TestChildCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="464">
+              <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
-                <marker date="1510865855465" expanded="true" signature="6:207" ph="..." />
-                <marker date="1510865855465" expanded="true" signature="267:2750" ph="{...}" />
-                <marker date="1510865855465" expanded="true" signature="446:2203" ph="{...}" />
-                <marker date="1510865855465" expanded="true" signature="781:2158" ph="{...}" />
-                <marker date="1510865855465" expanded="true" signature="1194:2144" ph="/* Use the triangulator to get indices for creating triangles ... */" />
-                <marker date="1510865855465" expanded="true" signature="2283:2744" ph="{...}" />
-                <marker date="1510865855465" expanded="true" signature="2403:2701" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Poly2Mesh.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4208">
-              <caret line="263" column="55" lean-forward="false" selection-start-line="263" selection-start-column="55" selection-end-line="263" selection-end-column="55" />
-              <folding>
-                <marker date="1510865874616" expanded="true" signature="0:755" ph="/* Poly2Mesh ... */" />
-                <marker date="1510865874616" expanded="true" signature="763:899" ph="..." />
-                <marker date="1510865874616" expanded="true" signature="931:10697" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="1019:4174" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="1696:1773" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="1777:1919" ph="/// Calculates the plane normal for this polygon (with no flipping). ... " />
-                <marker date="1510865874616" expanded="true" signature="1952:2589" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="1957:2146" ph="/* Calculate the plane normal by summing the cross product of ... */" />
-                <marker date="1510865874616" expanded="true" signature="2252:2390" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="2394:2543" ph="/* Now, sum is a vector that points in the normal direction with proper ... */" />
-                <marker date="1510865874616" expanded="true" signature="2593:2815" ph="/// Calculates the plane normal for this polygon, trying to face the given direction. ... " />
-                <marker date="1510865874616" expanded="true" signature="2860:3087" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3045:3083" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3091:3197" ph="/// Calculates the rotation needed to get this polygon into the XY plane. ... " />
-                <marker date="1510865874616" expanded="true" signature="3227:3534" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3323:3446" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3576:4171" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3708:3848" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3785:3843" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="3886:4149" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="4004:4144" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="4080:4138" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="4177:4631" ph="/// Helper method to convert a set of 3D points into the 2D polygon points ... " />
-                <marker date="1510865874616" expanded="true" signature="4758:5180" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="4879:5160" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="5183:5370" ph="/// Create a Mesh from a given Polygon. ... " />
-                <marker date="1510865874616" expanded="true" signature="5419:8573" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="5612:5652" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="6370:6469" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="6559:6689" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="6717:6734" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="6738:7020" ph="/* Now, to get back to our original positions, use our code-to-position map.  We do ... */" />
-                <marker date="1510865874616" expanded="true" signature="7216:7759" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="7249:7755" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="7435:7725" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="7442:7591" ph="/* This can happen in rare cases when we're hitting limits of floating-point precision. ... */" />
-                <marker date="1510865874616" expanded="true" signature="7914:8088" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="8229:8368" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="8312:8364" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="8616:8912" ph="/// Create a Mesh containing just the FIRST triangle in the given Polygon. ... " />
-                <marker date="1510865874616" expanded="true" signature="8965:9945" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="9470:9577" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="9523:9573" ph="{...}" />
-                <marker date="1510865874616" expanded="true" signature="9948:10384" ph="/// Create a GameObject from the given polygon.  The resulting object will ... " />
-                <marker date="1510865874616" expanded="true" signature="10468:10695" ph="{...}" />
+                <marker date="1511214037799" expanded="false" signature="6:102" ph="..." />
+                <marker date="1511214037799" expanded="true" signature="149:1062" ph="{...}" />
+                <marker date="1511214037799" expanded="true" signature="168:1060" ph="{...}" />
+                <marker date="1511214037799" expanded="true" signature="183:291" ph="/* Repositioning our gameObject to reflet the mesh shifting upwards problem ... */" />
               </folding>
             </state>
           </provider>
@@ -164,6 +198,11 @@
       <find>Vector2[]</find>
       <find>profileID</find>
       <find>Profiler</find>
+      <find>-1</find>
+      <find>AddOutlineMesh</find>
+      <find>vertex vert</find>
+      <find>ZTest</find>
+      <find>Collider</find>
     </findStrings>
     <replaceStrings>
       <replace>Vector3</replace>
@@ -174,34 +213,37 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ProcessedData/Countries.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/e1/5720d485/JsonToModel`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/16/c4cee8b0/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/340C334A-3B7B-4E06-9837-A14CDF0F50A1/db/fdefbfd7/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9F912A6E-9EF0-418C-AD58-0CEFFC1EA3B3/f3/6d5bf364/CountryBordersEntity.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/06/344a0784/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/26/39ccd193/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4EE56D5B-4823-478D-A0C5-407318350F79/37/29d79a56/Component.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4EE56D5B-4823-478D-A0C5-407318350F79/37/29d79a56/Component.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9FDFB7B-70CB-459B-A83B-3CBFFF665E82/29/2ffead97/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/16/c4cee8b0/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9F912A6E-9EF0-418C-AD58-0CEFFC1EA3B3/f3/6d5bf364/CountryBordersEntity.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/56/17b9116d/CountryBordersProcessor.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../ProcessedData/CountryInformation/bel.geo.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/Downloads IE/MeshBuilder.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/46/6a5970b7/JsonReader`1.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9FDFB7B-70CB-459B-A83B-3CBFFF665E82/29/2ffead97/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/TestChildCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Datasources/CountryInformation/bel.geo.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assembly-CSharp.csproj" />
         <option value="$PROJECT_DIR$/../Datasources/CountryInformation/bel.geo.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/BowyerAlgorithm/BowyerAlgorithm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/NaiveTriangulator.cs" />
@@ -213,7 +255,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup Scripts/CreateCountries.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup Scripts/CountriesSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/HullMesher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Polygon2D.cs" />
@@ -221,12 +262,39 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/TriangulatorAPI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/CustomMeshBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshHelpers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/OutlineGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Visual/OutlineGenerator.cs" />
+        <option value="$PROJECT_DIR$/Temp/Compiled-Outlined-Silhouetted Diffuse.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/Other Outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/outline2D.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/OutlineCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/Transparent.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/Outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/2D.shader" />
+        <option value="$PROJECT_DIR$/Assets/OutlineEffect/Demo/Toggle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/Sprite Outliner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/SpriteOutliner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/2dspriteoutline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/2D Outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline.shader" />
+        <option value="$PROJECT_DIR$/Assets/Testmeshenlarger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/Outliner.cs" />
+        <option value="$PROJECT_DIR$/Assets/TestChildCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PivotManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/TestChildCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" />
       </list>
     </option>
   </component>
@@ -237,9 +305,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="2" />
     <option name="width" value="960" />
-    <option name="height" value="1039" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -256,74 +323,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Country Meshes Generation" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Country Meshes Generation" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Triangulator" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Repository" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Startup" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Country Meshes Generation" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Meshing" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -331,12 +381,13 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Downloads IE/MeshBuilder.cs" />
-    <property name="SearchEverywhereHistoryKey" value="Onc&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Al&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs&#10;Countrie&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Tri&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Trian&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Countr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Iso&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountryPrefab.cs&#10;CountryBor&#9;null&#9;null&#10;MEshC&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/MeshesGeneration/CountryMeshesGenerator.cs&#10;Bowyer&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcessedData/Countries.json" />
+    <property name="SearchEverywhereHistoryKey" value="Piv&#9;null&#9;null&#10;Mes&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs&#10;MeshCr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs&#10;Test&#9;null&#9;null&#10;Sprite&#9;null&#9;null&#10;Sprit&#9;null&#9;null&#10;Other&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Art/Other Outline.shader&#10;shad&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Art/outline.shader&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Onc&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Al&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs&#10;Countrie&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Tri&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Trian&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Countr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Iso&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountryPrefab.cs&#10;CountryBor&#9;null&#9;null&#10;MEshC&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/MeshesGeneration/CountryMeshesGenerator.cs&#10;Bowyer&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -401,7 +452,11 @@
       <workItem from="1510858349641" duration="229000" />
       <workItem from="1510858705162" duration="6572000" />
       <workItem from="1510865563330" duration="4618000" />
-      <workItem from="1510928096447" duration="659000" />
+      <workItem from="1510928096447" duration="12834000" />
+      <workItem from="1510998040672" duration="28385000" />
+      <workItem from="1511169972312" duration="6590000" />
+      <workItem from="1511178617229" duration="3937000" />
+      <workItem from="1511191041467" duration="17400000" />
     </task>
     <task id="LOCAL-00001" summary="Working on restructuring so that we can easily spawn all Countries in 1 prefab">
       <created>1510647774808</created>
@@ -442,7 +497,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97294000" />
+    <option name="totallyTimeSpent" value="165781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,18 +509,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="2" width="960" height="1039" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3351235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -474,7 +531,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -493,171 +549,17 @@
     <MESSAGE value="Succesfully drew all countries, but will be migrating to new triangulator." />
     <MESSAGE value="trying the new triangulator but doesnt seem to work very nice either" />
     <MESSAGE value="Finally got a perfect triangulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally got a perfect triangulation" />
+    <MESSAGE value="tryna find cause for scale distortion" />
+    <MESSAGE value="Finalyl fixed center/pivot problem, now need to cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalyl fixed center/pivot problem, now need to cleanup" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/BowyerAlgorithm/BowyerAlgorithm.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/BowyerAlgorithm/BowyerAlgorithm.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1328">
-          <caret line="94" column="29" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="92" column="88" lean-forward="false" selection-start-line="92" selection-start-column="88" selection-end-line="92" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/BowyerAlgorithm/BowyerAlgorithm.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5024">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1504">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="350" column="55" lean-forward="false" selection-start-line="350" selection-start-column="55" selection-end-line="350" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="69" lean-forward="false" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assembly-CSharp.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3664">
-          <caret line="229" column="16" lean-forward="true" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assembly-CSharp.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3664">
-          <caret line="229" column="16" lean-forward="false" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Datasources/Economical &amp; Social/Religion/religion_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/16/c4cee8b0/CountryBordersRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/e1/5720d485/JsonToModel`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Datasources/CountryInformation/bel.geo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="105" column="45" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="105" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/56/17b9116d/CountryBordersProcessor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="94" lean-forward="false" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshesGeneration/BowyerAlgorithm/BowyerAlgorithm.cs" />
     <entry file="file://$PROJECT_DIR$/../ProcessedData/CountryInformation/bel.geo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -715,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9FDFB7B-70CB-459B-A83B-3CBFFF665E82/29/2ffead97/CountryBordersRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -749,124 +644,205 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Polygon2D.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/TriangulatorAPI.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/RepositoryHub.cs" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1510871180102" expanded="true" signature="103:610" ph="{...}" />
-            <marker date="1510871180102" expanded="true" signature="139:604" ph="{...}" />
-            <marker date="1510871180102" expanded="true" signature="194:594" ph="{...}" />
-            <marker date="1510871180102" expanded="true" signature="437:580" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="47" column="71" lean-forward="false" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
-          <folding>
-            <marker date="1510928965616" expanded="true" signature="2339:2351" ph="{...}" />
-            <marker date="1510928965616" expanded="true" signature="2339:2357" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1510865855465" expanded="true" signature="6:207" ph="..." />
-            <marker date="1510865855465" expanded="true" signature="267:2750" ph="{...}" />
-            <marker date="1510865855465" expanded="true" signature="446:2203" ph="{...}" />
-            <marker date="1510865855465" expanded="true" signature="781:2158" ph="{...}" />
-            <marker date="1510865855465" expanded="true" signature="1194:2144" ph="/* Use the triangulator to get indices for creating triangles ... */" />
-            <marker date="1510865855465" expanded="true" signature="2283:2744" ph="{...}" />
-            <marker date="1510865855465" expanded="true" signature="2403:2701" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4208">
-          <caret line="263" column="55" lean-forward="false" selection-start-line="263" selection-start-column="55" selection-end-line="263" selection-end-column="55" />
+        <state relative-caret-position="688">
+          <caret line="227" column="32" lean-forward="false" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/Countries.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Visual/OutlineGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Outlined-Silhouetted Diffuse.shader" />
+    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFixedFunction-Outlined-Silhouetted Diffuse.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/outline.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/Other Outline.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/outline2D.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/Transparent.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/Outline.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline/2D.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/OutlineEffect/Outline.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/OutlineEffect/Demo/Toggle.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Sprite Outliner.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/SpriteOutliner.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/2dspriteoutline.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/OutlineCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/Outline.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="78" lean-forward="false" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
           <folding>
-            <marker date="1510865874616" expanded="true" signature="0:755" ph="/* Poly2Mesh ... */" />
-            <marker date="1510865874616" expanded="true" signature="763:899" ph="..." />
-            <marker date="1510865874616" expanded="true" signature="931:10697" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="1019:4174" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="1696:1773" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="1777:1919" ph="/// Calculates the plane normal for this polygon (with no flipping). ... " />
-            <marker date="1510865874616" expanded="true" signature="1952:2589" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="1957:2146" ph="/* Calculate the plane normal by summing the cross product of ... */" />
-            <marker date="1510865874616" expanded="true" signature="2252:2390" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="2394:2543" ph="/* Now, sum is a vector that points in the normal direction with proper ... */" />
-            <marker date="1510865874616" expanded="true" signature="2593:2815" ph="/// Calculates the plane normal for this polygon, trying to face the given direction. ... " />
-            <marker date="1510865874616" expanded="true" signature="2860:3087" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3045:3083" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3091:3197" ph="/// Calculates the rotation needed to get this polygon into the XY plane. ... " />
-            <marker date="1510865874616" expanded="true" signature="3227:3534" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3323:3446" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3576:4171" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3708:3848" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3785:3843" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="3886:4149" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="4004:4144" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="4080:4138" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="4177:4631" ph="/// Helper method to convert a set of 3D points into the 2D polygon points ... " />
-            <marker date="1510865874616" expanded="true" signature="4758:5180" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="4879:5160" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="5183:5370" ph="/// Create a Mesh from a given Polygon. ... " />
-            <marker date="1510865874616" expanded="true" signature="5419:8573" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="5612:5652" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="6370:6469" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="6559:6689" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="6717:6734" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="6738:7020" ph="/* Now, to get back to our original positions, use our code-to-position map.  We do ... */" />
-            <marker date="1510865874616" expanded="true" signature="7216:7759" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="7249:7755" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="7435:7725" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="7442:7591" ph="/* This can happen in rare cases when we're hitting limits of floating-point precision. ... */" />
-            <marker date="1510865874616" expanded="true" signature="7914:8088" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="8229:8368" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="8312:8364" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="8616:8912" ph="/// Create a Mesh containing just the FIRST triangle in the given Polygon. ... " />
-            <marker date="1510865874616" expanded="true" signature="8965:9945" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="9470:9577" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="9523:9573" ph="{...}" />
-            <marker date="1510865874616" expanded="true" signature="9948:10384" ph="/// Create a GameObject from the given polygon.  The resulting object will ... " />
-            <marker date="1510865874616" expanded="true" signature="10468:10695" ph="{...}" />
+            <marker date="1511021699113" expanded="true" signature="46:617" ph="{...}" />
+            <marker date="1511021699113" expanded="true" signature="84:615" ph="{...}" />
+            <marker date="1511021699113" expanded="true" signature="160:609" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Testmeshenlarger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="31" column="63" lean-forward="false" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+          <folding>
+            <marker date="1511000219133" expanded="false" signature="6:206" ph="..." />
+            <marker date="1511000219133" expanded="true" signature="235:1725" ph="{...}" />
+            <marker date="1511000219133" expanded="true" signature="273:1723" ph="{...}" />
+            <marker date="1511000219133" expanded="true" signature="459:1220" ph="{...}" />
+            <marker date="1511000219133" expanded="true" signature="782:1175" ph="{...}" />
+            <marker date="1511000219133" expanded="true" signature="1308:1717" ph="{...}" />
+            <marker date="1511000219133" expanded="true" signature="1427:1674" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/Outliner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PivotManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding>
+            <marker date="1511212557936" expanded="false" signature="6:82" ph="..." />
+            <marker date="1511212557936" expanded="true" signature="109:1666" ph="{...}" />
+            <marker date="1511212557936" expanded="true" signature="243:1664" ph="{...}" />
+            <marker date="1511212557936" expanded="true" signature="278:298" ph="{...}" />
+            <marker date="1511212557936" expanded="true" signature="329:349" ph="{...}" />
+            <marker date="1511212557936" expanded="true" signature="505:1658" ph="{...}" />
+            <marker date="1511212557936" expanded="true" signature="528:711" ph="/* Meshes can only be generated after the Country Information is known, obviously ... */" />
+            <marker date="1511212557936" expanded="true" signature="941:1648" ph="/* var meshesForOurCountrysPolygons = MeshCreator.GetMeshPerPolygon(GetComponent&lt;CountryInformationReference&gt;()); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <marker date="1511212951661" expanded="false" signature="6:108" ph="..." />
+            <marker date="1511212951661" expanded="true" signature="137:2736" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="248:2734" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="360:1022" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="595:755" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="872:1012" ph="/* gameObject.GetComponent&lt;MeshFilter&gt;().mesh = meshesForOurCountrysPolygons[0]; ... */" />
+            <marker date="1511212951661" expanded="true" signature="1105:1456" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="1506:2291" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="1742:1996" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="2330:2483" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="2402:2473" ph="{...}" />
+            <marker date="1511212951661" expanded="true" signature="2523:2728" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/TestChildCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <marker date="1511214037799" expanded="false" signature="6:102" ph="..." />
+            <marker date="1511214037799" expanded="true" signature="149:1062" ph="{...}" />
+            <marker date="1511214037799" expanded="true" signature="168:1060" ph="{...}" />
+            <marker date="1511214037799" expanded="true" signature="183:291" ph="/* Repositioning our gameObject to reflet the mesh shifting upwards problem ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PivotOffsetter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding>
+            <marker date="1511214456674" expanded="true" signature="6:37" ph="..." />
+            <marker date="1511214456674" expanded="true" signature="65:1399" ph="{...}" />
+            <marker date="1511214456674" expanded="true" signature="115:1397" ph="{...}" />
+            <marker date="1511214456674" expanded="true" signature="149:1391" ph="{...}" />
+            <marker date="1511214456674" expanded="true" signature="501:575" ph="{...}" />
+            <marker date="1511214456674" expanded="true" signature="843:913" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="576">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
-            <marker date="1510869761039" expanded="false" signature="6:76" ph="..." />
-            <marker date="1510869761039" expanded="true" signature="156:1019" ph="{...}" />
-            <marker date="1510869761039" expanded="true" signature="245:1013" ph="{...}" />
-            <marker date="1510869761039" expanded="true" signature="441:1003" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <marker date="1510928965618" expanded="true" signature="6:113" ph="..." />
-            <marker date="1510928965618" expanded="true" signature="140:1057" ph="{...}" />
-            <marker date="1510928965618" expanded="true" signature="298:1055" ph="{...}" />
-            <marker date="1510928965618" expanded="true" signature="333:353" ph="{...}" />
-            <marker date="1510928965618" expanded="true" signature="384:404" ph="{...}" />
-            <marker date="1510928965618" expanded="true" signature="560:1049" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="6:124" ph="..." />
+            <marker date="1511214505122" expanded="true" signature="152:2317" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="204:2315" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="293:1865" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="489:1855" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="555:1841" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="1996:2197" ph="{...}" />
+            <marker date="1511214505122" expanded="true" signature="2264:2309" ph="{...}" />
           </folding>
         </state>
       </provider>
