@@ -1,4 +1,5 @@
-﻿using Map_Displaying.Reference_Scripts;
+﻿using DefaultNamespace;
+using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
 using UnityEngine;
 
@@ -18,31 +19,14 @@ namespace Startup_Scripts
         //Not too clean since we cant guarantee that this will be called
         public void Init(CountryInformationReference spawnersCountryInfo)
         {
-            /*
-            //Meshes can only be generated after the Country Information is known, obviously
-            gameObject.GetComponent<MeshesGenerator>().GenerateMeshes();
-            */
-            
             gameObject.name = spawnersCountryInfo.Iso3166Country.Name;            
             gameObject.GetComponent<CountryInformationReference>().Iso3166Country = spawnersCountryInfo.Iso3166Country;
 
-            /*
-            var meshesForOurCountrysPolygons = MeshCreator.GetMeshPerPolygon(GetComponent<CountryInformationReference>());
+            //Making sure the pivot == the center of the mesh for scaling purposes later
+            gameObject.AddComponent<PivotOffsetter>();
             
-            
-            //Making the nonoutline mesh a child as well
-            var mesh = meshesForOurCountrysPolygons[0];
-            GameObject newChildObject = new GameObject() {name = "Non outline mesh child"};
-            newChildObject.transform.parent = gameObject.transform;
-
-            newChildObject.AddComponent<MeshFilter>();
-            newChildObject.AddComponent<MeshRenderer>();
-
-            newChildObject.GetComponent<MeshFilter>().mesh = mesh;
-            
-            
-            newChildObject.AddComponent<TestChildCreator>();
-            */
+            //Meshes can only be generated after the Country Information is known, obviously
+            gameObject.GetComponent<MeshesGenerator>().GenerateMeshes();
         }
     }
 }

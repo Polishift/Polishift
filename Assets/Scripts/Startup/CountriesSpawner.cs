@@ -23,40 +23,13 @@ namespace Startup_Scripts
                     CountryInformationReference countryInformationReference =
                         new CountryInformationReference(currentCountry);
 
-                    var baseMesh = CreateBaseMesh(countryInformationReference);
-                    
-                    
-                    //TODO: Set this transform.position to be that of the mesh
                     CountryPrefab cloneForCurrentCountry = (CountryPrefab) Instantiate(_originalCountryPrefab,
-                                                                                       baseMesh.bounds.center,
-                                                                                       transform.rotation);
+                        Vector3.zero,
+                        transform.rotation);
 
-
-                    cloneForCurrentCountry.gameObject.AddComponent<MeshFilter>();
-                    cloneForCurrentCountry.gameObject.AddComponent<MeshRenderer>();
-                    cloneForCurrentCountry.gameObject.GetComponent<MeshRenderer>().material = new Material(Shader.Find("Diffuse"));
-
-                    cloneForCurrentCountry.gameObject.GetComponent<MeshFilter>().mesh = baseMesh;
-
-                    cloneForCurrentCountry.gameObject.AddComponent<PivotOffsetter>();
-
-                    //cloneForCurrentCountry.Init(countryInformationReference);
+                    cloneForCurrentCountry.Init(countryInformationReference);
                 }
             }
-        }
-    
-        //todo: Needs to combine as well
-        private Mesh CreateBaseMesh(CountryInformationReference spawnersCountryInfo)
-        {
-            var meshesForOurCountrysPolygons = MeshCreator.GetMeshPerPolygon(spawnersCountryInfo);
-            var mesh = meshesForOurCountrysPolygons[0];
-
-            return mesh;
-        }
-        
-        private Mesh CreateOutlineMesh(Mesh originalMesh)
-        {
-            return null;
         }
     }
 }

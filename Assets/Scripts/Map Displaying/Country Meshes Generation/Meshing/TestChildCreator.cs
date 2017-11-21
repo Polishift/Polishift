@@ -7,10 +7,6 @@ public class TestChildCreator : MonoBehaviour
 {
     void Start()
     {
-        //Repositioning our gameObject to reflet the mesh shifting upwards problem
-        //RepositionGameObject();
-
-        
         var thisMesh = gameObject.GetComponent<MeshFilter>().mesh;
         
         //Adding child mesh

@@ -6,7 +6,6 @@ using Map_Displaying.Reference_Scripts;
 
 namespace MeshesGeneration
 {
-    //todo make all this static so it doesnt need a gameObj
     public class MeshesGenerator : MonoBehaviour
     {
         private CountryBordersRepository _countryBordersRepository;
@@ -26,6 +25,7 @@ namespace MeshesGeneration
 
             AddMeshCollider();
 
+            //todo; add outline child
             //gameObject.GetComponent<MeshFilter>().mesh = meshesForOurCountrysPolygons[0];
             //gameObject.AddComponent<TestChildCreator>();*/
         }
