@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DefaultNamespace.Map_Displaying.UI;
+using UnityEngine;
 
 namespace Map_Displaying.Handlers
 {
@@ -8,13 +9,14 @@ namespace Map_Displaying.Handlers
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Mouse pressed");
-                
-                RaycastHit hit;
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hit, 100.0f))
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit))
                 {
-                    Debug.Log("You selected the " + hit.transform.name); // ensure you picked right object
+                    Debug.Log("gameObjectThatWasHit  = " + hit.transform.name);
+                    
+                    hit.transform.gameObject.AddComponent<CountryInfoDisplayer>();
+                    hit.transform.gameObject.GetComponent<CountryInfoDisplayer>().Init();
                 }
             }
         }

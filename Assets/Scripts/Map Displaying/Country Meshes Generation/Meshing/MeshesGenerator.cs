@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using Dataformatter.Data_accessing.Repositories;
+using Map_Displaying.Country_Meshes_Generation.Meshing;
 using Map_Displaying.Reference_Scripts;
 
 
@@ -8,7 +9,13 @@ namespace MeshesGeneration
 {
     public class MeshesGenerator : MonoBehaviour
     {
-        private CountryBordersRepository _countryBordersRepository;
+        private Material _countryMaterial;
+        
+        private void Awake()
+        {
+            _countryMaterial = Resources.Load<Material>("BorderMaterial"); 
+        }
+        
 
         public void GenerateMeshes()
         {
@@ -25,9 +32,7 @@ namespace MeshesGeneration
 
             AddMeshCollider();
 
-            //todo; add outline child
-            //gameObject.GetComponent<MeshFilter>().mesh = meshesForOurCountrysPolygons[0];
-            //gameObject.AddComponent<TestChildCreator>();*/
+            gameObject.AddComponent<BorderOutlineCreator>();
         }
 
         private void AddChildGameObjectWithMesh(Mesh mesh, string gameObjectName)
@@ -60,7 +65,7 @@ namespace MeshesGeneration
             transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
             transform.gameObject.active = true;
 
-            GetComponent<MeshRenderer>().material = new Material(Shader.Find("Diffuse"));
+            GetComponent<MeshRenderer>().material = _countryMaterial;
         }
 
         private void RemoveChildren()

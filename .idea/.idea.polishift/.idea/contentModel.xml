@@ -10,7 +10,6 @@
         <e p="Editor" t="Include">
           <e p="PivotManager.cs" t="Include" />
         </e>
-        <e p="OnClickHandler.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -28,10 +27,10 @@
           <e p="Map Displaying" t="Include">
             <e p="Country Meshes Generation" t="Include">
               <e p="Meshing" t="Include">
+                <e p="BorderOutlineCreator.cs" t="Include" />
                 <e p="MeshCreator.cs" t="Include" />
                 <e p="MeshesGenerator.cs" t="Include" />
                 <e p="MeshHelpers.cs" t="Include" />
-                <e p="TestChildCreator.cs" t="Include" />
               </e>
               <e p="Triangulator" t="Include">
                 <e p="Poly2Mesh.cs" t="Include" />
@@ -95,6 +94,9 @@
             </e>
             <e p="Reference Scripts" t="Include">
               <e p="CountryInformationReference.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="CountryInfoDisplayer.cs" t="Include" />
             </e>
           </e>
           <e p="PivotOffsetter.cs" t="Include" />
