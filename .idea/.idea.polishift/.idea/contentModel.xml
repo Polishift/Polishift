@@ -24,6 +24,11 @@
             <e p="ICameraMovementController.cs" t="Include" />
             <e p="ICameraTiltController.cs" t="Include" />
           </e>
+          <e p="Game Logic" t="Include">
+            <e p="Time" t="Include">
+              <e p="YearCounter.cs" t="Include" />
+            </e>
+          </e>
           <e p="Map Displaying" t="Include">
             <e p="Country Meshes Generation" t="Include">
               <e p="Meshing" t="Include">
@@ -31,6 +36,7 @@
                 <e p="MeshCreator.cs" t="Include" />
                 <e p="MeshesGenerator.cs" t="Include" />
                 <e p="MeshHelpers.cs" t="Include" />
+                <e p="PivotOffsetter.cs" t="Include" />
               </e>
               <e p="Triangulator" t="Include">
                 <e p="Poly2Mesh.cs" t="Include" />
@@ -97,9 +103,9 @@
             </e>
             <e p="UI" t="Include">
               <e p="CountryInfoDisplayer.cs" t="Include" />
+              <e p="YearUiController.cs" t="Include" />
             </e>
           </e>
-          <e p="PivotOffsetter.cs" t="Include" />
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />
           </e>

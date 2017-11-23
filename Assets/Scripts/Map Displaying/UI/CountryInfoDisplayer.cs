@@ -10,17 +10,10 @@ namespace DefaultNamespace.Map_Displaying.UI
     public class CountryInfoDisplayer : MonoBehaviour
     {
         Rect _mWindowRect;
-        Action _mAction;
         string _mTitle;
         string _mMsg;
+        //Action _mAction;
 
-        /*
-        static public void MessageBox(string title, string msg, Action action)
-        {
-            GameObject go = new GameObject("HFTDialog");
-            HFTDialog dlg = go.AddComponent<HFTDialog>();
-            dlg.Init(title, msg, action);
-        }*/
 
         public void Init()
         {
@@ -29,9 +22,6 @@ namespace DefaultNamespace.Map_Displaying.UI
             var countryInformation = gameObject.GetComponent<CountryInformationReference>();
             
             //todo set alternative face to be = new
-            //todo its null because we lookin at the outline, we need to make the outline child again
-            //string allAlternativeNames = countryInformation.Iso3166Country.AlternativeNames.Aggregate((i, j) => i + ", " + j); 
-            
             _mTitle = countryInformation.Iso3166Country.Name;
             _mMsg = countryInformation.Iso3166Country.Name;
             //_mAction = action;

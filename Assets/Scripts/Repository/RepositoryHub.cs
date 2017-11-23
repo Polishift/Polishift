@@ -8,9 +8,9 @@ namespace Repository
 {
     public static class RepositoryHub
     {
-        public static CountryBordersRepository CountryBordersRepository;
         public static Iso3166Country[] Iso3166Countries;
-        
+        public static CountryBordersRepository CountryBordersRepository;
+        public static ElectionsRepository ElectionsRepository;
 
         public static void Init()
         {
@@ -19,9 +19,12 @@ namespace Repository
             Iso3166Repository.InitializeCollection();
             
             //Countries
-            ParseCountryBorders();
+            //ParseCountryBorders();
             CountryBordersRepository = new CountryBordersRepository();
             Iso3166Countries = Iso3166Repository.GetCollection();
+            
+            //Elections
+            ElectionsRepository = new ElectionsRepository();
         }
 
         private static void SetDataPaths()
