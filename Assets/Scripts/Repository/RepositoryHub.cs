@@ -2,7 +2,9 @@ using Dataformatter.Datamodels;
 using Dataformatter.Dataprocessing.Parsing;
 using Dataformatter.Dataprocessing.Processors;
 using Dataformatter.Data_accessing.Factories.ModelFactories;
+using Dataformatter.Data_accessing.Filters;
 using Dataformatter.Data_accessing.Repositories;
+using UnityEngine;
 
 namespace Repository
 {
@@ -20,6 +22,9 @@ namespace Repository
             
             //Countries
             //ParseCountryBorders();
+            EuropeFilter europeOnly = new EuropeFilter();
+            europeOnly.Filter();
+            
             CountryBordersRepository = new CountryBordersRepository();
             Iso3166Countries = Iso3166Repository.GetCollection();
             
@@ -29,7 +34,7 @@ namespace Repository
 
         private static void SetDataPaths()
         {
-            Dataformatter.Paths.SetProcessedDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\");
+            Dataformatter.Paths.SetProcessedDataFolder(@"C:\Users\robert\Projects\Datascience Minor Project\ProcessedData");
             Dataformatter.Paths.SetRawDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\CountryInformation");
         }
 

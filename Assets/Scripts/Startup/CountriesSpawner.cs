@@ -18,14 +18,18 @@ namespace Startup_Scripts
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                CountryInformationReference countryInformationReference =
-                    new CountryInformationReference(currentCountry);
+                if (currentCountry.Alpha3 == "NLD" || currentCountry.Alpha3 == "BEL")
+                {
 
-                CountryPrefab cloneForCurrentCountry = Instantiate(OriginalCountryPrefab,
-                    Vector3.zero,
-                    transform.rotation);
+                    CountryInformationReference countryInformationReference =
+                        new CountryInformationReference(currentCountry);
 
-                cloneForCurrentCountry.Init(countryInformationReference);
+                    CountryPrefab cloneForCurrentCountry = Instantiate(OriginalCountryPrefab,
+                        Vector3.zero,
+                        transform.rotation);
+
+                    cloneForCurrentCountry.Init(countryInformationReference);
+                }
             }
         }
     }
