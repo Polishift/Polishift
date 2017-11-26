@@ -1,4 +1,5 @@
 ﻿using DefaultNamespace;
+using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
 using UnityEngine;
@@ -13,7 +14,8 @@ namespace Startup_Scripts
             gameObject.name = spawnersCountryInfo.Iso3166Country.Name;            
             
             gameObject.GetComponent<CountryInformationReference>().Iso3166Country = spawnersCountryInfo.Iso3166Country;
-
+            gameObject.GetComponent<CountryElectionHandler>().Init();
+            
             //Making sure the pivot == the center of the mesh for scaling purposes later
             gameObject.AddComponent<PivotOffsetter>();
             

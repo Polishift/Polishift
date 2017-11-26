@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using UnityEngine;
 
@@ -9,24 +10,23 @@ namespace DefaultNamespace.Map_Displaying.UI
     [RequireComponent(typeof(CountryInformationReference))]
     public class CountryInfoDisplayer : MonoBehaviour
     {
+        private CountryInformationReference _countryInformation;
+        
         Rect _mWindowRect;
         string _mTitle;
-        string _mMsg;
         //Action _mAction;
 
 
         public void Init()
         {
-            Debug.Log("Created new COuntryInfoDisplayer, gameObject name = " + gameObject.name);
+            _countryInformation = gameObject.GetComponent<CountryInformationReference>();
             
-            var countryInformation = gameObject.GetComponent<CountryInformationReference>();
-            
-            //todo set alternative face to be = new
-            _mTitle = countryInformation.Iso3166Country.Name;
-            _mMsg = countryInformation.Iso3166Country.Name;
+            //todo set alternative country names to be = new
+            _mTitle = _countryInformation.Iso3166Country.Name;
             //_mAction = action;
         }
 
+        //todo replace legacy OnGUI() stuff
         void OnGUI()
         {
             const int maxWidth = 640;
@@ -55,8 +55,13 @@ namespace DefaultNamespace.Map_Displaying.UI
                 border + spacing,
                 _mWindowRect.width - border * 2,
                 _mWindowRect.height - border * 2 - height - spacing);
-            GUI.Label(l, _mMsg);
 
+            var currentRulingPartyOfCountry = GetComponent<CountryElectionHandler>().GetCurrentRulingParty();
+            GUI.Label(l, _countryInformation.Iso3166Country.Name);
+            GUI.Label(l, _countryInformation.Iso3166Country.Name + " is currently ruled by the "
+                         + currentRulingPartyOfCountry.PartyName + " who are " + currentRulingPartyOfCountry.PartyClassification);
+
+            
             Rect b = new Rect(
                 _mWindowRect.width - width - border,
                 _mWindowRect.height - height - border,

@@ -25,7 +25,7 @@ namespace DefaultNamespace.Map_Displaying.UI
 
             AddChildCanvas();
             AddYearCounter();
-            AddChildButtonToCanvas("PauseButton", PauseButtonSprite, YearCounter.Pause, this.transform.position);
+            //AddChildButtonToCanvas("PauseButton", PauseButtonSprite, YearCounter.Pause, this.transform.position);
         }
 
         void AddChildCanvas()

@@ -34,7 +34,7 @@ namespace Repository
 
         private static void SetDataPaths()
         {
-            Dataformatter.Paths.SetProcessedDataFolder(@"C:\Users\robert\Projects\Datascience Minor Project\ProcessedData");
+            Dataformatter.Paths.SetProcessedDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\");
             Dataformatter.Paths.SetRawDataFolder(@"E:\Hogeschool\Polishift Organization\ProcessedData\CountryInformation");
         }
 

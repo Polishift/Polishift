@@ -8,9 +8,9 @@ namespace Game_Logic
         private static bool TimeIsGoingBackwards = false;
         
         private static float _currentTimePassed = 0;
-        private static int _secondsPerYear = 8;
+        private static float _secondsPerYear = 0.5f;
 
-        private static int _minimumYear = 1945;
+        private static int _minimumYear = 1948;
         private static int _maximumYear = 2012;
         private static int _currentYear = _minimumYear;
 
