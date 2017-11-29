@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using Game_Logic.Country_Coloring;
+﻿using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using UnityEngine;
 
@@ -14,7 +11,6 @@ namespace DefaultNamespace.Map_Displaying.UI
         
         Rect _mWindowRect;
         string _mTitle;
-        //Action _mAction;
 
 
         public void Init()
@@ -23,7 +19,6 @@ namespace DefaultNamespace.Map_Displaying.UI
             
             //todo set alternative country names to be = new
             _mTitle = _countryInformation.Iso3166Country.Name;
-            //_mAction = action;
         }
 
         //todo replace legacy OnGUI() stuff
@@ -56,10 +51,7 @@ namespace DefaultNamespace.Map_Displaying.UI
                 _mWindowRect.width - border * 2,
                 _mWindowRect.height - border * 2 - height - spacing);
 
-            var currentRulingPartyOfCountry = GetComponent<CountryElectionHandler>().GetCurrentRulingParty();
-            GUI.Label(l, _countryInformation.Iso3166Country.Name);
-            GUI.Label(l, _countryInformation.Iso3166Country.Name + " is currently ruled by the "
-                         + currentRulingPartyOfCountry.PartyName + " who are " + currentRulingPartyOfCountry.PartyClassification);
+            GUI.Label(l, GetComponent<CountryElectionHandler>().ToString());   
 
             
             Rect b = new Rect(
@@ -69,10 +61,7 @@ namespace DefaultNamespace.Map_Displaying.UI
                 height);
 
             if (GUI.Button(b, "ok"))
-            {
                 Destroy(this);
-                //_mAction();
-            }
         }
     }
 }

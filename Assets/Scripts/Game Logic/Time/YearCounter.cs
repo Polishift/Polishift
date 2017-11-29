@@ -8,7 +8,8 @@ namespace Game_Logic
         private static bool TimeIsGoingBackwards = false;
         
         private static float _currentTimePassed = 0;
-        private static float _secondsPerYear = 0.5f;
+        private static float _defaultSecondsPerYear = 1.5f;        
+        private static float _secondsPerYear = _defaultSecondsPerYear;
 
         private static int _minimumYear = 1948;
         private static int _maximumYear = 2012;
@@ -18,6 +19,7 @@ namespace Game_Logic
         public static void Play()
         {
             IsPaused = false;
+            _secondsPerYear = _defaultSecondsPerYear;
             TimeIsGoingBackwards = false;
         }
 
@@ -30,14 +32,14 @@ namespace Game_Logic
         {
             TimeIsGoingBackwards = false;
             
-            SpeedTimeUp(3);
+            SpeedTimeUp();
         }
 
         public static void FastBackward()
         {
             TimeIsGoingBackwards = true;
             
-            SpeedTimeUp(3);
+            SpeedTimeUp();
         }
         
         //Only a getter, we do not want the year variable to be changed from outside this script.
@@ -57,6 +59,7 @@ namespace Game_Logic
                 if (_currentTimePassed >= _secondsPerYear)
                 {
                     _currentTimePassed = 0.0f;
+                    Debug.Log("_secondsPerYear = " + _secondsPerYear);
 
                     if(TimeIsGoingBackwards)
                         DecrementYear();
@@ -78,14 +81,11 @@ namespace Game_Logic
                 _currentYear--;
         }
         
-        private static void SlowTimeDown(int slowDownFactor)
-        {
-            _secondsPerYear = _secondsPerYear / slowDownFactor;
-        }
 
-        private static void SpeedTimeUp(int speedUpFactor)
+        private static void SpeedTimeUp()
         {
-            _secondsPerYear = _secondsPerYear * speedUpFactor;
+            //Time is sped up, so we spend less seconds per year. 
+            _secondsPerYear = _secondsPerYear / 2;
         }
     }
 }

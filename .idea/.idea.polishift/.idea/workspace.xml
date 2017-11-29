@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="255786c6-9e2e-4e85-9c6a-402b9c818cf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs.meta" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Art.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Art/Playbutton.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Art/Playbutton.jpg.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/New Terrain.asset" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/New Terrain.asset.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/Playbutton.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Resources/Playbutton.jpg.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CountryInfoDisplayer.cs.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/UI/YearUIController.cs.meta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Dataformatter.dll" afterPath="$PROJECT_DIR$/Assets/Dataformatter.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.polishift/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/MainScene.unity" afterPath="$PROJECT_DIR$/Assets/MainScene.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,143 +32,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CountriesSpawner.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs">
+      <file leaf-file-name="TimeUIController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="505">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <marker date="1511562920813" expanded="false" signature="6:124" ph="..." />
-                <marker date="1511562920813" expanded="true" signature="152:1030" ph="{...}" />
-                <marker date="1511562920813" expanded="true" signature="204:1028" ph="{...}" />
-                <marker date="1511562920813" expanded="true" signature="292:1022" ph="{...}" />
-                <marker date="1511562920813" expanded="true" signature="488:1012" ph="{...}" />
-                <marker date="1511562920813" expanded="true" signature="554:998" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RepositoryHub.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-              <folding>
-                <marker date="1511534452050" expanded="false" signature="6:295" ph="..." />
-                <marker date="1511534452050" expanded="true" signature="317:1974" ph="{...}" />
-                <marker date="1511534452050" expanded="true" signature="357:1972" ph="{...}" />
-                <marker date="1511534452050" expanded="true" signature="591:1128" ph="{...}" />
-                <marker date="1511534452050" expanded="true" signature="731:779" ph="/* Countries ... */" />
-                <marker date="1511534452050" expanded="true" signature="1172:1428" ph="{...}" />
-                <marker date="1511534452050" expanded="true" signature="1479:1966" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryPrefab.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-              <folding>
-                <marker date="1511558782364" expanded="false" signature="6:141" ph="..." />
-                <marker date="1511558782364" expanded="true" signature="168:1032" ph="{...}" />
-                <marker date="1511558782364" expanded="true" signature="302:1030" ph="{...}" />
-                <marker date="1511558782364" expanded="true" signature="382:1024" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryElectionHandler.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <marker date="1511562700320" expanded="false" signature="6:174" ph="..." />
-                <marker date="1511562700320" expanded="true" signature="213:2581" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="271:2579" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="673:1346" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="1385:1755" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="1554:1745" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="1818:1890" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="1949:2120" ph="{...}" />
-                <marker date="1511562700320" expanded="true" signature="2162:2573" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PartyFamilies_BEL.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="127" column="6" lean-forward="false" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
-              <folding>
-                <marker date="1511561216153" expanded="true" signature="120:319" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="326:488" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="495:677" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="684:873" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="1259:1428" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="1542:1736" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="1980:2140" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="2147:2316" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="2435:2602" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="2609:2791" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="2900:3101" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="3208:3393" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="3400:3609" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="3616:3802" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="4157:4323" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="4443:4619" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="4732:4934" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="5276:5477" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="5604:5768" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="5896:6070" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="6077:6245" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="6252:6437" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="6444:6612" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="6742:6948" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="7303:7478" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="7485:7654" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="7661:7841" ph="{...}" />
-                <marker date="1511561216153" expanded="true" signature="8071:8249" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Countries.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProcessedData/Countries.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
-              <folding>
-                <marker date="1511555809471" expanded="true" signature="3419:3580" ph="{...}" />
-                <marker date="1511555809471" expanded="true" signature="4642:4795" ph="{...}" />
-                <marker date="1511555809471" expanded="true" signature="5757:5918" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YearUIController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding>
-                <marker date="1511539925592" expanded="false" signature="6:98" ph="..." />
-                <marker date="1511539925592" expanded="true" signature="144:3137" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="196:3135" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="275:505" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="585:871" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="902:1762" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="1801:2226" ph="{...}" />
-                <marker date="1511539925592" expanded="true" signature="2344:3129" ph="{...}" />
+                <marker date="1511966112884" expanded="false" signature="6:98" ph="..." />
+                <marker date="1511966112884" expanded="true" signature="144:4439" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="196:4437" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="410:633" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="663:1591" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="1633:2507" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="2546:3451" ph="{...}" />
+                <marker date="1511966112884" expanded="true" signature="3628:4431" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -171,23 +54,22 @@
       <file leaf-file-name="YearCounter.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="167">
+              <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
-                <marker date="1511561601364" expanded="true" signature="40:2253" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="87:2251" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="501:593" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="629:678" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="728:831" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="874:976" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1126:1179" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1239:1664" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1276:1654" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1404:1640" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1709:1806" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="1851:1948" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="2018:2102" ph="{...}" />
-                <marker date="1511561601364" expanded="true" signature="2162:2245" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="40:2355" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="87:2353" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="587:733" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="769:818" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="868:970" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1013:1114" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1264:1317" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1377:1873" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1414:1863" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1542:1849" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="1918:2015" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="2060:2157" ph="{...}" />
+                <marker date="1511963233831" expanded="true" signature="2209:2347" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -220,11 +102,14 @@
       <find>_countryInformationAvailable</find>
       <find>null</find>
       <find>christelijke volks</find>
+      <find>ZT</find>
+      <find>UI_Canvas</find>
     </findStrings>
     <replaceStrings>
       <replace>Vector3</replace>
       <replace>List&lt;Vector2&gt;</replace>
       <replace>�</replace>
+      <replace>TimeControl_Canvas</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -238,7 +123,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ProcessedData/Countries.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED38E56-8515-4380-A519-2CCAE2A6F0C9/00/cd1d2156/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/PivotOffsetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -246,8 +131,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/e1/5720d485/JsonToModel`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/340C334A-3B7B-4E06-9837-A14CDF0F50A1/db/fdefbfd7/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/06/344a0784/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/26/39ccd193/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -268,21 +154,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ProcessedData/Election_NLD.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Datasources/CountryInformation/bel.geo.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshHelpers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshesGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/OutlineGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Visual/OutlineGenerator.cs" />
-        <option value="$PROJECT_DIR$/Temp/Compiled-Outlined-Silhouetted Diffuse.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/outline.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/Other Outline.shader" />
         <option value="$PROJECT_DIR$/Assets/Art/OutlineEffect/outline2D.shader" />
@@ -310,7 +186,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
         <option value="$PROJECT_DIR$/../ProcessedData/Countries.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Visitors/VisitablePartyElectionResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Visitors/PartyElectionResult.cs" />
@@ -318,13 +193,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Design Patterns/Visitor/IOptionVisitor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Design Patterns/Visitor/ElectionVisitor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/ElectionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup/CountryPrefab.cs" />
         <option value="$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/On Top Shader/onTopShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UICreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/YearUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CountryInfoDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Pretty printers/IVisitor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Pretty printers/RulingPartyPrettyPrinter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/YearUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs" />
       </list>
     </option>
   </component>
@@ -334,7 +219,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -353,6 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -395,19 +282,70 @@
               <item name="Game Logic" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Country Coloring" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Country Meshes Generation" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Handlers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Map Displaying" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Reference Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="UI" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="UI" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="UI Controllers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json" />
-    <property name="SearchEverywhereHistoryKey" value="Yea&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Time/YearCounter.cs&#10;Countries&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;CountryEle&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs&#10;Coun&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountryPrefab.cs&#10;Year&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Time/YearCounter.cs&#10;CountryCol&#9;null&#9;null&#10;Meshe&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs&#10;CountriesS&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;On&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Bo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs&#10;OnCl&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Piv&#9;null&#9;null&#10;Mes&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs&#10;MeshCr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs&#10;Test&#9;null&#9;null&#10;Sprite&#9;null&#9;null&#10;Sprit&#9;null&#9;null&#10;Other&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Art/Other Outline.shader&#10;shad&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Art/outline.shader&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Onc&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Al&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs&#10;Countrie&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Tri&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Trian&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Countr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Iso&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountryPrefab.cs&#10;CountryBor&#9;null&#9;null&#10;MEshC&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/MeshesGeneration/CountryMeshesGenerator.cs&#10;Bowyer&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs&#10;shad&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Resources/On Top Shader/onTopShader.shader&#10;YearC&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Time/YearCounter.cs&#10;onTop&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Resources/On Top Shader/onTopShader.shader&#10;Yea&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Time/YearCounter.cs&#10;Countries&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;CountryEle&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs&#10;Coun&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountryPrefab.cs&#10;Year&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Time/YearCounter.cs&#10;CountryCol&#9;null&#9;null&#10;Meshe&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs&#10;CountriesS&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;On&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Bo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs&#10;OnCl&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Piv&#9;null&#9;null&#10;Mes&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs&#10;MeshCr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs&#10;Test&#9;null&#9;null&#10;Sprite&#9;null&#9;null&#10;Sprit&#9;null&#9;null&#10;Other&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Art/Other Outline.shader&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Onc&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Al&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/AlternativeTriangulator.cs&#10;Countrie&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;Tri&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Trian&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/NaiveTriangulator.cs&#10;Countr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/CountriesSpawner.cs&#10;mesh&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Country Meshes Generation/MeshCreator.cs&#10;Iso&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs&#10;CountryBor&#9;null&#9;null&#10;MEshC&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/MeshesGeneration/CountryMeshesGenerator.cs&#10;Bowyer&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -482,6 +420,12 @@
       <workItem from="1511456474910" duration="14402000" />
       <workItem from="1511534225828" duration="13625000" />
       <workItem from="1511555804672" duration="6603000" />
+      <workItem from="1511817824898" duration="795000" />
+      <workItem from="1511858163590" duration="1380000" />
+      <workItem from="1511875972614" duration="317000" />
+      <workItem from="1511888479058" duration="7571000" />
+      <workItem from="1511906562603" duration="25000" />
+      <workItem from="1511950091653" duration="11377000" />
     </task>
     <task id="LOCAL-00001" summary="Working on restructuring so that we can easily spawn all Countries in 1 prefab">
       <created>1510647774808</created>
@@ -529,7 +473,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230312000" />
+    <option name="totallyTimeSpent" value="251777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,21 +485,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="1" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -614,16 +559,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="227" column="32" lean-forward="false" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Visual/OutlineGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Outlined-Silhouetted Diffuse.shader" />
-    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFixedFunction-Outlined-Silhouetted Diffuse.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Art/outline.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Art/Other Outline.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Art/OutlineEffect/outline2D.shader" />
@@ -681,22 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
-          <folding>
-            <marker date="1511362419059" expanded="false" signature="6:58" ph="..." />
-            <marker date="1511362419059" expanded="true" signature="174:4192" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="654:1243" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="909:1057" ph="/* Temporarily making the outline the parent so we can scale down ... */" />
-            <marker date="1511362419059" expanded="true" signature="1285:2006" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="2048:2152" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="2197:2549" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="2599:3611" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="2974:3058" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="3182:3266" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="3389:3473" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="3517:3601" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="3654:3939" ph="{...}" />
-            <marker date="1511362419059" expanded="true" signature="4023:4186" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,220 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding>
-            <marker date="1511540273724" expanded="true" signature="6:406" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="412:811" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="817:1221" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="1227:1624" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="1630:2040" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="2046:2452" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="2458:2866" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="2872:3271" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="3277:3678" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="3684:4089" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="4095:4492" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="4498:4892" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="4898:5304" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="5310:5718" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="5724:6124" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="6130:6531" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="6537:6942" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="6948:7349" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="7355:7752" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="7758:8152" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="8158:8564" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="8570:8978" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="8984:9384" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="9390:9791" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="9797:10202" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="10208:10605" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="10611:11005" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="11011:11417" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="11423:11831" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="11837:12237" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="12243:12642" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="12648:13050" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="13056:13453" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="13459:13853" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="13859:14265" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="14271:14679" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="14685:15085" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="15091:15492" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="15498:15903" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="15909:16306" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="16312:16717" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="16723:17117" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="17123:17528" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="17534:17942" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="17948:18348" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="18354:18752" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="18758:19159" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="19165:19570" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="19576:19959" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="19965:20362" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="20368:20773" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="20779:21173" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="21179:21585" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="21591:21998" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="22004:22402" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="22408:22809" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="22815:23220" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="23226:23606" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="23612:24013" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="24019:24421" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="24427:24824" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="24830:25224" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="25230:25636" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="25642:26050" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="26056:26456" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="26462:26863" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="26869:27274" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="27280:27663" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="27669:28070" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="28076:28478" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="28484:28880" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="28886:29280" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="29286:29679" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="29685:30090" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="30096:30505" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="30511:30910" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="30916:31299" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="31305:31699" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="31705:32114" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="32120:32519" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="32525:32908" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="32914:33308" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="33314:33720" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="33726:34135" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="34141:34540" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="34546:34940" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="34946:35355" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="35361:35760" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="35766:36149" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="36155:36549" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="36555:36961" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="36967:37376" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="37382:37781" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="37787:38170" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="38176:38570" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="38576:38985" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="38991:39382" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="39388:39775" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="39781:40180" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="40186:40570" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="40576:40970" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="40976:41382" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="41388:41797" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="41803:42198" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="42204:42591" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="42597:42996" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="43002:43385" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="43391:43793" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="43799:44173" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="44179:44573" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="44579:44988" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="44994:45384" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="45390:45796" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="45802:46211" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="46217:46616" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="46622:47007" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="47013:47395" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="47401:47800" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="47806:48182" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="48188:48574" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="48580:48969" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="48975:49372" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="49378:49771" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="49777:50171" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="50177:50570" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="50576:50966" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="50972:51378" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="51384:51786" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="51792:52201" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="52207:52597" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="52603:53016" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="53022:53421" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="53427:53809" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="53815:54226" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="54232:54614" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="54620:55019" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="55025:55400" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="55406:55791" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="55797:56185" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="56191:56588" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="56594:56989" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="56995:57408" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="57414:57807" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="57813:58207" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="58213:58602" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="58608:58996" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="59002:59408" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="59414:59823" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="59829:60263" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="60269:60663" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="60669:61068" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="61074:61459" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="61465:61869" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="61875:62257" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="62263:62643" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="62649:63043" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="63049:63425" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="63431:63831" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="63837:64247" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="64253:64663" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="64669:65078" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="65084:65475" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="65481:65890" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="65896:66287" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="66293:66682" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="66688:67082" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="67088:67483" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="67489:67880" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="67886:68288" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="68294:68700" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="68706:69097" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="69103:69505" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="69511:69920" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="69926:70325" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="70331:70716" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="70722:71104" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="71110:71486" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="71492:71866" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="71872:72272" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="72278:72694" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="72700:73097" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="73103:73496" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="73502:73891" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="73897:74292" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="74298:74696" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="74702:75089" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="75095:75476" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="75482:75872" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="75878:76284" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="76290:76704" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="76710:77118" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="77124:77507" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="77513:77903" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="77909:78307" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="78313:78698" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="78704:79086" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="79092:79497" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="79503:79879" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="79885:80285" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="80291:80679" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="80685:81073" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="81079:81472" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="81478:81872" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="81878:82267" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="82273:82667" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="82673:83071" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="83077:83458" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="83464:83855" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="83861:84251" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="84257:84672" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="84678:85083" ph="{...}" />
-            <marker date="1511540273724" expanded="true" signature="85089:85498" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,11 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1511545078361" expanded="false" signature="6:141" ph="..." />
-            <marker date="1511545078361" expanded="true" signature="367:565" ph="{...}" />
-            <marker date="1511545078361" expanded="true" signature="494:559" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,11 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511534257633" expanded="false" signature="6:66" ph="..." />
-            <marker date="1511534257633" expanded="true" signature="153:991" ph="{...}" />
-            <marker date="1511534257633" expanded="true" signature="274:984" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,45 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <marker date="1511558759718" expanded="false" signature="6:241" ph="..." />
-            <marker date="1511558759718" expanded="true" signature="280:728" ph="{...}" />
-            <marker date="1511558759718" expanded="true" signature="330:726" ph="{...}" />
-            <marker date="1511558759718" expanded="true" signature="417:720" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/CountryInfoDisplayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <marker date="1511558797453" expanded="false" signature="6:179" ph="..." />
-            <marker date="1511558797453" expanded="true" signature="225:2543" ph="{...}" />
-            <marker date="1511558797453" expanded="true" signature="341:2541" ph="{...}" />
-            <marker date="1511558797453" expanded="true" signature="528:808" ph="{...}" />
-            <marker date="1511558797453" expanded="true" signature="874:1385" ph="{...}" />
-            <marker date="1511558797453" expanded="true" signature="1432:2535" ph="{...}" />
-            <marker date="1511558797453" expanded="true" signature="2436:2525" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/UI/YearUIController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <marker date="1511539925592" expanded="false" signature="6:98" ph="..." />
-            <marker date="1511539925592" expanded="true" signature="144:3137" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="196:3135" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="275:505" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="585:871" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="902:1762" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="1801:2226" ph="{...}" />
-            <marker date="1511539925592" expanded="true" signature="2344:3129" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,71 +684,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
-          <folding>
-            <marker date="1511555809471" expanded="true" signature="3419:3580" ph="{...}" />
-            <marker date="1511555809471" expanded="true" signature="4642:4795" ph="{...}" />
-            <marker date="1511555809471" expanded="true" signature="5757:5918" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <marker date="1511561601364" expanded="true" signature="40:2253" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="87:2251" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="501:593" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="629:678" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="728:831" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="874:976" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1126:1179" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1239:1664" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1276:1654" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1404:1640" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1709:1806" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="1851:1948" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="2018:2102" ph="{...}" />
-            <marker date="1511561601364" expanded="true" signature="2162:2245" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_BEL.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="2032">
           <caret line="127" column="6" lean-forward="false" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
-          <folding>
-            <marker date="1511561216153" expanded="true" signature="120:319" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="326:488" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="495:677" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="684:873" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="1259:1428" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="1542:1736" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="1980:2140" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="2147:2316" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="2435:2602" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="2609:2791" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="2900:3101" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="3208:3393" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="3400:3609" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="3616:3802" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="4157:4323" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="4443:4619" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="4732:4934" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="5276:5477" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="5604:5768" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="5896:6070" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="6077:6245" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="6252:6437" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="6444:6612" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="6742:6948" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="7303:7478" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="7485:7654" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="7661:7841" ph="{...}" />
-            <marker date="1511561216153" expanded="true" signature="8071:8249" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,30 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-          <folding>
-            <marker date="1511558782364" expanded="false" signature="6:141" ph="..." />
-            <marker date="1511558782364" expanded="true" signature="168:1032" ph="{...}" />
-            <marker date="1511558782364" expanded="true" signature="302:1030" ph="{...}" />
-            <marker date="1511558782364" expanded="true" signature="382:1024" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <marker date="1511562700320" expanded="false" signature="6:174" ph="..." />
-            <marker date="1511562700320" expanded="true" signature="213:2581" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="271:2579" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="673:1346" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="1385:1755" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="1554:1745" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="1818:1890" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="1949:2120" ph="{...}" />
-            <marker date="1511562700320" expanded="true" signature="2162:2573" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,37 +705,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="496">
           <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-          <folding>
-            <marker date="1511534452050" expanded="false" signature="6:295" ph="..." />
-            <marker date="1511534452050" expanded="true" signature="317:1974" ph="{...}" />
-            <marker date="1511534452050" expanded="true" signature="357:1972" ph="{...}" />
-            <marker date="1511534452050" expanded="true" signature="591:1128" ph="{...}" />
-            <marker date="1511534452050" expanded="true" signature="731:779" ph="/* Countries ... */" />
-            <marker date="1511534452050" expanded="true" signature="1172:1428" ph="{...}" />
-            <marker date="1511534452050" expanded="true" signature="1479:1966" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/CountriesSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/On Top Shader/onTopShader.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UICreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Pretty printers/IVisitor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Pretty printers/RulingPartyPrettyPrinter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryElectionHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="55" column="93" lean-forward="true" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
           <folding>
-            <marker date="1511562920813" expanded="false" signature="6:124" ph="..." />
-            <marker date="1511562920813" expanded="true" signature="152:1030" ph="{...}" />
-            <marker date="1511562920813" expanded="true" signature="204:1028" ph="{...}" />
-            <marker date="1511562920813" expanded="true" signature="292:1022" ph="{...}" />
-            <marker date="1511562920813" expanded="true" signature="488:1012" ph="{...}" />
-            <marker date="1511562920813" expanded="true" signature="554:998" ph="{...}" />
+            <marker date="1511954818773" expanded="false" signature="6:174" ph="..." />
+            <marker date="1511954818773" expanded="true" signature="213:3049" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="271:3047" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="665:1218" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="1249:1619" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="1418:1609" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="1662:2341" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="1806:1911" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="1928:2327" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="2417:2588" ph="{...}" />
+            <marker date="1511954818773" expanded="true" signature="2630:3041" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1511954725173" expanded="true" signature="6:93" ph="..." />
+            <marker date="1511954725173" expanded="true" signature="139:2014" ph="{...}" />
+            <marker date="1511954725173" expanded="true" signature="255:2012" ph="{...}" />
+            <marker date="1511954725173" expanded="true" signature="415:662" ph="{...}" />
+            <marker date="1511954725173" expanded="true" signature="728:1239" ph="{...}" />
+            <marker date="1511954725173" expanded="true" signature="1286:2006" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <marker date="1511963233831" expanded="true" signature="40:2355" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="87:2353" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="587:733" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="769:818" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="868:970" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1013:1114" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1264:1317" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1377:1873" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1414:1863" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1542:1849" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="1918:2015" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="2060:2157" ph="{...}" />
+            <marker date="1511963233831" expanded="true" signature="2209:2347" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1511966112884" expanded="false" signature="6:98" ph="..." />
+            <marker date="1511966112884" expanded="true" signature="144:4439" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="196:4437" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="410:633" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="663:1591" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="1633:2507" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="2546:3451" ph="{...}" />
+            <marker date="1511966112884" expanded="true" signature="3628:4431" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -10,7 +10,7 @@ namespace Game_Logic.Country_Coloring
     public class CountryElectionHandler : MonoBehaviour
     {
         private CountryInformationReference _thisCountrysInfo;
-        private bool _countryInformationIsSet = false;
+        private bool _countryInformationIsSet;
         private List<ElectionEntity> _allElectionsEverForThisCountry;
         private ElectionEntity _currentRulingPartyElectionData;
         
@@ -22,15 +22,13 @@ namespace Game_Logic.Country_Coloring
 
             _allElectionsEverForThisCountry =
                 RepositoryHub.ElectionsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
-            Debug.Log("_allElectionsEverForThisCountry.Count = " + _allElectionsEverForThisCountry.Count);
-            
             
             //Setting this to a dummy value in case it is accessed before an election/regime has happened.
             _currentRulingPartyElectionData = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
             _countryInformationIsSet = true;
         }
         
-        private void Update()
+        void Update()
         {
             if (!_countryInformationIsSet) return;
 
@@ -41,13 +39,26 @@ namespace Game_Logic.Country_Coloring
                 gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewParty(_currentRulingPartyElectionData);    
             }
         }
-        
-        public ElectionEntity GetCurrentRulingParty()
+
+        public override string ToString()
         {
-            return _currentRulingPartyElectionData;
+            var thisCountry = _thisCountrysInfo.Iso3166Country;
+            
+            if (_currentRulingPartyElectionData == null)
+            {
+                return thisCountry.Name + " currently has no ruling party.";
+            }
+            else
+            {
+                return _currentRulingPartyElectionData.CountryName + " is currently ruled by the " 
+                       + _currentRulingPartyElectionData.PartyName 
+                       + " who are of type '" + _currentRulingPartyElectionData.PartyClassification + "'. "
+                       + " They won the elections of " + _currentRulingPartyElectionData.Year;
+            }    
         }
         
-
+        
+        
         private bool CurrentYearIsElectionYear()
         {
             var currentYear = YearCounter.GetCurrentYear();

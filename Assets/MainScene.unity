@@ -153,7 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3b3c3565d34836a52b18c9665104ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseButtonSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  PauseButtonSprite: {fileID: 21300000, guid: ea651aed8e36fa54e9fdd44f6fb71660, type: 3}
+  PlayButtonSprite: {fileID: 21300000, guid: 902e3e899b414aa4296a144e61775073, type: 3}
+  FastbackwardButtonSprite: {fileID: 21300000, guid: eff6c652b72f91b40bdfceed2075841e,
+    type: 3}
+  FastforwardButtonSprite: {fileID: 21300000, guid: 9a92cd36dbdf3184b90959d6e83925b4,
+    type: 3}
 --- !u!114 &129302150
 MonoBehaviour:
   m_ObjectHideFlags: 0

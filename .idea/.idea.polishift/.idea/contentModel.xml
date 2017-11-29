@@ -17,6 +17,11 @@
             </e>
           </e>
         </e>
+        <e p="Resources" t="Include">
+          <e p="On Top Shader" t="Include">
+            <e p="onTopShader.shader" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Camera" t="Include">
             <e p="CameraLogicController.cs" t="Include" />
@@ -106,10 +111,6 @@
             <e p="Reference Scripts" t="Include">
               <e p="CountryInformationReference.cs" t="Include" />
             </e>
-            <e p="UI" t="Include">
-              <e p="CountryInfoDisplayer.cs" t="Include" />
-              <e p="YearUiController.cs" t="Include" />
-            </e>
           </e>
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />
@@ -117,6 +118,12 @@
           <e p="Startup" t="Include">
             <e p="CountriesSpawner.cs" t="Include" />
             <e p="CountryPrefab.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="UI Controllers" t="Include">
+              <e p="CountryInfoDisplayer.cs" t="Include" />
+              <e p="TimeUIController.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
