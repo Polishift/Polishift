@@ -13,7 +13,8 @@ namespace Repository
         public static Iso3166Country[] Iso3166Countries;
         public static CountryBordersRepository CountryBordersRepository;
         public static ElectionsRepository ElectionsRepository;
-
+        public static DictatorShipsRepository DictatorShipsRepository;
+        
         public static void Init()
         {
             //Parsing
@@ -30,6 +31,9 @@ namespace Repository
             
             //Elections
             ElectionsRepository = new ElectionsRepository();
+            
+            //Dictatorships
+            DictatorShipsRepository = new DictatorShipsRepository();
         }
 
         private static void SetDataPaths()

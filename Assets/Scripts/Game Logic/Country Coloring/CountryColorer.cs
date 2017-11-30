@@ -11,10 +11,10 @@ namespace Game_Logic.Country_Coloring
 {
     public class CountryColorer : MonoBehaviour
     {
-        public void UpdateCountryColorForNewParty(ElectionEntity newRulingParty)
+        public void UpdateCountryColorForNewRuler(string classification)
         {
-            var currentRulingPartysFamily = newRulingParty.PartyClassification.ToLower();
-            var colorForRulingParty = PoliticalFamilyColors.ColorPerFamily[currentRulingPartysFamily];
+            var lowerCaseClassification = classification.ToLower(); //just in case (get it?)
+            var colorForRulingParty = PoliticalFamilyColors.ColorPerFamily[lowerCaseClassification];
             gameObject.GetComponent<MeshRenderer>().material.color = colorForRulingParty;
         }
     }
