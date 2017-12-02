@@ -22,24 +22,15 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private void Start()
         {
+            this.transform.position = Vector3.zero;
+
             CreateTimeControlsCanvas();
 
             AddYearCounter();
-            AddChildButtonToCanvas("Pause Button", PauseButtonSprite, 
-                                   YearCounter.Pause, 
-                                   new Vector3(380, 140, 3300), 0.55f);
-            
-            AddChildButtonToCanvas("Play Button", PlayButtonSprite, 
-                                   YearCounter.Play, 
-                                   new Vector3(450, 140, 3300), 0.55f);
-            
-            AddChildButtonToCanvas("FFW Button", FastforwardButtonSprite, 
-                                   YearCounter.FastForward, 
-                                    new Vector3(450, 80, 3300), 0.45f);
-
-            AddChildButtonToCanvas("FBW Button", FastbackwardButtonSprite, 
-                                   YearCounter.FastBackward, 
-                                   new Vector3(380, 80, 3300), 0.45f);
+            AddChildButtonToCanvas("Pause Button", PauseButtonSprite, YearCounter.Pause, new Vector3(380, 140, 3300), 0.55f);
+            AddChildButtonToCanvas("Play Button", PlayButtonSprite, YearCounter.Play, new Vector3(450, 140, 3300), 0.55f);
+            AddChildButtonToCanvas("FFW Button", FastforwardButtonSprite, YearCounter.FastForward, new Vector3(450, 80, 3300), 0.45f);
+            AddChildButtonToCanvas("FBW Button", FastbackwardButtonSprite, YearCounter.FastBackward, new Vector3(380, 80, 3300), 0.45f);
         }
 
 
@@ -47,7 +38,6 @@ namespace DefaultNamespace.Map_Displaying.UI
         {
             GameObject canvasChild = new GameObject();
             canvasChild.name = "TimeControl_Canvas";
-            canvasChild.transform.position = new Vector3(472, 265, 0);
             canvasChild.transform.parent = this.gameObject.transform;
 
             canvasChild.AddComponent<Canvas>();
@@ -58,9 +48,11 @@ namespace DefaultNamespace.Map_Displaying.UI
             canvasChild.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
             canvasChild.GetComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            canvasChild.GetComponent<CanvasScaler>().referenceResolution = new Vector2(800, 600);
+            canvasChild.GetComponent<CanvasScaler>().referencePixelsPerUnit = 100;            
             canvasChild.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
         }
-        
+
         void AddYearCounter()
         {
             GameObject yearCounter = new GameObject("Year Counter");
@@ -83,9 +75,8 @@ namespace DefaultNamespace.Map_Displaying.UI
             text.verticalOverflow = VerticalWrapMode.Overflow;
         }
 
-        
-        void AddChildButtonToCanvas(string name, Sprite buttonSprite, Action buttonAction, 
-                                    Vector3 anchoredPosition, float scale)
+
+        void AddChildButtonToCanvas(string name, Sprite buttonSprite, Action buttonAction, Vector3 anchoredPosition, float scale)
         {
             GameObject newChildButton = new GameObject(name);
             newChildButton.transform.SetParent(GameObject.Find("TimeControl_Canvas").transform);
@@ -94,8 +85,8 @@ namespace DefaultNamespace.Map_Displaying.UI
             RectTransform trans = newChildButton.AddComponent<RectTransform>();
             trans.localScale = new Vector3(scale, scale, 1);
             trans.anchoredPosition = anchoredPosition;
-            
-            newChildButton.AddComponent<Image>();            
+
+            newChildButton.AddComponent<Image>();
             newChildButton.AddComponent<Button>();
 
             newChildButton.GetComponent<Image>().sprite = buttonSprite;

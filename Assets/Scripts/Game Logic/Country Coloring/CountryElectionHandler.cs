@@ -14,20 +14,22 @@ namespace Game_Logic.Country_Coloring
         private bool _countryInformationIsSet;
         
         private List<ElectionEntity> _allElectionsEverForThisCountry;
-        private ElectionEntity _currentRulingPartyElectionData;
+        private List<DictatorshipEntity> _allDictatorshipsEverForThisCountry;
+        private ICountryRuler _currentCountryRuler;
 
-        private int _currentYear = 0000; 
+        private int _currentYear; 
+        
         
         //We dont use start(), since the CountryInformationReference is not filled in immediately.
         public void Init()
         {
             _thisCountrysInfo = gameObject.GetComponent<CountryInformationReference>();
 
-            _allElectionsEverForThisCountry =
-                RepositoryHub.ElectionsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
+            _allElectionsEverForThisCountry = RepositoryHub.ElectionsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
+            _allDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
             
-            //Setting this to a dummy value in case it is accessed before an election/regime has happened.
-            _currentRulingPartyElectionData = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
+            //Setting this to a dummy value in case it is accessed before an election/dictatorship has happened.
+            _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
             _countryInformationIsSet = true;
         }
         
@@ -36,63 +38,52 @@ namespace Game_Logic.Country_Coloring
             _currentYear = YearCounter.GetCurrentYear();
             if (!_countryInformationIsSet) return;
 
-            
+
+            var currentElections = GetCurrentElections();
             var currentDictatorships = GetCurrentDictatorships();
             
-            if (CurrentYearIsElectionYear() ^ currentDictatorships.Length > 0)
+            if (currentElections.Length > 0)
             {
-                UpdateRulingParty(); //TODO: MAKE PARTY AND DICTATORSHIP MEMBER OF SAME INTERFACE SO THIS DOESNT HAVE TO CHANGE AT ALL
-                gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(_currentRulingPartyElectionData.PartyClassification);    
+                var biggestParty = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
+                _currentCountryRuler = biggestParty;
             }
-                
-                
-                  
+            else if(currentDictatorships.Length > 0)
+            {
+                _currentCountryRuler = currentDictatorships.First();
+            }
+            
+            //if a dictatorship just ended but there havent been elections yet, the ruler is set to be unknown.            
+            if (DictatorShipJustEnded())
+                _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country); 
+            
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(_currentCountryRuler.PartyClassification);    
         }
 
         public override string ToString()
         {
-            var thisCountry = _thisCountrysInfo.Iso3166Country;
-            
-            if (_currentRulingPartyElectionData == null)
-            {
-                return thisCountry.Name + " currently has no ruling party.";
-            }
-            else
-            {
-                return _currentRulingPartyElectionData.CountryName + " is currently ruled by the '" 
-                       + _currentRulingPartyElectionData.PartyName + "' " 
-                       + " who are of type '" + _currentRulingPartyElectionData.PartyClassification + "'. "
-                       + " They won the elections of " + _currentRulingPartyElectionData.Year;
-            }    
+            return _thisCountrysInfo.Iso3166Country.Name + " is currently ruled by " + _currentCountryRuler;
         }
 
-
+        
         private DictatorshipEntity[] GetCurrentDictatorships()
         {
-            var thisCountrysCode = _thisCountrysInfo.Iso3166Country.Alpha3;
-            var allDictatorShipsEverInThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(thisCountrysCode);
-
-            return allDictatorShipsEverInThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
+            return _allDictatorshipsEverForThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
         }
         
-        private DictatorshipEntity[]
-        
-        
-        
-        private bool CurrentYearIsElectionYear()
+        private ElectionEntity[] GetCurrentElections()
         {
-            var currentYear = YearCounter.GetCurrentYear();
-            return _allElectionsEverForThisCountry.Count(e => e.Year == currentYear) >= 1;
+            return _allElectionsEverForThisCountry.Where(e => e.Year == _currentYear).ToArray();
         }
 
-        private void UpdateRulingParty()
+        private bool DictatorShipJustEnded()
         {
-            //duplication
-            var currentYear = YearCounter.GetCurrentYear();
-            var currentYearsElection = _allElectionsEverForThisCountry.Where(e => e.Year == currentYear).ToList();
-
-            var newRulingPoliticalParty = currentYearsElection.OrderByDescending(p => p.TotalVotePercentage).First();
-            _currentRulingPartyElectionData = newRulingPoliticalParty;
+            if (_allDictatorshipsEverForThisCountry.Count > 0)
+            {
+                var lastDictatorShip = _allDictatorshipsEverForThisCountry.OrderByDescending(d => d.To).First();
+                return _currentYear >= lastDictatorShip.To;
+            }
+            else
+                return false;
         }
     }
 }

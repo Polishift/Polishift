@@ -4,14 +4,14 @@ namespace Game_Logic
 {
     public class YearCounter : MonoBehaviour
     {
-        private static bool IsPaused = false;
-        private static bool TimeIsGoingBackwards = false;
+        private static bool IsPaused;
+        private static bool TimeIsGoingBackwards ;
         
         private static float _currentTimePassed = 0;
         private static float _defaultSecondsPerYear = 1.5f;        
         private static float _secondsPerYear = _defaultSecondsPerYear;
 
-        private static int _minimumYear = 1948;
+        private static int _minimumYear = 1945;
         private static int _maximumYear = 2012;
         private static int _currentYear = _minimumYear;
 
