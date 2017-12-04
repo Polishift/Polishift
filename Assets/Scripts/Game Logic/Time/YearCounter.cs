@@ -59,7 +59,6 @@ namespace Game_Logic
                 if (_currentTimePassed >= _secondsPerYear)
                 {
                     _currentTimePassed = 0.0f;
-                    Debug.Log("_secondsPerYear = " + _secondsPerYear);
 
                     if(TimeIsGoingBackwards)
                         DecrementYear();

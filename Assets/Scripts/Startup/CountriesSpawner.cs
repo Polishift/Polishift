@@ -23,7 +23,9 @@ namespace Startup_Scripts
                     || currentCountry.Alpha3 == "RUS"
                     || currentCountry.Alpha3 == "ESP"
                     || currentCountry.Alpha3 == "LUX"
-                    || currentCountry.Alpha3 == "DNK")
+                    || currentCountry.Alpha3 == "DNK"
+                    || currentCountry.Alpha3 == "DEU"
+                )
                 {
                     CountryInformationReference countryInformationReference =
                         new CountryInformationReference(currentCountry);

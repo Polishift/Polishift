@@ -80,7 +80,7 @@ namespace Game_Logic.Country_Coloring
             if (_allDictatorshipsEverForThisCountry.Count > 0)
             {
                 var lastDictatorShip = _allDictatorshipsEverForThisCountry.OrderByDescending(d => d.To).First();
-                return _currentYear >= lastDictatorShip.To;
+                return lastDictatorShip.To - _currentYear == 1;
             }
             else
                 return false;
