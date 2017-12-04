@@ -23,8 +23,8 @@ namespace Repository
             
             //Countries
             //ParseCountryBorders();
-            EuropeFilter europeOnly = new EuropeFilter();
-            europeOnly.Filter();
+            //IFilter europeOnly = new ClassificationAvailableFilter();
+            //europeOnly.Filter();
             
             CountryBordersRepository = new CountryBordersRepository();
             Iso3166Countries = Iso3166Repository.GetCollection();

@@ -47,14 +47,15 @@ namespace Game_Logic.Country_Coloring
                 var biggestParty = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
                 _currentCountryRuler = biggestParty;
             }
-            else if(currentDictatorships.Length > 0)
+            else if (currentDictatorships.Length > 0)
             {
+                Debug.Log("In " + _thisCountrysInfo.Iso3166Country.Name + " in " + _currentYear + " theres a dict");
                 _currentCountryRuler = currentDictatorships.First();
             }
-            
-            //if a dictatorship just ended but there havent been elections yet, the ruler is set to be unknown.            
-            if (DictatorShipJustEnded())
+            else if(CurrentRulerIsDictator()) //if the currently set ruler is a dictator BUT his reign ends this year
+            {
                 _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country); 
+            }
             
             gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(_currentCountryRuler.PartyClassification);    
         }
@@ -74,16 +75,11 @@ namespace Game_Logic.Country_Coloring
         {
             return _allElectionsEverForThisCountry.Where(e => e.Year == _currentYear).ToArray();
         }
-
-        private bool DictatorShipJustEnded()
+        
+        
+        private bool CurrentRulerIsDictator()
         {
-            if (_allDictatorshipsEverForThisCountry.Count > 0)
-            {
-                var lastDictatorShip = _allDictatorshipsEverForThisCountry.OrderByDescending(d => d.To).First();
-                return lastDictatorShip.To - _currentYear == 1;
-            }
-            else
-                return false;
+            return _currentCountryRuler.GetRulerType() == RulerType.Dictator;
         }
     }
 }

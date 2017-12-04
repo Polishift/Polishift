@@ -9,10 +9,10 @@ namespace Game_Logic.Country_Coloring
         public static readonly Dictionary<string, Color> ColorPerFamily = new Dictionary<string, Color>()
         {
             {"unknown", Color.white}, //white
-            {"no family", Color.white}, //grey            
+            {"no family", Color.white}, //white
             {"christdem", new Color(1, 0.631f, 0.101f)}, //orange  
             {"libdem", Color.yellow}, //gold
-            {"cons", Color.gray},
+            {"cons", Color.gray}, //gray
             {"confessional", Color.blue}, //blue
             {"socialist", Color.magenta}, //pink            
             {"liberal", new Color(0.101f, 0.968f, 1)}, 
