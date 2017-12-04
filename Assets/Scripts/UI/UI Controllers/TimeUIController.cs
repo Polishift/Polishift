@@ -56,6 +56,7 @@ namespace DefaultNamespace.Map_Displaying.UI
         void AddYearCounter()
         {
             GameObject yearCounter = new GameObject("Year Counter");
+            yearCounter.tag = "UI";
             yearCounter.transform.SetParent(GameObject.Find("TimeControl_Canvas").transform);
 
             //Setting transform
@@ -79,6 +80,7 @@ namespace DefaultNamespace.Map_Displaying.UI
         void AddChildButtonToCanvas(string name, Sprite buttonSprite, Action buttonAction, Vector3 anchoredPosition, float scale)
         {
             GameObject newChildButton = new GameObject(name);
+            newChildButton.tag = "UI";
             newChildButton.transform.SetParent(GameObject.Find("TimeControl_Canvas").transform);
 
             //Setting transform

@@ -32,8 +32,8 @@ namespace Game_Logic.Country_Coloring
             _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
             _countryInformationIsSet = true;
         }
-        
-        void Update()
+
+        private void Update()
         {
             _currentYear = YearCounter.GetCurrentYear();
             if (!_countryInformationIsSet) return;
@@ -49,7 +49,6 @@ namespace Game_Logic.Country_Coloring
             }
             else if (currentDictatorships.Length > 0)
             {
-                Debug.Log("In " + _thisCountrysInfo.Iso3166Country.Name + " in " + _currentYear + " theres a dict");
                 _currentCountryRuler = currentDictatorships.First();
             }
             else if(CurrentRulerIsDictator()) //if the currently set ruler is a dictator BUT his reign ends this year

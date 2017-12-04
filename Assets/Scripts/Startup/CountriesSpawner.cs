@@ -21,6 +21,7 @@ namespace Startup_Scripts
                 if (currentCountry.Alpha3 == "NLD" 
                     || currentCountry.Alpha3 == "BEL" 
                     || currentCountry.Alpha3 == "RUS"
+                    || currentCountry.Name == "belarus"                    
                     || currentCountry.Alpha3 == "ESP"
                     || currentCountry.Alpha3 == "LUX"
                     || currentCountry.Alpha3 == "DNK"
