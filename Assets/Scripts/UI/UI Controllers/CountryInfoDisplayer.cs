@@ -1,6 +1,10 @@
-﻿using Game_Logic.Country_Coloring;
+﻿using System.Collections.Generic;
+using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
+using Dataformatter.Misc;
+using DefaultNamespace.Map_Displaying.UI.Country_Info_Popup;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DefaultNamespace.Map_Displaying.UI
 {
@@ -8,60 +12,45 @@ namespace DefaultNamespace.Map_Displaying.UI
     public class CountryInfoDisplayer : MonoBehaviour
     {
         private CountryInformationReference _countryInformation;
-        
-        Rect _mWindowRect;
-        string _mTitle;
 
 
         public void Init()
         {
             _countryInformation = gameObject.GetComponent<CountryInformationReference>();
-            
-            //todo set alternative country names to be = new
-            _mTitle = _countryInformation.Iso3166Country.Name;
+            CreateBasicInfoPanel();
         }
 
-        //todo replace legacy OnGUI() stuff
-        void OnGUI()
+        private void CreateBasicInfoPanel()
         {
-            const int maxWidth = 640;
-            const int maxHeight = 480;
-
-            int width = Mathf.Min(maxWidth, Screen.width - 20);
-            int height = Mathf.Min(maxHeight, Screen.height - 20);
-            _mWindowRect = new Rect(
-                x: (Screen.width - width) / 2,
-                y: (Screen.height - height) / 2,
-                width: width,
-                height: height);
-
-            _mWindowRect = GUI.Window(0, _mWindowRect, WindowPropertyFunc, _mTitle);
-        }
-
-        void WindowPropertyFunc(int windowId)
-        {
-            const int border = 10;
-            const int width = 50;
-            const int height = 25;
-            const int spacing = 10;
-
-            Rect l = new Rect(
-                border,
-                border + spacing,
-                _mWindowRect.width - border * 2,
-                _mWindowRect.height - border * 2 - height - spacing);
-
-            GUI.Label(l, GetComponent<CountryElectionHandler>().ToString());   
-
+            GenericPanel newPanel = new GenericPanel();            
             
-            Rect b = new Rect(
-                _mWindowRect.width - width - border,
-                _mWindowRect.height - height - border,
-                width,
-                height);
+            string name = _countryInformation.Iso3166Country.Name + "_InfoPanel";
+            Font defaultFont = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
+            Material defaultMaterial = new Material(Shader.Find("UI/Default_Overlay"));
+            Sprite defaultSprite = Resources.Load<Sprite>("Square");
+            Sprite buttonSprite = Resources.Load<Sprite>("Triangle");
+            
+            //GetComponent<CountryElectionHandler>().ToString()
+            var textLabels = new List<TextLabelInfo>
+            {
+                new TextLabelInfo(GetComponent<CountryElectionHandler>().ToString(), 
+                                  defaultFont, 12, 
+                                  defaultMaterial, Color.black, 
+                                  new Vector3(0, 0))
+            };
 
-            if (GUI.Button(b, "ok"))
-                Destroy(this);
+            var buttons = new List<ButtonInfo>
+            {
+                new ButtonInfo(new Vector3(80, 80), new Vector3(0.3f, 0.3f), 
+                               buttonSprite, () =>  newPanel.Destroy())
+            }; 
+            
+            ImageInfo backgroundImageInfo = new ImageInfo(new Vector3(0, 0), 
+                                                          new Vector3(2, 2), 
+                                                          defaultSprite);
+            
+            
+            newPanel.Create(new Vector2(0, 0), name, backgroundImageInfo, textLabels, buttons);
         }
     }
 }

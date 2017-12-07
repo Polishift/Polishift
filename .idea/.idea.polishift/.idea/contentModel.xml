@@ -121,6 +121,12 @@
           </e>
           <e p="UI" t="Include">
             <e p="UI Controllers" t="Include">
+              <e p="Country Info Popup" t="Include">
+                <e p="ButtonInfo.cs" t="Include" />
+                <e p="GenericPanel.cs" t="Include" />
+                <e p="ImageInfo.cs" t="Include" />
+                <e p="TextLabelInfo.cs" t="Include" />
+              </e>
               <e p="CountryInfoDisplayer.cs" t="Include" />
               <e p="TimeUIController.cs" t="Include" />
             </e>

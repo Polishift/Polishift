@@ -1,4 +1,5 @@
 ﻿using DefaultNamespace.Map_Displaying.UI;
+using DefaultNamespace.Map_Displaying.UI.Country_Info_Popup;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,7 +7,7 @@ namespace Map_Displaying.Handlers
 {
     public class OnClickHandler : MonoBehaviour
     {
-        private readonly string UI_TAG = "UI";
+        private readonly string UI_CANVAS = "UI";
         private EventSystem _theEventSystem;
 
         private void Start()
@@ -20,15 +21,28 @@ namespace Map_Displaying.Handlers
             {
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))
+                
+                //ignore if the raycast is over an UI element
+                if (Physics.Raycast(ray, out hit) && !_theEventSystem.IsPointerOverGameObject())
                 {
-                    if (!_theEventSystem.IsPointerOverGameObject()) //ignore if its an UI element
-                    {
-                        hit.transform.gameObject.AddComponent<CountryInfoDisplayer>();
-                        hit.transform.gameObject.GetComponent<CountryInfoDisplayer>().Init();
-                    }
+                    RemoveAllOtherInformationPanels();
+                    AddInformationPanelForHitCountry(hit);
                 }
             }
+        }
+
+        private void RemoveAllOtherInformationPanels()
+        {
+            foreach (Transform childUIPanel in GenericPanel.UI_CANVAS.transform)
+            {
+                Destroy(childUIPanel.gameObject);
+            }
+        }
+
+        private void AddInformationPanelForHitCountry(RaycastHit hit)
+        {
+            hit.transform.gameObject.AddComponent<CountryInfoDisplayer>();
+            hit.transform.gameObject.GetComponent<CountryInfoDisplayer>().Init();
         }
     }
 }
