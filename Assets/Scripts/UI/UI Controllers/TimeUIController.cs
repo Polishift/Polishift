@@ -9,9 +9,16 @@ namespace DefaultNamespace.Map_Displaying.UI
     public class TimeUIController : MonoBehaviour
     {
         public Sprite PauseButtonSprite;
+        public Sprite PauseButtonPressedSprite;
+                
         public Sprite PlayButtonSprite;
+        public Sprite PlayButtonPressedSprite;
+       
         public Sprite FastbackwardButtonSprite;
+        public Sprite FastbackwardButtonPressedSprite;
+
         public Sprite FastforwardButtonSprite;
+        public Sprite FastforwardButtonPressedSprite;
 
 
         private void Update()
@@ -27,10 +34,17 @@ namespace DefaultNamespace.Map_Displaying.UI
             CreateTimeControlsCanvas();
 
             AddYearCounter();
-            AddChildButtonToCanvas("Pause Button", PauseButtonSprite, YearCounter.Pause, new Vector3(380, 140, 3300), 0.55f);
-            AddChildButtonToCanvas("Play Button", PlayButtonSprite, YearCounter.Play, new Vector3(450, 140, 3300), 0.55f);
-            AddChildButtonToCanvas("FFW Button", FastforwardButtonSprite, YearCounter.FastForward, new Vector3(450, 80, 3300), 0.45f);
-            AddChildButtonToCanvas("FBW Button", FastbackwardButtonSprite, YearCounter.FastBackward, new Vector3(380, 80, 3300), 0.45f);
+            AddChildButtonToCanvas("Pause Button", PauseButtonSprite, PauseButtonPressedSprite,
+                                   YearCounter.Pause, new Vector3(380, 140, 3300), 0.55f);
+            
+            AddChildButtonToCanvas("Play Button", PlayButtonSprite, PlayButtonPressedSprite,
+                                   YearCounter.Play, new Vector3(450, 140, 3300), 0.55f);
+            
+            AddChildButtonToCanvas("FFW Button", FastforwardButtonSprite, FastforwardButtonPressedSprite,
+                                   YearCounter.FastForward, new Vector3(450, 80, 3300), 0.45f);
+            
+            AddChildButtonToCanvas("FBW Button", FastbackwardButtonSprite, FastbackwardButtonPressedSprite,
+                                   YearCounter.FastBackward, new Vector3(380, 80, 3300), 0.45f);
         }
 
 
@@ -77,7 +91,8 @@ namespace DefaultNamespace.Map_Displaying.UI
         }
 
 
-        void AddChildButtonToCanvas(string name, Sprite buttonSprite, Action buttonAction, Vector3 anchoredPosition, float scale)
+        void AddChildButtonToCanvas(string name, Sprite buttonSprite, Sprite pressedButtonSprite,
+                                    Action buttonAction, Vector3 anchoredPosition, float scale)
         {
             GameObject newChildButton = new GameObject(name);
             newChildButton.tag = "UI";
@@ -93,6 +108,9 @@ namespace DefaultNamespace.Map_Displaying.UI
 
             newChildButton.GetComponent<Image>().sprite = buttonSprite;
             newChildButton.GetComponent<Button>().targetGraphic = newChildButton.GetComponent<Image>();
+            newChildButton.GetComponent<Button>().transition = Selectable.Transition.SpriteSwap;
+            newChildButton.GetComponent<Button>().spriteState = new SpriteState() {pressedSprite = pressedButtonSprite};
+            
             newChildButton.GetComponent<Button>().onClick.AddListener(buttonAction.Invoke);
         }
     }

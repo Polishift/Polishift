@@ -154,10 +154,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseButtonSprite: {fileID: 21300000, guid: ea651aed8e36fa54e9fdd44f6fb71660, type: 3}
+  PauseButtonPressedSprite: {fileID: 21300000, guid: 4f2aedfff3a104c498a0a53aaa66b5b5,
+    type: 3}
   PlayButtonSprite: {fileID: 21300000, guid: 902e3e899b414aa4296a144e61775073, type: 3}
+  PlayButtonPressedSprite: {fileID: 21300000, guid: 6b1ff052ea9da18469b89edec5900584,
+    type: 3}
   FastbackwardButtonSprite: {fileID: 21300000, guid: eff6c652b72f91b40bdfceed2075841e,
     type: 3}
+  FastbackwardButtonPressedSprite: {fileID: 21300000, guid: 4cfdf0cd1f078fb45aa730e0e9e7ddd2,
+    type: 3}
   FastforwardButtonSprite: {fileID: 21300000, guid: 9a92cd36dbdf3184b90959d6e83925b4,
+    type: 3}
+  FastforwardButtonPressedSprite: {fileID: 21300000, guid: f52ce9db2919f6245938a5ff579c4b45,
     type: 3}
 --- !u!114 &129302150
 MonoBehaviour:
@@ -677,7 +685,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420678886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.6504517, y: -271.39423, z: -217.66284}
+  m_LocalPosition: {x: -5.6503906, y: -271.39423, z: -217.66284}
   m_LocalScale: {x: 0.43833333, y: 0.43833333, z: 0.43833333}
   m_Children: []
   m_Father: {fileID: 1592355906}
