@@ -115,7 +115,10 @@ namespace DefaultNamespace.Map_Displaying.UI.Country_Info_Popup
                 RectTransform trans = labelGameObject.AddComponent<RectTransform>();
                 trans.localScale = new Vector3(1, 1, 1);
                 trans.anchoredPosition = label.positionOnCanvas;
-
+                trans.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, label.widthHeight.x);
+                trans.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, label.widthHeight.y);
+                //text rect and button shouldnt overlap
+                
                 //Setting text properties                
                 Text text = labelGameObject.AddComponent<Text>();
                 text.text = label.Text;

@@ -15,7 +15,8 @@ namespace Game_Logic.Country_Coloring
         
         private List<ElectionEntity> _allElectionsEverForThisCountry;
         private List<DictatorshipEntity> _allDictatorshipsEverForThisCountry;
-        private ICountryRuler _currentCountryRuler;
+        public ElectionEntity[] LastElection;
+        public ICountryRuler CurrentCountryRuler;
 
         private int _currentYear; 
         
@@ -29,7 +30,8 @@ namespace Game_Logic.Country_Coloring
             _allDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
             
             //Setting this to a dummy value in case it is accessed before an election/dictatorship has happened.
-            _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
+            CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
+            LastElection = new ElectionEntity[1] { ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country) };            
             _countryInformationIsSet = true;
         }
 
@@ -44,27 +46,23 @@ namespace Game_Logic.Country_Coloring
             
             if (currentElections.Length > 0)
             {
+                LastElection = currentElections;
+                
                 var biggestParty = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
-                _currentCountryRuler = biggestParty;
+                CurrentCountryRuler = biggestParty;
             }
             else if (currentDictatorships.Length > 0)
             {
-                _currentCountryRuler = currentDictatorships.First();
+                CurrentCountryRuler = currentDictatorships.First();
             }
             else if(CurrentRulerIsDictator()) //if the currently set ruler is a dictator BUT his reign ends this year
             {
-                _currentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country); 
+                CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country); 
             }
             
-            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(_currentCountryRuler.PartyClassification);    
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentCountryRuler.PartyClassification);    
         }
 
-        public override string ToString()
-        {
-            return _thisCountrysInfo.Iso3166Country.Name + " is currently ruled by " + _currentCountryRuler;
-        }
-
-        
         private DictatorshipEntity[] GetCurrentDictatorships()
         {
             return _allDictatorshipsEverForThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
@@ -78,7 +76,7 @@ namespace Game_Logic.Country_Coloring
         
         private bool CurrentRulerIsDictator()
         {
-            return _currentCountryRuler.GetRulerType() == RulerType.Dictator;
+            return CurrentCountryRuler.GetRulerType() == RulerType.Dictator;
         }
     }
 }
