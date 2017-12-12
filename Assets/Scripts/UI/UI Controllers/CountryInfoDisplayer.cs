@@ -32,25 +32,30 @@ namespace DefaultNamespace.Map_Displaying.UI
             Font defaultFont = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
             Material defaultMaterial = new Material(Shader.Find("UI/Default_Overlay"));
             Sprite defaultSprite = Resources.Load<Sprite>("Square");
-            Sprite buttonSprite = Resources.Load<Sprite>("Triangle");
+            Sprite buttonSprite = Resources.Load<Sprite>("Sprites/ExitButton");
 
             //todo: set width height
-            var textLabels = new List<TextLabelInfo> {new TextLabelInfo(GetCurrentRulerText(), defaultFont, 20, defaultMaterial, Color.black, 
+            var textLabels = new List<TextLabelInfo> {new TextLabelInfo(GetCountryName(), defaultFont, 35, defaultMaterial, Color.black, 
+                                                                        new Vector3(0, 60), new Vector2(300,200)),
+                                                      new TextLabelInfo(GetCurrentRulerText(), defaultFont, 20, defaultMaterial, Color.black, 
                                                                         new Vector3(0, 0), new Vector2(300,200)), 
                                                       new TextLabelInfo(GetRunnersUpText(), defaultFont, 20, defaultMaterial, Color.black, 
-                                                                        new Vector3(0, -100), new Vector2(300,200))};  
+                                                                        new Vector3(0, -105), new Vector2(300,200))};  
 
             var buttons = new List<ButtonInfo> {new ButtonInfo(new Vector3(150, 150), new Vector3(0.3f, 0.3f), buttonSprite, () => newPanel.Destroy())};
             
             
             
-            
-            
-            ImageInfo backgroundImageInfo = new ImageInfo(new Vector3(0, 0), new Vector3(4, 4), defaultSprite);
+            ImageInfo backgroundImageInfo = new ImageInfo(new Vector3(0, 0), new Vector3(4.2f, 4.2f), defaultSprite);
 
             newPanel.Create(new Vector2(0, 0), name, backgroundImageInfo, textLabels, buttons);
         }
 
+        private string GetCountryName()
+        {
+            return _countryInformation.Iso3166Country.Name;
+        }
+        
         private string GetCurrentRulerText()
         {
             var currentRuler = _thisCountryElectionHandler.CurrentCountryRuler;
