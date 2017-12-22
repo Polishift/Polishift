@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using Dataformatter.Dataprocessing.Entities;
 using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
@@ -53,7 +54,10 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private string GetCountryName()
         {
-            return _countryInformation.Iso3166Country.Name;
+            var potentiallyLowerCaseName = _countryInformation.Iso3166Country.Name;
+            potentiallyLowerCaseName = Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(potentiallyLowerCaseName.ToLower());
+
+            return potentiallyLowerCaseName;
         }
         
         private string GetCurrentRulerText()

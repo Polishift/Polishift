@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Kraaijeveld\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_polishift.-507998281.01" t="ExcludeRecursive" />
+    <e p="C:\Users\Kraaijeveld\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_polishift.-507998281.00" t="ExcludeRecursive" />
     <e p="E:\Hogeschool\Polishift Organization\polishift" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -111,6 +111,15 @@
             <e p="Reference Scripts" t="Include">
               <e p="CountryInformationReference.cs" t="Include" />
             </e>
+          </e>
+          <e p="Predicting" t="Include">
+            <e p="Naive Bayes Classifier" t="Include">
+              <e p="NaiveBayes.cs" t="Include" />
+              <e p="Record.cs" t="Include" />
+              <e p="Table.cs" t="Include" />
+            </e>
+            <e p="PredictionCreator.cs" t="Include" />
+            <e p="TrainingSetCreator.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />

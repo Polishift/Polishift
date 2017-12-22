@@ -11,8 +11,8 @@ namespace Game_Logic
         private static float _defaultSecondsPerYear = 1.5f;        
         private static float _secondsPerYear = _defaultSecondsPerYear;
 
-        private static int _minimumYear = 1945;
-        private static int _maximumYear = 2012;
+        public static readonly int _minimumYear = 1945;
+        public static readonly int _maximumYear = 2012;
         private static int _currentYear = _minimumYear;
 
 

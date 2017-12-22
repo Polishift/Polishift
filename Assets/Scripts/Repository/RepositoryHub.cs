@@ -15,25 +15,36 @@ namespace Repository
         public static ElectionsRepository ElectionsRepository;
         public static DictatorShipsRepository DictatorShipsRepository;
         
+        public static WarRepository WarRepository;
+        public static GdpPerCapitaRepository GdpPerCapitaRepository;
+        public static GdpTotalRepository GdpTotalRepository;
+        public static PopulationRepository PopulationRepository;
+        public static TvRepository TvRepository;
+        public static ReligionRepository ReligionRepository;
+        public static InterestRepository InterestRepository;
+        
         public static void Init()
         {
             //Parsing
             SetDataPaths();
-            Iso3166Repository.InitializeCollection();
-            
+
             //Countries
             //ParseCountryBorders();
             //IFilter europeOnly = new ClassificationAvailableFilter();
             //europeOnly.Filter();
-            
-            CountryBordersRepository = new CountryBordersRepository();
+
             Iso3166Countries = Iso3166Repository.GetCollection();
             
-            //Elections
+            CountryBordersRepository = new CountryBordersRepository();
             ElectionsRepository = new ElectionsRepository();
-            
-            //Dictatorships
             DictatorShipsRepository = new DictatorShipsRepository();
+            WarRepository = new WarRepository();
+            GdpPerCapitaRepository = new GdpPerCapitaRepository();
+            GdpTotalRepository = new GdpTotalRepository();
+            PopulationRepository = new PopulationRepository();
+            TvRepository = new TvRepository();
+            ReligionRepository = new ReligionRepository();
+            InterestRepository = new InterestRepository();
         }
 
         private static void SetDataPaths()

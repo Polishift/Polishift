@@ -13,21 +13,17 @@ namespace Game_Logic.Country_Coloring
         private CountryInformationReference _thisCountrysInfo;
         private bool _countryInformationIsSet;
         
-        private List<ElectionEntity> _allElectionsEverForThisCountry;
-        private List<DictatorshipEntity> _allDictatorshipsEverForThisCountry;
         public ElectionEntity[] LastElection;
         public ICountryRuler CurrentCountryRuler;
 
-        private int _currentYear; 
+        //todo: This is dirty, but necessary for the predicitions. Fix this
+        public int CurrentYear; 
         
         
         //We dont use start(), since the CountryInformationReference is not filled in immediately.
         public void Init()
         {
             _thisCountrysInfo = gameObject.GetComponent<CountryInformationReference>();
-
-            _allElectionsEverForThisCountry = RepositoryHub.ElectionsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
-            _allDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(_thisCountrysInfo.Iso3166Country.Alpha3).ToList();
             
             //Setting this to a dummy value in case it is accessed before an election/dictatorship has happened.
             CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
@@ -37,7 +33,7 @@ namespace Game_Logic.Country_Coloring
 
         private void Update()
         {
-            _currentYear = YearCounter.GetCurrentYear();
+            CurrentYear = YearCounter.GetCurrentYear();
             if (!_countryInformationIsSet) return;
 
 
@@ -65,12 +61,12 @@ namespace Game_Logic.Country_Coloring
 
         private DictatorshipEntity[] GetCurrentDictatorships()
         {
-            return _allDictatorshipsEverForThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
+            return _thisCountrysInfo.AllDictatorshipsEverForThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
         }
         
         private ElectionEntity[] GetCurrentElections()
         {
-            return _allElectionsEverForThisCountry.Where(e => e.Year == _currentYear).ToArray();
+            return _thisCountrysInfo.AllElectionsEverForThisCountry.Where(e => e.Year == _currentYear).ToArray();
         }
         
         
