@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Dataformatter.Datamodels;
 using Dataformatter.Dataprocessing.Parsing;
 using Dataformatter.Dataprocessing.Processors;
@@ -30,8 +32,6 @@ namespace Repository
 
             //Countries
             //ParseCountryBorders();
-            //IFilter europeOnly = new ClassificationAvailableFilter();
-            //europeOnly.Filter();
 
             Iso3166Countries = Iso3166Repository.GetCollection();
             

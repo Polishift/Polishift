@@ -14,7 +14,7 @@ namespace Startup_Scripts
             gameObject.name = spawnersCountryInfo.Iso3166Country.Name;            
             
             gameObject.GetComponent<CountryInformationReference>().Iso3166Country = spawnersCountryInfo.Iso3166Country;
-            gameObject.GetComponent<CountryElectionHandler>().Init();
+            gameObject.GetComponent<CountryElectionHandler>().Init(spawnersCountryInfo);
             
             //Making sure the pivot == the center of the mesh for scaling purposes later
             gameObject.AddComponent<PivotOffsetter>();

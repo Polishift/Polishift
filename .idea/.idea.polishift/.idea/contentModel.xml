@@ -119,7 +119,6 @@
               <e p="Table.cs" t="Include" />
             </e>
             <e p="PredictionCreator.cs" t="Include" />
-            <e p="TrainingSetCreator.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />

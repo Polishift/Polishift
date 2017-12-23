@@ -1,4 +1,5 @@
-﻿using DefaultNamespace;
+﻿using Dataformatter.Data_accessing.Filters;
+using DefaultNamespace;
 using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
 using Repository;
@@ -16,12 +17,17 @@ namespace Startup_Scripts
             //Probly oughta make the repohub a static gameObject of its own
             RepositoryHub.Init();
 
+            EuropeFilter europeFilter = new EuropeFilter();
+
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                CountryInformationReference countryInformationReference = new CountryInformationReference(currentCountry);
-                CountryPrefab cloneForCurrentCountry = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
+                if (europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
+                {
+                    CountryInformationReference countryInformationReference = new CountryInformationReference(currentCountry);
+                    CountryPrefab cloneForCurrentCountry = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
 
-                cloneForCurrentCountry.Init(countryInformationReference);
+                    cloneForCurrentCountry.Init(countryInformationReference);
+                }
             }
         }
     }

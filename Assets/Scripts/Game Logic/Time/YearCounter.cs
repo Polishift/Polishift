@@ -11,9 +11,9 @@ namespace Game_Logic
         private static float _defaultSecondsPerYear = 1.5f;        
         private static float _secondsPerYear = _defaultSecondsPerYear;
 
-        public static readonly int _minimumYear = 1945;
-        public static readonly int _maximumYear = 2012;
-        private static int _currentYear = _minimumYear;
+        public static readonly int MinimumYear = 1945;
+        public static readonly int MaximumYear = 2012;
+        private static int _currentYear = MinimumYear;
 
 
         public static void Play()
@@ -70,13 +70,13 @@ namespace Game_Logic
 
         private static void IncrementYear()
         {
-            if (_currentYear < _maximumYear)
+            if (_currentYear < MaximumYear)
                 _currentYear++;
         }
 
         private static void DecrementYear()
         {
-            if (_currentYear > _minimumYear)
+            if (_currentYear > MinimumYear)
                 _currentYear--;
         }
         

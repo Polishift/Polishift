@@ -1,24 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using Game_Logic;
+using Game_Logic.Country_Coloring;
+using Map_Displaying.Reference_Scripts;
 using NaiveBayesClassifier;
 using UnityEngine;
 
 namespace Predicting
 {
-    public class PredictionCreator
+    [RequireComponent(typeof(CountryInformationReference), typeof(CountryElectionHandler), typeof(CountryColorer))]
+    public class PredictionCreator : MonoBehaviour
     {
-        public string ToBePredictedCountryName;
         public List<Record> TrainingSet;
         
         //create trainingset. The classification is the current political family. The factors are all the things from the repo's
-        public PredictionCreator()
+        public void Predict()
         {
-            var countryToBePredicted = GameObject.Find(ToBePredictedCountryName);
-            TrainingSet = TrainingSetCreator.CreateTrainingSet(countryToBePredicted);
+            var thisCountriesInfo = gameObject.GetComponent<CountryInformationReference>();
+
+            var classificationRecordForThisCountry = new Record("Unknown", thisCountriesInfo.GetPredictorFactors(YearCounter.MaximumYear - 1, YearCounter.MaximumYear));
+            TrainingSet = thisCountriesInfo.CreateTrainingSetForThisCountry();
+            var predictedClassification = GetPredictedClassification(classificationRecordForThisCountry);
+            
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(predictedClassification);
         }
 
-        public string GetClassification(Record recordToBeClassified)
+        private string GetPredictedClassification(Record recordToBeClassified)
         {
             var classifier = new NaiveBayesClassifier.NaiveBayesClassifier(TrainingSet);
             return classifier.GetClassification(recordToBeClassified);
