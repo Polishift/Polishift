@@ -36,10 +36,8 @@ namespace Map_Displaying.Reference_Scripts
             Iso3166Country = iso3166Country;
 
             AllElectionsEverForThisCountry = RepositoryHub.ElectionsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
-            AllDictatorshipsEverForThisCountry.Add(DictatorshipEntity.GetEmptyDictatorshipEntity(iso3166Country)); //RepositoryHub.DictatorShipsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
-            Debug.Log("AllElectionsEverForThisCountry count = " + AllElectionsEverForThisCountry.Count);            
-            
-            /*
+            AllDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
+
             try
             {
                 _allWarsEverForThisCountry = RepositoryHub.WarRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
@@ -53,7 +51,7 @@ namespace Map_Displaying.Reference_Scripts
             catch (Exception e)
             {
                 //Debug.Log("Country " + Iso3166Country.Alpha3 + " constructor exception: " + e);
-            }*/
+            }
         }
 
         //Do the year loop in here instead

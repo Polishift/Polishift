@@ -26,9 +26,6 @@ namespace Game_Logic.Country_Coloring
         {
             _thisCountrysInfo = thisCountriesInformationReference;
             
-            Debug.Log("_thisCountrysInfo == null? " + (_thisCountrysInfo == null));
-            Debug.Log("_thisCountrysInfo.Elections == null? " + (_thisCountrysInfo.AllElectionsEverForThisCountry == null));
-            
             //Setting this to a dummy value in case it is accessed before an election/dictatorship has happened.
             CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
             LastElection = new ElectionEntity[1] {ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country)};
@@ -40,10 +37,10 @@ namespace Game_Logic.Country_Coloring
             CurrentYear = YearCounter.GetCurrentYear();
             if (!_countryInformationIsSet) return;
 
-
             var currentElections = GetCurrentElections();
-            var currentDictatorships = GetCurrentDictatorships();
-
+            var currentDictatorships = GetCurrentDictatorships();            
+            
+            
             if (currentElections.Length > 0)
             {
                 LastElection = currentElections;
@@ -65,19 +62,19 @@ namespace Game_Logic.Country_Coloring
 
         private ElectionEntity[] GetCurrentElections()
         {
-            if (_thisCountrysInfo.AllElectionsEverForThisCountry.Count() > 0)
+            if (_thisCountrysInfo.AllElectionsEverForThisCountry.Any())
                 return _thisCountrysInfo.AllElectionsEverForThisCountry.Where(e => e.Year == CurrentYear).ToArray();
             else
-                return new ElectionEntity[1] {ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country)};
+                return new ElectionEntity[0] {};
 
         }
 
         private DictatorshipEntity[] GetCurrentDictatorships()
         {
-            if (_thisCountrysInfo.AllDictatorshipsEverForThisCountry.Count() > 0)
+            if (_thisCountrysInfo.AllDictatorshipsEverForThisCountry.Any())
                 return _thisCountrysInfo.AllDictatorshipsEverForThisCountry.Where(d => d.From <= CurrentYear && d.To >= CurrentYear).ToArray();
             else
-                return new DictatorshipEntity[1] {DictatorshipEntity.GetEmptyDictatorshipEntity(_thisCountrysInfo.Iso3166Country)};
+                return new DictatorshipEntity[0] {};
         }
 
 
