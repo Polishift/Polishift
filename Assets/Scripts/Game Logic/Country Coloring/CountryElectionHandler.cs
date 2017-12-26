@@ -17,7 +17,7 @@ namespace Game_Logic.Country_Coloring
         public ElectionEntity[] LastElection;
         public ICountryRuler CurrentCountryRuler;
 
-        //todo: This is dirty, but necessary for the predicitions. Fix this
+        //This is dirty, but necessary for the creation of training sets for the predicitions. 
         public int CurrentYear = YearCounter.MinimumYear;
 
 

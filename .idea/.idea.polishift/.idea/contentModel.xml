@@ -124,8 +124,16 @@
             <e p="RepositoryHub.cs" t="Include" />
           </e>
           <e p="Startup" t="Include">
-            <e p="CountriesSpawner.cs" t="Include" />
-            <e p="CountryPrefab.cs" t="Include" />
+            <e p="Prefabs" t="Include">
+              <e p="AbstractCountryPrefab.cs" t="Include" />
+              <e p="DefaultCountryPrefab.cs" t="Include" />
+              <e p="PredictableCountryPrefab.cs" t="Include" />
+              <e p="SimulationCountryPrefab.cs" t="Include" />
+            </e>
+            <e p="Spawners" t="Include">
+              <e p="CountriesSpawner.cs" t="Include" />
+              <e p="DefaultCountriesSpawner.cs" t="Include" />
+            </e>
           </e>
           <e p="UI" t="Include">
             <e p="UI Controllers" t="Include">

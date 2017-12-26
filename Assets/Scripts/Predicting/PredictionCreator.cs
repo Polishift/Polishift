@@ -11,7 +11,7 @@ namespace Predicting
     [RequireComponent(typeof(CountryInformationReference), typeof(CountryElectionHandler), typeof(CountryColorer))]
     public class PredictionCreator : MonoBehaviour
     {
-        public List<Record> TrainingSet;
+        private List<Record> _trainingSet;
         
         //create trainingset. The classification is the current political family. The factors are all the things from the repo's
         public void Predict()
@@ -19,7 +19,7 @@ namespace Predicting
             var thisCountriesInfo = gameObject.GetComponent<CountryInformationReference>();
 
             var classificationRecordForThisCountry = new Record("Unknown", thisCountriesInfo.GetPredictorFactors(YearCounter.MaximumYear - 1, YearCounter.MaximumYear));
-            TrainingSet = thisCountriesInfo.CreateTrainingSetForThisCountry();
+            _trainingSet = thisCountriesInfo.CreateTrainingSetForThisCountry();
             var predictedClassification = GetPredictedClassification(classificationRecordForThisCountry);
             
             gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(predictedClassification);
@@ -27,7 +27,7 @@ namespace Predicting
 
         private string GetPredictedClassification(Record recordToBeClassified)
         {
-            var classifier = new NaiveBayesClassifier.NaiveBayesClassifier(TrainingSet);
+            var classifier = new NaiveBayesClassifier.NaiveBayesClassifier(_trainingSet);
             return classifier.GetClassification(recordToBeClassified);
         }
     }

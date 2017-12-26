@@ -3,14 +3,15 @@ using DefaultNamespace;
 using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
 using Repository;
+using UnityEditor;
 using UnityEngine;
 
 
 namespace Startup_Scripts
 {
-    public class CountriesSpawner : MonoBehaviour
+    public abstract class CountriesSpawner : MonoBehaviour
     {
-        public CountryPrefab OriginalCountryPrefab;
+        public DefaultCountryPrefab OriginalCountryPrefab;
 
         private void Awake()
         {
@@ -24,11 +25,13 @@ namespace Startup_Scripts
                 if (europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
                 {
                     CountryInformationReference countryInformationReference = new CountryInformationReference(currentCountry);
-                    CountryPrefab cloneForCurrentCountry = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
+                    DefaultCountryPrefab x = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
 
-                    cloneForCurrentCountry.Init(countryInformationReference);
+                    InitializeGivenCountry(countryInformationReference, x);
                 }
             }
         }
+
+        protected abstract void InitializeGivenCountry(CountryInformationReference countryInfo, AbstractCountryPrefab countryPrefab);
     }
 }
