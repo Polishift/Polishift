@@ -15,15 +15,19 @@ namespace DefaultNamespace.Map_Displaying.UI
     public class CountryInfoDisplayer : MonoBehaviour
     {
         private CountryInformationReference _countryInformation;
-        private SimulationRulerHandler _thisSimulationRulerHandler;
+        private AbstractRulerHandler _thisCountriesRulerHandler;
 
         public void Init()
         {
             _countryInformation = gameObject.GetComponent<CountryInformationReference>();
             
-            
-            _thisSimulationRulerHandler = GetComponent<SimulationRulerHandler>();
+            //Getting the correct handler
+            if(GetComponent<SimulationRulerHandler>() != null)
+                _thisCountriesRulerHandler = GetComponent<SimulationRulerHandler>();
+            else
+                _thisCountriesRulerHandler = GetComponent<PredictionRulerHandler>();
 
+            //Creating the panel
             CreateBasicInfoPanel();
         }
 
@@ -38,12 +42,10 @@ namespace DefaultNamespace.Map_Displaying.UI
             Sprite buttonSprite = Resources.Load<Sprite>("Sprites/ExitButton");
 
             //todo: set width height
-            var textLabels = new List<TextLabelInfo> {new TextLabelInfo(GetCountryName(), defaultFont, 35, defaultMaterial, Color.black, 
-                                                                        new Vector3(0, 60), new Vector2(300,200)),
-                                                      new TextLabelInfo(GetCurrentRulerText(), defaultFont, 20, defaultMaterial, Color.black, 
-                                                                        new Vector3(0, 0), new Vector2(300,200)), 
-                                                      new TextLabelInfo(GetRunnersUpText(), defaultFont, 20, defaultMaterial, Color.black, 
-                                                                        new Vector3(0, -105), new Vector2(300,200))};  
+            var textLabels = new List<TextLabelInfo> {new TextLabelInfo(GetCountryName(), defaultFont, 35, defaultMaterial, 
+                                                                        Color.black, new Vector3(0, 60), new Vector2(300, 200)), 
+                                                      new TextLabelInfo(GetCurrentRulerText(), defaultFont, 20, defaultMaterial, 
+                                                                        Color.black, new Vector3(0, 0), new Vector2(300, 200))};
 
             var buttons = new List<ButtonInfo> {new ButtonInfo(new Vector3(150, 150), new Vector3(0.3f, 0.3f), buttonSprite, () => newPanel.Destroy())};
             
@@ -61,35 +63,10 @@ namespace DefaultNamespace.Map_Displaying.UI
 
             return potentiallyLowerCaseName;
         }
-        
+
         private string GetCurrentRulerText()
         {
-            var currentRuler = _thisSimulationRulerHandler.CurrentCountryRuler;
-
-            return _countryInformation.Iso3166Country.Name + " is ruled by the " + currentRuler;
-        }
-
-        private string GetRunnersUpText()
-        {
-            string returnStr = "";
-
-            if (_thisSimulationRulerHandler.CurrentCountryRuler.GetRulerType() != RulerType.Dictator)
-            {
-                returnStr = "The runners up were: \n";
-                foreach (var runnerUp in GetRunnerUpsForLastElection())
-                {
-                    returnStr += runnerUp.PartyName + ": " + runnerUp.TotalVotePercentage.ToString ("0.##") + "% \n";
-                }
-            }
-            
-            return returnStr;
-        }
-
-        private ElectionEntity[] GetRunnerUpsForLastElection()
-        {
-            var biggestFiveParties = _thisSimulationRulerHandler.LastElection.OrderByDescending(e => e.TotalVotePercentage).Take(5);
-
-            return biggestFiveParties.Skip(1).ToArray();
+            return _thisCountriesRulerHandler.RulerToText();
         }
     }
 }

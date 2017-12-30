@@ -11,12 +11,11 @@ namespace Game_Logic.Country_Coloring
     public class PredictionRulerHandler : AbstractRulerHandler
     {
         public int CurrentYear;
-        public ElectionEntity CurrentRulingParty;
 
         public override void Init()
         {
             ThisCountriesInfo = gameObject.GetComponent<CountryInformationReference>();
-            CurrentRulingParty = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
+            CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
 
             IsInitialized = true;
         }
@@ -24,7 +23,7 @@ namespace Game_Logic.Country_Coloring
         public override void HandleRuler()
         {
             //If we are either not ready yet, or done predicting, we dont do anything.            
-            if (!IsInitialized || CurrentRulingParty.PartyClassification != "unknown")
+            if (!IsInitialized || CurrentRuler.PartyClassification != "unknown")
                 return;
             
             var trainingSet = new List<Record>();
@@ -45,12 +44,12 @@ namespace Game_Logic.Country_Coloring
                 var currentElections = ThisCountriesInfo.AllElectionsEverForThisCountry.Where(e => e.Year == CurrentYear);
                 if (currentElections.Any())
                 {
-                    CurrentRulingParty = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
+                    CurrentRuler = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
                 }
 
                 //Retrieving the currently ruling party's political family
                 CurrentYear = currentYear;
-                var currentCountrysPoliticalFamily = CurrentRulingParty.PartyClassification;
+                var currentCountrysPoliticalFamily = CurrentRuler.PartyClassification;
                 
                 //Adding the combination of current ruling family + predictor values to the training set
                 trainingSet.Add(new Record(currentCountrysPoliticalFamily, 
@@ -63,11 +62,15 @@ namespace Game_Logic.Country_Coloring
             
             //Finally, getting the most likely future classification and setting the ruler to be of that family.
             var predictedClassification = naiveBayesClassifier.GetClassification(classificationRecordForThisCountry);
-            CurrentRulingParty = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
-            CurrentRulingParty.Year = YearCounter.MaximumYear;
-            CurrentRulingParty.PartyClassification = predictedClassification;
+            CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
+            CurrentRuler.PartyClassification = predictedClassification;
 
-            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRulingParty.PartyClassification);
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRuler.PartyClassification);
+        }
+        
+        public override string RulerToText()
+        {
+            return "We predict that a party of type " + CurrentRuler.PartyClassification + " will rule next.";
         }
 
         public bool IsReady()
