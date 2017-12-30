@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game_Logic.Country_Coloring
 {
-    public static class PoliticalFamilyColors
+    public static class PoliticalFamilyRecords
     {
         public static readonly Dictionary<string, Color> ColorPerFamily = new Dictionary<string, Color>()
         {
@@ -15,7 +15,7 @@ namespace Game_Logic.Country_Coloring
             {"cons", Color.gray}, //gray
             {"confessional", Color.blue}, //blue
             {"socialist", Color.magenta}, //pink            
-            {"liberal", new Color(0.101f, 0.968f, 1)}, 
+            {"liberal", new Color(0.101f, 0.968f, 1)},
             {"rad left", Color.red}, //red       
             {"rad right", new Color(0.545f, 0.270f, 0.074f)}, //brown
             {"green", Color.green}, //green 

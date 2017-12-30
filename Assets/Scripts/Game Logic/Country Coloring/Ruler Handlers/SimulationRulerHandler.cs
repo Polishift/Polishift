@@ -8,38 +8,32 @@ using UnityEngine;
 
 namespace Game_Logic.Country_Coloring
 {
-    [RequireComponent(typeof(CountryInformationReference), typeof(CountryColorer))]
-    public class CountryElectionHandler : MonoBehaviour
+    //Todo: make this extend a common interface
+    public class SimulationRulerHandler : AbstractRulerHandler
     {
-        private CountryInformationReference _thisCountrysInfo;
-        private bool _countryInformationIsSet;
+        private int _currentYear = YearCounter.MinimumYear;
 
         public ElectionEntity[] LastElection;
         public ICountryRuler CurrentCountryRuler;
 
-        //This is dirty, but necessary for the creation of training sets for the predicitions. 
-        public int CurrentYear = YearCounter.MinimumYear;
-
 
         //We dont use start(), since the CountryInformationReference is not filled in immediately.
-        public void Init(CountryInformationReference thisCountriesInformationReference)
+        public override void Init()
         {
-            _thisCountrysInfo = thisCountriesInformationReference;
+            ThisCountriesInfo = gameObject.GetComponent<CountryInformationReference>();
             
             //Setting this to a dummy value in case it is accessed before an election/dictatorship has happened.
-            CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
-            LastElection = new ElectionEntity[1] {ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country)};
-            _countryInformationIsSet = true;
+            CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
+            LastElection = new ElectionEntity[1] {ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country)};
+            IsInitialized = true;
         }
 
-        private void Update()
+        public override void HandleRuler()
         {
-            CurrentYear = YearCounter.GetCurrentYear();
-            if (!_countryInformationIsSet) return;
-
+            _currentYear = YearCounter.GetCurrentYear();
+            
             var currentElections = GetCurrentElections();
             var currentDictatorships = GetCurrentDictatorships();            
-            
             
             if (currentElections.Length > 0)
             {
@@ -54,16 +48,18 @@ namespace Game_Logic.Country_Coloring
             }
             else if (CurrentRulerIsDictator()) //if the currently set ruler is a dictator BUT his reign ends this year
             {
-                CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(_thisCountrysInfo.Iso3166Country);
+                CurrentCountryRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             }
 
             gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentCountryRuler.PartyClassification);
         }
+      
+
 
         private ElectionEntity[] GetCurrentElections()
         {
-            if (_thisCountrysInfo.AllElectionsEverForThisCountry.Any())
-                return _thisCountrysInfo.AllElectionsEverForThisCountry.Where(e => e.Year == CurrentYear).ToArray();
+            if (ThisCountriesInfo.AllElectionsEverForThisCountry.Any())
+                return ThisCountriesInfo.AllElectionsEverForThisCountry.Where(e => e.Year == _currentYear).ToArray();
             else
                 return new ElectionEntity[0] {};
 
@@ -71,8 +67,8 @@ namespace Game_Logic.Country_Coloring
 
         private DictatorshipEntity[] GetCurrentDictatorships()
         {
-            if (_thisCountrysInfo.AllDictatorshipsEverForThisCountry.Any())
-                return _thisCountrysInfo.AllDictatorshipsEverForThisCountry.Where(d => d.From <= CurrentYear && d.To >= CurrentYear).ToArray();
+            if (ThisCountriesInfo.AllDictatorshipsEverForThisCountry.Any())
+                return ThisCountriesInfo.AllDictatorshipsEverForThisCountry.Where(d => d.From <= _currentYear && d.To >= _currentYear).ToArray();
             else
                 return new DictatorshipEntity[0] {};
         }

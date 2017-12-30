@@ -45,8 +45,6 @@ namespace Repository
             TvRepository = new TvRepository();
             ReligionRepository = new ReligionRepository();
             InterestRepository = new InterestRepository();
-            
-            Debug.Log("Amount of dictators: " + DictatorShipsRepository.GetAll().Length);
         }
 
         private static void SetDataPaths()

@@ -15,12 +15,14 @@ namespace DefaultNamespace.Map_Displaying.UI
     public class CountryInfoDisplayer : MonoBehaviour
     {
         private CountryInformationReference _countryInformation;
-        private CountryElectionHandler _thisCountryElectionHandler;
+        private SimulationRulerHandler _thisSimulationRulerHandler;
 
         public void Init()
         {
             _countryInformation = gameObject.GetComponent<CountryInformationReference>();
-            _thisCountryElectionHandler = GetComponent<CountryElectionHandler>();
+            
+            
+            _thisSimulationRulerHandler = GetComponent<SimulationRulerHandler>();
 
             CreateBasicInfoPanel();
         }
@@ -62,7 +64,8 @@ namespace DefaultNamespace.Map_Displaying.UI
         
         private string GetCurrentRulerText()
         {
-            var currentRuler = _thisCountryElectionHandler.CurrentCountryRuler;
+            var currentRuler = _thisSimulationRulerHandler.CurrentCountryRuler;
+
             return _countryInformation.Iso3166Country.Name + " is ruled by the " + currentRuler;
         }
 
@@ -70,7 +73,7 @@ namespace DefaultNamespace.Map_Displaying.UI
         {
             string returnStr = "";
 
-            if (_thisCountryElectionHandler.CurrentCountryRuler.GetRulerType() != RulerType.Dictator)
+            if (_thisSimulationRulerHandler.CurrentCountryRuler.GetRulerType() != RulerType.Dictator)
             {
                 returnStr = "The runners up were: \n";
                 foreach (var runnerUp in GetRunnerUpsForLastElection())
@@ -84,7 +87,7 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private ElectionEntity[] GetRunnerUpsForLastElection()
         {
-            var biggestFiveParties = _thisCountryElectionHandler.LastElection.OrderByDescending(e => e.TotalVotePercentage).Take(5);
+            var biggestFiveParties = _thisSimulationRulerHandler.LastElection.OrderByDescending(e => e.TotalVotePercentage).Take(5);
 
             return biggestFiveParties.Skip(1).ToArray();
         }

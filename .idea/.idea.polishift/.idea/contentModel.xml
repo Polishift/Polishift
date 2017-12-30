@@ -32,8 +32,12 @@
           <e p="Game Logic" t="Include">
             <e p="Country Coloring" t="Include">
               <e p="CountryColorer.cs" t="Include" />
-              <e p="CountryElectionHandler.cs" t="Include" />
-              <e p="PoliticalFamilyColors.cs" t="Include" />
+              <e p="PoliticalFamilyRecords.cs" t="Include" />
+              <e p="Ruler Handlers" t="Include">
+                <e p="AbstractRulerHandler.cs" t="Include" />
+                <e p="PredictionRulerHandler.cs" t="Include" />
+                <e p="SimulationRulerHandler.cs" t="Include" />
+              </e>
             </e>
             <e p="Time" t="Include">
               <e p="YearCounter.cs" t="Include" />
@@ -118,7 +122,6 @@
               <e p="Record.cs" t="Include" />
               <e p="Table.cs" t="Include" />
             </e>
-            <e p="PredictionCreator.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />
@@ -126,13 +129,15 @@
           <e p="Startup" t="Include">
             <e p="Prefabs" t="Include">
               <e p="AbstractCountryPrefab.cs" t="Include" />
+              <e p="CountryPrefabDecorator.cs" t="Include" />
               <e p="DefaultCountryPrefab.cs" t="Include" />
-              <e p="PredictableCountryPrefab.cs" t="Include" />
-              <e p="SimulationCountryPrefab.cs" t="Include" />
+              <e p="PredictionCountryPrefabDecorator.cs" t="Include" />
+              <e p="SimulationCountryPrefabDecoratoer.cs" t="Include" />
             </e>
             <e p="Spawners" t="Include">
               <e p="CountriesSpawner.cs" t="Include" />
               <e p="DefaultCountriesSpawner.cs" t="Include" />
+              <e p="PredictionCountriesSpawner.cs" t="Include" />
             </e>
           </e>
           <e p="UI" t="Include">

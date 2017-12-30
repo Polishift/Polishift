@@ -56,7 +56,7 @@
 
 /*
  * Portions of the following code (notably: the methods PolygonUnion, 
- * PolygonSubtract, PolygonIntersect, PolygonOperationContext.Init,
+ * PolygonSubtract, PolygonIntersect, PolygonOperationContext.Initialize,
  * PolygonOperationContext.VerticesIntersect,
  * PolygonOperationContext.PointInPolygonAngle, and
  * PolygonOperationContext.VectorAngle are from the Farseer Physics Engine 3.0

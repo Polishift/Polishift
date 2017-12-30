@@ -1,4 +1,5 @@
 ﻿using Dataformatter.Data_accessing.Filters;
+using Dataformatter.Data_accessing.Repositories;
 using DefaultNamespace;
 using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
@@ -22,16 +23,16 @@ namespace Startup_Scripts
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                if (europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
+                if (currentCountry.Alpha3.Equals("DEU"))//europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
                 {
-                    CountryInformationReference countryInformationReference = new CountryInformationReference(currentCountry);
-                    DefaultCountryPrefab x = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
-
-                    InitializeGivenCountry(countryInformationReference, x);
+                    DefaultCountryPrefab countryPrefab = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
+                    countryPrefab.Initialize(currentCountry);
+                    
+                    InitializeGivenCountry(currentCountry, countryPrefab);
                 }
             }
         }
 
-        protected abstract void InitializeGivenCountry(CountryInformationReference countryInfo, AbstractCountryPrefab countryPrefab);
+        protected abstract void InitializeGivenCountry(Iso3166Country isoCountry, AbstractCountryPrefab countryPrefab);
     }
 }

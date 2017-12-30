@@ -403,7 +403,7 @@ namespace Poly2Tri
                                 }
                                 else
                                 {
-                                    throw new Exception("PolygonOperationContext.Init had an error during initialization");
+                                    throw new Exception("PolygonOperationContext.Initialize had an error during initialization");
                                 }
                             }
                             PolygonUtil.PolyUnionError pue = PolygonUtil.PolygonOperation(ctx);

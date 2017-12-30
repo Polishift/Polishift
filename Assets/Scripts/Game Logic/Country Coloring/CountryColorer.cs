@@ -14,7 +14,7 @@ namespace Game_Logic.Country_Coloring
         public void UpdateCountryColorForNewRuler(string classification)
         {
             var lowerCaseClassification = classification.ToLower(); //just in case (get it?)
-            var colorForRulingParty = PoliticalFamilyColors.ColorPerFamily[lowerCaseClassification];
+            var colorForRulingParty = PoliticalFamilyRecords.ColorPerFamily[lowerCaseClassification];
             gameObject.GetComponent<MeshRenderer>().material.color = colorForRulingParty;
         }
     }
