@@ -23,11 +23,14 @@ namespace Startup_Scripts
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                if (currentCountry.Alpha3.Equals("DEU"))//europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
+                //europeFilter.EuropeanSet.Contains(currentCountry.Alpha3)
+                
+                if (currentCountry.Alpha3.Equals("DEU"))
                 {
+                    //Init 1
                     DefaultCountryPrefab countryPrefab = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
-                    countryPrefab.Initialize(currentCountry);
                     
+                    //Init 2 calls the base, too
                     InitializeGivenCountry(currentCountry, countryPrefab);
                 }
             }

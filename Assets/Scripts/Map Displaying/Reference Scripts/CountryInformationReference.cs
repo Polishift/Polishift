@@ -22,23 +22,23 @@ namespace Map_Displaying.Reference_Scripts
         public List<DictatorshipEntity> AllDictatorshipsEverForThisCountry;
 
         //TODO FIX THIS AND INTEREST
-        private List<WarEntity> _allWarsEverForThisCountry = new List<WarEntity>();
+        private List<WarEntity> _allWarsEverForThisCountry;
+
         private List<GdpPerCapitaEntity> _allGdpPerCapitaEverForThisCountry;
         private List<GdpTotalEntity> _allGdpTotalEverForThisCountry;
         private List<PopulationEntity> _allPopulationEverForThisCountry;
         private List<TvEntity> _allTvEverForThisCountry;
         private List<ReligionEntity> _allReligionEverForThisCountry;
-        private List<InterestEntity> _allInterestEverForThisCountry = new List<InterestEntity>();
+        private List<InterestEntity> _allInterestEverForThisCountry;
 
 
         public void Init(Iso3166Country iso3166Country)
         {
             Iso3166Country = iso3166Country;
-            _allInterestEverForThisCountry = new List<InterestEntity>();
 
             AllElectionsEverForThisCountry = RepositoryHub.ElectionsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             AllDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
-            //_allWarsEverForThisCountry = RepositoryHub.WarRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
+            _allWarsEverForThisCountry = RepositoryHub.WarRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allGdpPerCapitaEverForThisCountry = RepositoryHub.GdpPerCapitaRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allGdpTotalEverForThisCountry = RepositoryHub.GdpTotalRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allPopulationEverForThisCountry = RepositoryHub.PopulationRepository.GetByCountry(Iso3166Country.Alpha3).ToList();

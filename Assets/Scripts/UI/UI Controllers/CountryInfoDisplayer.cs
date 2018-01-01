@@ -50,7 +50,6 @@ namespace DefaultNamespace.Map_Displaying.UI
             var buttons = new List<ButtonInfo> {new ButtonInfo(new Vector3(150, 150), new Vector3(0.3f, 0.3f), buttonSprite, () => newPanel.Destroy())};
             
             
-            
             ImageInfo backgroundImageInfo = new ImageInfo(new Vector3(0, 0), new Vector3(4.2f, 4.2f), defaultSprite);
 
             newPanel.Create(new Vector2(0, 0), name, backgroundImageInfo, textLabels, buttons);
