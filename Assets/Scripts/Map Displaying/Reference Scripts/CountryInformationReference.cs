@@ -18,18 +18,18 @@ namespace Map_Displaying.Reference_Scripts
     {
         public Iso3166Country Iso3166Country;
 
-        public List<ElectionEntity> AllElectionsEverForThisCountry;
-        public List<DictatorshipEntity> AllDictatorshipsEverForThisCountry;
+        public List<ElectionEntity> AllElectionsEverForThisCountry = new List<ElectionEntity>();
+        public List<DictatorshipEntity> AllDictatorshipsEverForThisCountry = new List<DictatorshipEntity>();
 
         //TODO FIX THIS AND INTEREST
-        private List<WarEntity> _allWarsEverForThisCountry;
+        private List<WarEntity> _allWarsEverForThisCountry = new List<WarEntity>();
 
-        private List<GdpPerCapitaEntity> _allGdpPerCapitaEverForThisCountry;
-        private List<GdpTotalEntity> _allGdpTotalEverForThisCountry;
-        private List<PopulationEntity> _allPopulationEverForThisCountry;
-        private List<TvEntity> _allTvEverForThisCountry;
-        private List<ReligionEntity> _allReligionEverForThisCountry;
-        private List<InterestEntity> _allInterestEverForThisCountry;
+        private List<GdpPerCapitaEntity> _allGdpPerCapitaEverForThisCountry = new List<GdpPerCapitaEntity>();
+        private List<GdpTotalEntity> _allGdpTotalEverForThisCountry = new List<GdpTotalEntity>();
+        private List<PopulationEntity> _allPopulationEverForThisCountry = new List<PopulationEntity>();
+        private List<TvEntity> _allTvEverForThisCountry = new List<TvEntity>();
+        private List<ReligionEntity> _allReligionEverForThisCountry = new List<ReligionEntity>();
+        private List<InterestEntity> _allInterestEverForThisCountry = new List<InterestEntity>();
 
 
         public void Init(Iso3166Country iso3166Country)

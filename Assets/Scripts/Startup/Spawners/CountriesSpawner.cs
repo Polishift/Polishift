@@ -16,21 +16,18 @@ namespace Startup_Scripts
 
         private void Awake()
         {
-            //Probly oughta make the repohub a static gameObject of its own
             RepositoryHub.Init();
 
             EuropeFilter europeFilter = new EuropeFilter();
 
             foreach (var currentCountry in RepositoryHub.Iso3166Countries)
             {
-                //europeFilter.EuropeanSet.Contains(currentCountry.Alpha3)
                 
-                if (currentCountry.Alpha3.Equals("DEU"))
+                //if (currentCountry.Alpha3.Equals("DEU"))
+                if(europeFilter.EuropeanSet.Contains(currentCountry.Alpha3))
                 {
-                    //Init 1
                     DefaultCountryPrefab countryPrefab = Instantiate(OriginalCountryPrefab, Vector3.zero, transform.rotation);
                     
-                    //Init 2 calls the base, too
                     InitializeGivenCountry(currentCountry, countryPrefab);
                 }
             }

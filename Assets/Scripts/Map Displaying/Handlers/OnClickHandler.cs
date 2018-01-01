@@ -1,5 +1,6 @@
 ﻿using DefaultNamespace.Map_Displaying.UI;
 using DefaultNamespace.Map_Displaying.UI.Country_Info_Popup;
+using Map_Displaying.Reference_Scripts;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -22,8 +23,10 @@ namespace Map_Displaying.Handlers
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 
-                //ignore if the raycast is over an UI element
-                if (Physics.Raycast(ray, out hit) && !_theEventSystem.IsPointerOverGameObject())
+                //ignore if the raycast is over an UI element, or if it's not a country 
+                if (Physics.Raycast(ray, out hit) 
+                    && !_theEventSystem.IsPointerOverGameObject()
+                    && hit.transform.gameObject.GetComponent<CountryInformationReference>() != null)
                 {
                     RemoveAllOtherInformationPanels();
                     AddInformationPanelForHitCountry(hit);

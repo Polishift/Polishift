@@ -35,7 +35,9 @@ namespace DefaultNamespace.Map_Displaying.UI
         {
             GenericPanel newPanel = new GenericPanel();
 
+            //This isn't inited anymore? 
             string name = _countryInformation.Iso3166Country.Name + "_InfoPanel";
+            Debug.Log("_countryInformation.Iso3166Country = " + _countryInformation.Iso3166Country);
             Font defaultFont = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
             Material defaultMaterial = new Material(Shader.Find("UI/Default_Overlay"));
             Sprite defaultSprite = Resources.Load<Sprite>("Square");
