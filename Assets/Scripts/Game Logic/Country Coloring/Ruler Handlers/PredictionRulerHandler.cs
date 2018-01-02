@@ -4,6 +4,7 @@ using System.Linq;
 using Dataformatter.Dataprocessing.Entities;
 using Map_Displaying.Reference_Scripts;
 using NaiveBayesClassifier;
+using Predicting.Nearest_Neighbours_Classifier;
 using UnityEngine;
 
 namespace Game_Logic.Country_Coloring
@@ -64,11 +65,12 @@ namespace Game_Logic.Country_Coloring
             }
             
             //Creating the classifier, plus the record for the current (to be predicted) state of this country
-            var naiveBayesClassifier = new NaiveBayesClassifier.NaiveBayesClassifier(trainingSet);
+            //var naiveBayesClassifier = new NaiveBayesClassifier.NaiveBayesClassifier(trainingSet);
             var classificationRecordForThisCountry = new Record("Unknown", ThisCountriesInfo.GetPredictorFactors(YearCounter.MaximumYear - 1, YearCounter.MaximumYear));
+            var classifier = new KNN(trainingSet);
             
             //Finally, getting the most likely future classification and setting the ruler to be of that family.
-            var predictedClassification = naiveBayesClassifier.GetClassification(classificationRecordForThisCountry);
+            var predictedClassification = classifier.GetClassification(classificationRecordForThisCountry);
             CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             CurrentRuler.PartyClassification = predictedClassification;
 

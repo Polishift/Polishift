@@ -1,11 +1,12 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Predicting;
 using UnityEngine;
 
 namespace NaiveBayesClassifier
 {
-    public class NaiveBayesClassifier
+    public class NaiveBayesClassifier : AbstractClassifier
     {
         private List<Record> _trainingSet;
 
@@ -17,26 +18,12 @@ namespace NaiveBayesClassifier
         public NaiveBayesClassifier(List<Record> trainingSet)
         {
             foreach (var r in trainingSet)
-            {
-                Debug.Log("Record from training set has class " + r.classification);                
-            }
+                Debug.Log("Record from training set has class " + r.Classification);
 
-            SanitizeTrainingSet(trainingSet);
+            _trainingSet = base.SanitizeTrainingSet(trainingSet);
 
             CreateFrequencyTableAndCountClassifications();
             CreateLikelihoodTable();
-        }
-
-        private void SanitizeTrainingSet(List<Record> trainingSet)
-        {
-            var trainingSetWithoutUnknowns = trainingSet.Where(t => !t.classification.Equals("unknown")).ToList();
-            
-            //if all training set records are unknown, thje trainingsetWithoutUnknowns would be empty.
-            //to avoid nulls, we substitute it with a one record-only list.
-            if (trainingSetWithoutUnknowns.Count() <= 0)
-                trainingSetWithoutUnknowns.Add(new Record("unknown", new Dictionary<string, bool>()));
-
-            _trainingSet = trainingSetWithoutUnknowns;
         }
         
 
@@ -44,7 +31,7 @@ namespace NaiveBayesClassifier
         * Classification creation 
         **/
 
-        public string GetClassification(Record recordToBeClassified)
+        public override string GetClassification(Record recordToBeClassified)
         {
             var likelihoodsPerClassification = new Dictionary<string, double>();
             
@@ -70,7 +57,7 @@ namespace NaiveBayesClassifier
                 var predictorsName = predictorKV.Key;
                 var predictorLikelihood = predictorKV.Value;
 
-                if (recordToBeClassified.predictors[predictorsName] == true)
+                if (recordToBeClassified.Predictors[predictorsName] == true)
                     finalProbability = finalProbability * predictorLikelihood;
             }
             return finalProbability;
@@ -86,24 +73,24 @@ namespace NaiveBayesClassifier
             foreach (var record in _trainingSet)
             {
                 //populating count dict
-                if (!_classificationCounts.ContainsKey(record.classification))
+                if (!_classificationCounts.ContainsKey(record.Classification))
                 {
-                    _classificationCounts.Add(record.classification, 1);
+                    _classificationCounts.Add(record.Classification, 1);
                 }
                 else
-                    _classificationCounts[record.classification] += 1;
+                    _classificationCounts[record.Classification] += 1;
 
                 //populating frequency table
-                _frequencyTable.PotentiallyAddClassification(record.classification);
+                _frequencyTable.PotentiallyAddClassification(record.Classification);
 
-                foreach (var predictor in record.predictors)
+                foreach (var predictor in record.Predictors)
                 {
-                    if (!_frequencyTable.rowsPerColumn[record.classification].ContainsKey(predictor.Key))
-                        _frequencyTable.rowsPerColumn[record.classification].Add(predictor.Key, 0);
+                    if (!_frequencyTable.rowsPerColumn[record.Classification].ContainsKey(predictor.Key))
+                        _frequencyTable.rowsPerColumn[record.Classification].Add(predictor.Key, 0);
 
                     if (predictor.Value == true)
                     {
-                        _frequencyTable.rowsPerColumn[record.classification][predictor.Key] += 1;
+                        _frequencyTable.rowsPerColumn[record.Classification][predictor.Key] += 1;
                     }
                 }
             }

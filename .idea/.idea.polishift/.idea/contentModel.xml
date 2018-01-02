@@ -117,11 +117,15 @@
             </e>
           </e>
           <e p="Predicting" t="Include">
+            <e p="AbstractClassifier.cs" t="Include" />
+            <e p="KNN Classifier" t="Include">
+              <e p="KNN.cs" t="Include" />
+            </e>
             <e p="Naive Bayes Classifier" t="Include">
               <e p="NaiveBayes.cs" t="Include" />
-              <e p="Record.cs" t="Include" />
               <e p="Table.cs" t="Include" />
             </e>
+            <e p="Record.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="RepositoryHub.cs" t="Include" />
