@@ -42,15 +42,22 @@ namespace Game_Logic.Country_Coloring
                 
                 //(temporarily) Setting the CurrentRulingParty to the winner of the current elections
                 var currentElections = ThisCountriesInfo.AllElectionsEverForThisCountry.Where(e => e.Year == CurrentYear);
+                var currentDictators = ThisCountriesInfo.AllDictatorshipsEverForThisCountry.Where(e => e.From >= CurrentYear
+                                                                                                       && e.To <= CurrentYear);
                 if (currentElections.Any())
                 {
                     CurrentRuler = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
+                }
+                else if (currentDictators.Any())
+                {
+                    CurrentRuler = currentDictators.First();
                 }
 
                 //Retrieving the currently ruling party's political family
                 CurrentYear = currentYear;
                 var currentCountrysPoliticalFamily = CurrentRuler.PartyClassification;
                 
+                Debug.Log("currentCountrysPoliticalFamily = " + currentCountrysPoliticalFamily);
                 //Adding the combination of current ruling family + predictor values to the training set
                 trainingSet.Add(new Record(currentCountrysPoliticalFamily, 
                                 ThisCountriesInfo.GetPredictorFactors(previousYear, currentYear)));
@@ -70,7 +77,7 @@ namespace Game_Logic.Country_Coloring
         
         public override string RulerToText()
         {
-            return "We predict that a party of type " + CurrentRuler.PartyClassification + " will rule next.";
+            return "We predict that a party of type " + CurrentRuler.PartyClassification + " will rule after " + YearCounter.MaximumYear + ".";
         }
 
         public bool IsReady()
