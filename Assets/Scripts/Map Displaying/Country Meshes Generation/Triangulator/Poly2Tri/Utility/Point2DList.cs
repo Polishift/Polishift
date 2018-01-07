@@ -507,7 +507,7 @@ namespace Poly2Tri
         /// <param name="value">The amount to rotate by in radians.</param>
         public void Rotate(double radians)
         {
-            // kickin' it old-skool since I don't want to create a Matrix class for now.
+            // kickin' it old-skool since I don't want to create a NeuralMatrix class for now.
             double cosr = Math.Cos(radians);
             double sinr = Math.Sin(radians);
             foreach (Point2D p in mPoints)

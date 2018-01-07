@@ -13,8 +13,6 @@ namespace Startup_Scripts
     {
         public override void Initialize(Iso3166Country isoCountry)
         {
-            Debug.Log("Initialzing default prefab");
-            
             gameObject.name = isoCountry.Name;
             gameObject.GetComponent<CountryInformationReference>().Init(isoCountry);
 

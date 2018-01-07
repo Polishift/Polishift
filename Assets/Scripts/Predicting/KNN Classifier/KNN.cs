@@ -11,7 +11,7 @@ namespace Predicting.Nearest_Neighbours_Classifier
         
         public KNN(List<Record> trainingSet)
         {
-            K = 4;
+            K = 7;
             _trainingSet = base.SanitizeTrainingSet(trainingSet);    
         }
             
