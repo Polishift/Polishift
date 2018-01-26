@@ -118,20 +118,16 @@
           </e>
           <e p="Predicting" t="Include">
             <e p="AbstractClassifier.cs" t="Include" />
+            <e p="ID3 Classifier" t="Include">
+              <e p="ID3.cs" t="Include" />
+              <e p="Node.cs" t="Include" />
+            </e>
             <e p="KNN Classifier" t="Include">
               <e p="KNN.cs" t="Include" />
             </e>
             <e p="Naive Bayes Classifier" t="Include">
               <e p="NaiveBayes.cs" t="Include" />
               <e p="Table.cs" t="Include" />
-            </e>
-            <e p="Neural Network Classifier" t="Include">
-              <e p="BackPropagator.cs" t="Include" />
-              <e p="MiniBatch.cs" t="Include" />
-              <e p="NeuralMatrix.cs" t="Include" />
-              <e p="NeuralNetwork.cs" t="Include" />
-              <e p="NeuralNetworkClassifier.cs" t="Include" />
-              <e p="Operators.cs" t="Include" />
             </e>
             <e p="Record.cs" t="Include" />
           </e>

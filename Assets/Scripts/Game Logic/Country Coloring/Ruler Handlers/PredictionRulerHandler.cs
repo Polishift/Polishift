@@ -5,7 +5,6 @@ using Dataformatter.Dataprocessing.Entities;
 using Map_Displaying.Reference_Scripts;
 using NaiveBayesClassifier;
 using Predicting.Nearest_Neighbours_Classifier;
-using Predicting.NeuralNetworkClassifier;
 using UnityEngine;
 
 namespace Game_Logic.Country_Coloring
@@ -73,14 +72,6 @@ namespace Game_Logic.Country_Coloring
             var predictedClassification = classifier.GetClassification(classificationRecordForThisCountry);
             CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             CurrentRuler.PartyClassification = predictedClassification;
-            
-            //todo: Debugging neural network classifier
-            var neuralNetwork = new NeuralNetwork(new int[]{ 2, 3, 3});
-            Debug.Log(neuralNetwork.ToString());
-            
-            
-            
-            
 
             gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRuler.PartyClassification);
         }

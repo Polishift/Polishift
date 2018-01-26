@@ -7,7 +7,7 @@ namespace NaiveBayesClassifier
     public class Record
     {
         public readonly string Classification;
-        public readonly Dictionary<string, bool> Predictors = new Dictionary<string, bool>();
+        public readonly Dictionary<string, bool> Attributes = new Dictionary<string, bool>();
 
         
         public Record(string classification)
@@ -15,10 +15,10 @@ namespace NaiveBayesClassifier
             this.Classification = classification;
         }
 
-        public Record(string classification, Dictionary<string, bool> predictors)
+        public Record(string classification, Dictionary<string, bool> attributes)
         {
             this.Classification = classification;
-            this.Predictors = predictors;
+            this.Attributes = attributes;
         }
 
         public double GetEuclideanDistance(Record anotherRecord)
@@ -28,10 +28,10 @@ namespace NaiveBayesClassifier
             
             var euclidDistance = 0.0;
 
-            foreach (var predictorKv in this.Predictors)
+            foreach (var predictorKv in this.Attributes)
             {
                 var thisPredictorsValue = Convert.ToInt32(predictorKv.Value);
-                var otherRecordsPredictorValue = Convert.ToInt32(anotherRecord.Predictors[predictorKv.Key]);
+                var otherRecordsPredictorValue = Convert.ToInt32(anotherRecord.Attributes[predictorKv.Key]);
 
                 euclidDistance += Math.Pow((thisPredictorsValue - otherRecordsPredictorValue), 2);
             }
@@ -40,9 +40,9 @@ namespace NaiveBayesClassifier
 
         private bool HasTheSamePredictors(Record anotherRecord)
         {
-            foreach (var predictorKey in this.Predictors.Keys)
+            foreach (var predictorKey in this.Attributes.Keys)
             {
-                if (anotherRecord.Predictors.ContainsKey(predictorKey) == false)
+                if (anotherRecord.Attributes.ContainsKey(predictorKey) == false)
                     return false;
             }
             return true;
@@ -53,7 +53,7 @@ namespace NaiveBayesClassifier
         public override string ToString()
         {
             var predictorValueString = "";
-            Predictors.ToList().ForEach(p => predictorValueString += (p.Key + " = " + p.Value + "\n"));
+            Attributes.ToList().ForEach(p => predictorValueString += (p.Key + " = " + p.Value + "\n"));
 
             return Classification + ": { " + predictorValueString + " } ";
         }
