@@ -9,7 +9,7 @@ namespace Classifiers
         public bool IsLeaf;
         public string Label = "";        
         public string DecisionAttribute; 
-        public Dictionary<bool, Node> Children = new Dictionary<bool, Node>();
+        public Dictionary<int, Node> Children = new Dictionary<int, Node>();
 
         public override string ToString()
         {

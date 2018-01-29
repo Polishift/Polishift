@@ -116,6 +116,11 @@
               <e p="CountryInformationReference.cs" t="Include" />
             </e>
           </e>
+          <e p="Menu" t="Include">
+            <e p="PredictionButtonHandler.cs" t="Include" />
+            <e p="QuitButtonHandler.cs" t="Include" />
+            <e p="SimulationButtonHandler.cs" t="Include" />
+          </e>
           <e p="Predicting" t="Include">
             <e p="AbstractClassifier.cs" t="Include" />
             <e p="ID3 Classifier" t="Include">

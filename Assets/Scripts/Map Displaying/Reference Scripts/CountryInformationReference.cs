@@ -47,7 +47,7 @@ namespace Map_Displaying.Reference_Scripts
             _allInterestEverForThisCountry = RepositoryHub.InterestRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
         }
 
-        public Dictionary<string, bool> GetPredictorFactors(int previousYear, int currentYear)
+        public Dictionary<string, int> GetPredictorFactors(int previousYear, int currentYear)
         {
             //Doing where->sum here to avoid nullpointers when the gdp is unknown for a given year
             var lastYearsTotalGDP = _allGdpTotalEverForThisCountry.Where(g => g.Year == previousYear).Sum(g => g.Total);
@@ -55,8 +55,23 @@ namespace Map_Displaying.Reference_Scripts
             var lastYearsPerCapitaGDP = _allGdpPerCapitaEverForThisCountry.Where(g => g.Year == previousYear).Sum(g => g.Total);
             var currentPerCapitaGDP = _allGdpPerCapitaEverForThisCountry.Where(g => g.Year == currentYear).Sum(g => g.Total);
 
-            var factorDict = new Dictionary<string, bool>() {{"hasHadDictatorships", AllDictatorshipsEverForThisCountry.Any()}, {"wasEverAtWar", _allWarsEverForThisCountry.Any()}, {"highInterestRate", _allInterestEverForThisCountry.Where(i => i.Year == currentYear).Sum(i => i.Value) > 3}, {"lowInterestRate", _allInterestEverForThisCountry.Where(i => i.Year == currentYear).Sum(i => i.Value) < 1}, {"HigherTotalGdpThanLastYear", lastYearsTotalGDP < currentTotalGDP}, {"LowerTotalGdpThanLastYear", lastYearsTotalGDP > currentTotalGDP}, {"HigherPerCapitaGdpThanLastYear", lastYearsPerCapitaGDP < currentPerCapitaGDP}, {"LowerPerCapitaGdpThanLastYear", lastYearsPerCapitaGDP > currentPerCapitaGDP}};
+            var factorDict = new Dictionary<string, int>()
+            {
+                {"hasHadDictatorships", BoolToInt(AllDictatorshipsEverForThisCountry.Any())}, 
+                {"wasEverAtWar", BoolToInt(_allWarsEverForThisCountry.Any())}, 
+                {"highInterestRate", BoolToInt(_allInterestEverForThisCountry.Where(i => i.Year == currentYear).Sum(i => i.Value) > 3)}, 
+                {"lowInterestRate", BoolToInt(_allInterestEverForThisCountry.Where(i => i.Year == currentYear).Sum(i => i.Value) < 1)}, 
+                {"HigherTotalGdpThanLastYear", BoolToInt(lastYearsTotalGDP < currentTotalGDP)}, 
+                {"LowerTotalGdpThanLastYear", BoolToInt(lastYearsTotalGDP > currentTotalGDP)},
+                {"HigherPerCapitaGdpThanLastYear", BoolToInt(lastYearsPerCapitaGDP < currentPerCapitaGDP)}, 
+                {"LowerPerCapitaGdpThanLastYear", BoolToInt(lastYearsPerCapitaGDP > currentPerCapitaGDP)}
+            };
             return factorDict;
+        }
+
+        private int BoolToInt(bool b)
+        {
+            return b ? 1 : 0;
         }
     }
 }

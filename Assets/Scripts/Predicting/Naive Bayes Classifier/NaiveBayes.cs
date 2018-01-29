@@ -57,7 +57,7 @@ namespace NaiveBayesClassifier
                 var predictorsName = predictorKV.Key;
                 var predictorLikelihood = predictorKV.Value;
 
-                if (recordToBeClassified.Attributes[predictorsName] == true)
+                if (recordToBeClassified.Attributes[predictorsName] == 1)
                     finalProbability = finalProbability * predictorLikelihood;
             }
             return finalProbability;
@@ -88,7 +88,7 @@ namespace NaiveBayesClassifier
                     if (!_frequencyTable.rowsPerColumn[record.Classification].ContainsKey(predictor.Key))
                         _frequencyTable.rowsPerColumn[record.Classification].Add(predictor.Key, 0);
 
-                    if (predictor.Value == true)
+                    if (predictor.Value == 1)
                     {
                         _frequencyTable.rowsPerColumn[record.Classification][predictor.Key] += 1;
                     }

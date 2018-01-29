@@ -7,7 +7,7 @@ namespace NaiveBayesClassifier
     public class Record
     {
         public readonly string Classification;
-        public readonly Dictionary<string, bool> Attributes = new Dictionary<string, bool>();
+        public readonly Dictionary<string, int> Attributes = new Dictionary<string, int>();
 
         
         public Record(string classification)
@@ -15,7 +15,7 @@ namespace NaiveBayesClassifier
             this.Classification = classification;
         }
 
-        public Record(string classification, Dictionary<string, bool> attributes)
+        public Record(string classification, Dictionary<string, int> attributes)
         {
             this.Classification = classification;
             this.Attributes = attributes;

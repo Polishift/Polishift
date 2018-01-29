@@ -15,7 +15,7 @@ namespace Predicting
             //if all training set records are unknown, thje trainingsetWithoutUnknowns would be empty.
             //to avoid nulls, we substitute it with a one record-only list.
             if (sanitizedTrainingSet.Any() == false)
-                sanitizedTrainingSet.Add(new Record("unknown", new Dictionary<string, bool>()));
+                sanitizedTrainingSet.Add(new Record("unknown", new Dictionary<string, int>()));
 
             return sanitizedTrainingSet;
         }
