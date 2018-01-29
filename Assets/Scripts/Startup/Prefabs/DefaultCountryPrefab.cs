@@ -3,8 +3,6 @@ using DefaultNamespace;
 using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using MeshesGeneration;
-using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace Startup_Scripts
 {

@@ -25,10 +25,10 @@
       <file leaf-file-name="SimulationButtonHandler.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SimulationButtonHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="208">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1517234818791" expanded="true" signature="6:75" ph="..." />
+                <marker date="1517234818791" expanded="false" signature="6:75" ph="..." />
                 <marker date="1517234818791" expanded="true" signature="91:382" ph="{...}" />
                 <marker date="1517234818791" expanded="true" signature="150:380" ph="{...}" />
                 <marker date="1517234818791" expanded="true" signature="177:277" ph="{...}" />
@@ -45,7 +45,6 @@
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <marker date="1517234831460" expanded="true" signature="6:75" ph="..." />
-                <marker date="1517234831460" expanded="true" signature="91:388" ph="{...}" />
                 <marker date="1517234831460" expanded="true" signature="150:386" ph="{...}" />
                 <marker date="1517234831460" expanded="true" signature="177:277" ph="{...}" />
                 <marker date="1517234831460" expanded="true" signature="305:380" ph="{...}" />
@@ -61,7 +60,6 @@
               <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
                 <marker date="1517234837382" expanded="true" signature="6:40" ph="..." />
-                <marker date="1517234837382" expanded="true" signature="56:324" ph="{...}" />
                 <marker date="1517234837382" expanded="true" signature="109:322" ph="{...}" />
                 <marker date="1517234837382" expanded="true" signature="136:236" ph="{...}" />
                 <marker date="1517234837382" expanded="true" signature="264:316" ph="{...}" />
@@ -70,19 +68,102 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountryColorer.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CountryColorer.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
                 <marker date="1517235529711" expanded="false" signature="6:241" ph="..." />
-                <marker date="1517235529711" expanded="true" signature="280:926" ph="{...}" />
                 <marker date="1517235529711" expanded="true" signature="330:924" ph="{...}" />
                 <marker date="1517235529711" expanded="true" signature="409:918" ph="{...}" />
                 <marker date="1517235529711" expanded="true" signature="435:760" ph="{...}" />
                 <marker date="1517235529711" expanded="true" signature="792:908" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultCountryPrefab.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <marker date="1517235830327" expanded="true" signature="6:171" ph="..." />
+                <marker date="1517235830327" expanded="true" signature="345:888" ph="{...}" />
+                <marker date="1517235830327" expanded="true" signature="418:882" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountriesSpawner.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <marker date="1517237461364" expanded="true" signature="6:129" ph="..." />
+                <marker date="1517237461364" expanded="true" signature="157:978" ph="{...}" />
+                <marker date="1517237461364" expanded="true" signature="218:976" ph="{...}" />
+                <marker date="1517237461364" expanded="true" signature="313:849" ph="{...}" />
+                <marker date="1517237461364" expanded="true" signature="494:839" ph="{...}" />
+                <marker date="1517237461364" expanded="true" signature="586:825" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultCountriesSpawner.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <marker date="1517232830549" expanded="true" signature="6:88" ph="..." />
+                <marker date="1517232830549" expanded="true" signature="115:677" ph="{...}" />
+                <marker date="1517232830549" expanded="true" signature="177:675" ph="{...}" />
+                <marker date="1517232830549" expanded="true" signature="302:669" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryHub.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+              <folding>
+                <marker date="1517232830536" expanded="false" signature="6:328" ph="..." />
+                <marker date="1517232830536" expanded="true" signature="350:2791" ph="{...}" />
+                <marker date="1517232830536" expanded="true" signature="390:2789" ph="{...}" />
+                <marker date="1517232830536" expanded="true" signature="1129:1945" ph="{...}" />
+                <marker date="1517232830536" expanded="true" signature="1203:1251" ph="/* Countries ... */" />
+                <marker date="1517232830536" expanded="true" signature="1989:2245" ph="{...}" />
+                <marker date="1517232830536" expanded="true" signature="2296:2783" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Iso3166Repository.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/37/8dbd80aa/Iso3166Repository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="137" column="70" lean-forward="false" selection-start-line="137" selection-start-column="70" selection-end-line="137" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonReader`1.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/9f/7cf9ff27/JsonReader`1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,82 +226,84 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED38E56-8515-4380-A519-2CCAE2A6F0C9/00/cd1d2156/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/de/83fac098/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../ProcessedData/Interest_AUT.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/cb/bfe8897c/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/85/90b88d11/EuropeFilter.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ProcessedData/Interest_NLD.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E06AC72-5F68-4564-9015-E830A780D691/29/4f83fe3a/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/046583BF-E8C8-4381-B233-311D97841482/35/81d9f667/ElectionEntity.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/01/a1cb3e5b/WarRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/36/572388a7/ElectionEntity.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/TextLabelInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5515D97D-6E38-4EE1-AA63-576CAF2D382D/00/b39b6439/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/ImageInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/GenericPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1A1EA7A7-0D6A-41EF-85A7-97DBCA7EF61C/90/cccc6953/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/ButtonInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD259948-9E02-452C-9ADF-B5B100EA9274/de/f17d71e1/DictatorshipEntity.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/67/ae53a9ba/PrettifiedPartyClassifications.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/PredictionCountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/046583BF-E8C8-4381-B233-311D97841482/15/f29a7afe/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD259948-9E02-452C-9ADF-B5B100EA9274/3d/1269b0ed/ICountryRuler.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/e1/5720d485/JsonToModel`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/AbstractCountryPrefab.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0ED38E56-8515-4380-A519-2CCAE2A6F0C9/00/cd1d2156/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/de/83fac098/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../ProcessedData/Interest_AUT.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/cb/bfe8897c/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ABC3CD6-7591-464A-BBEA-C412775DE274/85/90b88d11/EuropeFilter.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ProcessedData/Interest_NLD.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/PivotOffsetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E06AC72-5F68-4564-9015-E830A780D691/29/4f83fe3a/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/046583BF-E8C8-4381-B233-311D97841482/35/81d9f667/ElectionEntity.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/01/a1cb3e5b/WarRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/36/572388a7/ElectionEntity.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5515D97D-6E38-4EE1-AA63-576CAF2D382D/00/b39b6439/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1A1EA7A7-0D6A-41EF-85A7-97DBCA7EF61C/90/cccc6953/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD259948-9E02-452C-9ADF-B5B100EA9274/de/f17d71e1/DictatorshipEntity.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/67/ae53a9ba/PrettifiedPartyClassifications.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/046583BF-E8C8-4381-B233-311D97841482/15/f29a7afe/ElectionsRepository.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/KNN Classifier/KNN.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD259948-9E02-452C-9ADF-B5B100EA9274/3d/1269b0ed/ICountryRuler.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ID3 Classifier/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ID3 Classifier/ID3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/e1/5720d485/JsonToModel`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SimulationButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/QuitButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/340C334A-3B7B-4E06-9837-A14CDF0F50A1/db/fdefbfd7/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E06AC72-5F68-4564-9015-E830A780D691/67/3941b338/ICountryRuler.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/6a/f02d5683/WarRepository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/06/344a0784/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/QuitButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Record.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/AbstractClassifier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/26/39ccd193/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/1d/d6593804/ICountryRuler.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/PredictionButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/AbstractClassifier.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SimulationButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4EE56D5B-4823-478D-A0C5-407318350F79/37/29d79a56/Component.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/KNN Classifier/KNN.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/e4/623c3e79/ElectionEntity.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu/PredictionButtonHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9FDFB7B-70CB-459B-A83B-3CBFFF665E82/29/2ffead97/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/PivotOffsetter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/ImageInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/16/c4cee8b0/CountryBordersRepository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9FDFB7B-70CB-459B-A83B-3CBFFF665E82/c0/32ae3b23/Iso3166Country.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ID3 Classifier/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ID3 Classifier/ID3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/GenericPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/9f/7cf9ff27/JsonReader`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/TextLabelInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9F912A6E-9EF0-418C-AD58-0CEFFC1EA3B3/f3/6d5bf364/CountryBordersEntity.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/Country Info Popup/ButtonInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/PoliticalFamilyRecords.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78DE1199-3EC9-427C-98C4-D3D6B07B7EE9/56/17b9116d/CountryBordersProcessor.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Time/YearCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ProcessedData/Election_IRL.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/37/8dbd80aa/Iso3166Repository.cs" root0="SKIP_INSPECTION" />
     <setting file="file://E:/Downloads IE/MeshBuilder.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/TimeUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80A8301B-A549-4840-9F30-CBAB3D3F8CC3/16/507b49d4/Object.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/46/6a5970b7/JsonReader`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../Datasources/CountryInformation/bel.geo.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/PredictionCountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ProcessedData/Election_NLD.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/PoliticalFamilyRecords.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Triangulator/Poly2Mesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -252,8 +335,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/Record.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/Nearest Neighbours Classifier/KNN.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/IClassifier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/SVM Classifier/SvmClassifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/KNN Classifier/KNN.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/Neural Network Classifier/SvmClassifier.cs" />
@@ -276,6 +357,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PredictionButtonHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/QuitButtonHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs" />
       </list>
     </option>
   </component>
@@ -285,7 +368,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -304,6 +387,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -362,19 +446,44 @@
               <item name="Predicting" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="ID3 Classifier" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Startup" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Startup" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Prefabs" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Startup" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Spawners" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcessedData/Election_IRL.json" />
-    <property name="SearchEverywhereHistoryKey" value="CountryColo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;Node&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/ID3 Classifier/Node.cs&#10;Neu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Ope&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Op&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Neur&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Pre&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Prefa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Predic&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Def&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Pred&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Predi&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Pr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Oncli&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;CountryInfo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Mesh&#9;null&#9;null&#10;CountriesSp&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;C&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;CountryInfor&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Defau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Sim&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Abs&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Decorator&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;Si&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ruler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;CountryInf&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Simul&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs&#10;CountryCo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;OnClick&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Ele&#9;null&#9;null&#10;Deco&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Rec&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Naive Bayes Classifier/Record.cs&#10;Prefab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;CountryIn&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Prediction&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Elec&#9;null&#9;null&#10;Handler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;CountryPref&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;CountriesSpa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Simu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Dec&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;S&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Defa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Default&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs&#10;Ru&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Electi&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/046583BF-E8C8-4381-B233-311D97841482/35/81d9f667/ElectionEntity.cs" />
+    <property name="SearchEverywhereHistoryKey" value="Repo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Repository/RepositoryHub.cs&#10;CountriesSpa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Defau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;CountryColo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;Node&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/ID3 Classifier/Node.cs&#10;Neu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Ope&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Op&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Neur&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Pre&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Prefa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Predic&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Def&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Pred&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Predi&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Pr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Oncli&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;CountryInfo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Mesh&#9;null&#9;null&#10;CountriesSp&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;C&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;CountryInfor&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Sim&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Abs&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Decorator&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;Si&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ruler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;CountryInf&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Simul&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs&#10;CountryCo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;OnClick&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Ele&#9;null&#9;null&#10;Deco&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Rec&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Naive Bayes Classifier/Record.cs&#10;Prefab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;CountryIn&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Prediction&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Elec&#9;null&#9;null&#10;Handler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;CountryPref&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;Simu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Dec&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;S&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Defa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Default&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs&#10;Ru&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -543,7 +652,8 @@
       <workItem from="1516724365081" duration="704000" />
       <workItem from="1516801237794" duration="1256000" />
       <workItem from="1516954795406" duration="17000" />
-      <workItem from="1517233357182" duration="1760000" />
+      <workItem from="1517233357182" duration="2135000" />
+      <workItem from="1517237344323" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="Working on restructuring so that we can easily spawn all Countries in 1 prefab">
       <created>1510647774808</created>
@@ -717,7 +827,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604680000" />
+    <option name="totallyTimeSpent" value="605622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -729,8 +839,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="1" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -740,7 +849,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -798,15 +907,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/PoliticalFamilyRecords.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/01/a1cb3e5b/WarRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E06AC72-5F68-4564-9015-E830A780D691/67/3941b338/ICountryRuler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -824,7 +924,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/PredictableCountryPrefab.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/PredictionRulerHandler.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/AbstractCountryPrefab.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AF38ED00-5A30-4AED-ABB6-1A570FD98756/67/ae53a9ba/PrettifiedPartyClassifications.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -905,8 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Neural Network Classifier/DotProduct.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Neural Network Classifier/NeuralNetworkClassifier.cs" />
@@ -920,18 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="12" column="44" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <marker date="1517233409829" expanded="false" signature="6:66" ph="..." />
-            <marker date="1517233409829" expanded="true" signature="98:1873" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="124:1871" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="324:394" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="476:588" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="654:1245" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="874:1189" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="1310:1561" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="1383:1526" ph="{...}" />
-            <marker date="1517233409829" expanded="true" signature="1622:1865" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,14 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <marker date="1517233559055" expanded="false" signature="6:66" ph="..." />
-            <marker date="1517233559055" expanded="true" signature="89:959" ph="{...}" />
-            <marker date="1517233559055" expanded="true" signature="113:957" ph="{...}" />
-            <marker date="1517233559055" expanded="true" signature="351:951" ph="{...}" />
-            <marker date="1517233559055" expanded="true" signature="549:831" ph="{...}" />
-            <marker date="1517233559055" expanded="true" signature="660:783" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,29 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="90" column="44" lean-forward="false" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-          <folding>
-            <marker date="1517233568019" expanded="false" signature="6:103" ph="..." />
-            <marker date="1517233568019" expanded="true" signature="135:5026" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="196:5024" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="603:915" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="934:984" ph="/* Classification creation ... */" />
-            <marker date="1517233568019" expanded="true" signature="1063:1798" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="1254:1524" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="1925:2541" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2197:2494" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2552:2590" ph="/* Table creation ... */" />
-            <marker date="1517233568019" expanded="true" signature="2658:3699" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2717:3689" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2850:2959" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3244:3675" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3515:3657" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3745:4605" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3821:4595" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4032:4581" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4704:4782" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4793:4836" ph="/* Formula computation ... */" />
-            <marker date="1517233568019" expanded="true" signature="4908:5018" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,35 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding>
-            <marker date="1517232830505" expanded="false" signature="6:112" ph="..." />
-            <marker date="1517232830505" expanded="true" signature="135:7404" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="179:7402" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="352:614" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="674:802" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="855:1501" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="950:1491" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="1122:1265" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="1304:1477" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="1577:3801" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="1691:2044" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="2087:2259" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="2276:3766" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="2839:3752" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="3071:3381" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="3406:3734" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="3948:4045" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="4123:4359" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="4452:4863" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="4556:4809" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="5036:5436" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="5265:5395" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="5529:6275" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="5892:6229" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="6286:6479" ph="/* Calculates a measure of how much the classifications of the dataset 'lean' to a certain classification label. ... */" />
-            <marker date="1517232830505" expanded="true" signature="6535:7286" ph="{...}" />
-            <marker date="1517232830505" expanded="true" signature="7330:7396" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,13 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="89" lean-forward="false" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-          <folding>
-            <marker date="1517233545073" expanded="false" signature="6:80" ph="..." />
-            <marker date="1517233545073" expanded="true" signature="102:827" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="149:825" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="304:819" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="452:618" ph="/* if all training set records are unknown, thje trainingsetWithoutUnknowns would be empty. ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,15 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="66" column="104" lean-forward="false" selection-start-line="66" selection-start-column="104" selection-end-line="66" selection-end-column="104" />
-          <folding>
-            <marker date="1517233527327" expanded="false" signature="6:377" ph="..." />
-            <marker date="1517233527327" expanded="true" signature="421:4477" ph="{...}" />
-            <marker date="1517233527327" expanded="true" signature="484:4475" ph="{...}" />
-            <marker date="1517233527327" expanded="true" signature="1512:2695" ph="{...}" />
-            <marker date="1517233527327" expanded="true" signature="2790:4380" ph="{...}" />
-            <marker date="1517233527327" expanded="true" signature="3466:4338" ph="{...}" />
-            <marker date="1517233527327" expanded="true" signature="4419:4469" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,28 +1059,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-          <folding>
-            <marker date="1517232830412" expanded="false" signature="6:246" ph="..." />
-            <marker date="1517232830412" expanded="true" signature="285:4159" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="350:4157" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="425:668" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="712:3848" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="1198:2867" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="2060:2203" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="2252:2349" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="2893:3092" ph="/* Creating the classifier, plus the record for the current (to be predicted) state of this country ... */" />
-            <marker date="1517232830412" expanded="true" signature="3902:4066" ph="{...}" />
-            <marker date="1517232830412" expanded="true" signature="4097:4151" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/SimulationButtonHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="208">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1517234818791" expanded="true" signature="6:75" ph="..." />
+            <marker date="1517234818791" expanded="false" signature="6:75" ph="..." />
             <marker date="1517234818791" expanded="true" signature="91:382" ph="{...}" />
             <marker date="1517234818791" expanded="true" signature="150:380" ph="{...}" />
             <marker date="1517234818791" expanded="true" signature="177:277" ph="{...}" />
@@ -1086,7 +1082,6 @@
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <marker date="1517234831460" expanded="true" signature="6:75" ph="..." />
-            <marker date="1517234831460" expanded="true" signature="91:388" ph="{...}" />
             <marker date="1517234831460" expanded="true" signature="150:386" ph="{...}" />
             <marker date="1517234831460" expanded="true" signature="177:277" ph="{...}" />
             <marker date="1517234831460" expanded="true" signature="305:380" ph="{...}" />
@@ -1100,7 +1095,6 @@
           <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
             <marker date="1517234837382" expanded="true" signature="6:40" ph="..." />
-            <marker date="1517234837382" expanded="true" signature="56:324" ph="{...}" />
             <marker date="1517234837382" expanded="true" signature="109:322" ph="{...}" />
             <marker date="1517234837382" expanded="true" signature="136:236" ph="{...}" />
             <marker date="1517234837382" expanded="true" signature="264:316" ph="{...}" />
@@ -1110,16 +1104,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="160">
+          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding>
             <marker date="1517235529711" expanded="false" signature="6:241" ph="..." />
-            <marker date="1517235529711" expanded="true" signature="280:926" ph="{...}" />
             <marker date="1517235529711" expanded="true" signature="330:924" ph="{...}" />
             <marker date="1517235529711" expanded="true" signature="409:918" ph="{...}" />
             <marker date="1517235529711" expanded="true" signature="435:760" ph="{...}" />
             <marker date="1517235529711" expanded="true" signature="792:908" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <marker date="1517235830327" expanded="true" signature="6:171" ph="..." />
+            <marker date="1517235830327" expanded="true" signature="345:888" ph="{...}" />
+            <marker date="1517235830327" expanded="true" signature="418:882" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1517237461364" expanded="true" signature="6:129" ph="..." />
+            <marker date="1517237461364" expanded="true" signature="157:978" ph="{...}" />
+            <marker date="1517237461364" expanded="true" signature="218:976" ph="{...}" />
+            <marker date="1517237461364" expanded="true" signature="313:849" ph="{...}" />
+            <marker date="1517237461364" expanded="true" signature="494:839" ph="{...}" />
+            <marker date="1517237461364" expanded="true" signature="586:825" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Startup/Spawners/DefaultCountriesSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1517232830549" expanded="true" signature="6:88" ph="..." />
+            <marker date="1517232830549" expanded="true" signature="115:677" ph="{...}" />
+            <marker date="1517232830549" expanded="true" signature="177:675" ph="{...}" />
+            <marker date="1517232830549" expanded="true" signature="302:669" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Repository/RepositoryHub.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <marker date="1517232830536" expanded="false" signature="6:328" ph="..." />
+            <marker date="1517232830536" expanded="true" signature="350:2791" ph="{...}" />
+            <marker date="1517232830536" expanded="true" signature="390:2789" ph="{...}" />
+            <marker date="1517232830536" expanded="true" signature="1129:1945" ph="{...}" />
+            <marker date="1517232830536" expanded="true" signature="1203:1251" ph="/* Countries ... */" />
+            <marker date="1517232830536" expanded="true" signature="1989:2245" ph="{...}" />
+            <marker date="1517232830536" expanded="true" signature="2296:2783" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/37/8dbd80aa/Iso3166Repository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="137" column="70" lean-forward="false" selection-start-line="137" selection-start-column="70" selection-end-line="137" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F60F20E-9112-4A48-85AA-442A5F62350C/9f/7cf9ff27/JsonReader`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
