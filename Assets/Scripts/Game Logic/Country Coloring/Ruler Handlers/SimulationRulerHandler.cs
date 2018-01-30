@@ -54,7 +54,7 @@ namespace Game_Logic.Country_Coloring
 
         public override string RulerToText()
         {
-            return ThisCountriesInfo.Iso3166Country.Name + " is currently ruled by the " + CurrentRuler
+            return ThisCountriesInfo.Iso3166Country.Name + " is currently ruled by the \n" + CurrentRuler
                    + "\n " + GetRunnersUpText();
         }
       
@@ -89,7 +89,7 @@ namespace Game_Logic.Country_Coloring
 
             if (CurrentRuler.GetRulerType() != RulerType.Dictator)
             {
-                returnStr = "The runners up were: \n";
+                returnStr = "\nThe runners up were:\n";
                 foreach (var runnerUp in GetRunnerUpsForLastElection())
                 {
                     returnStr += runnerUp.PartyName + ": " + runnerUp.TotalVotePercentage.ToString ("0.##") + "% \n";

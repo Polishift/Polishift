@@ -78,7 +78,7 @@ namespace Game_Logic.Country_Coloring
         
         public override string RulerToText()
         {
-            return "We predict that a party of type " + CurrentRuler.PartyClassification + " will rule after " + YearCounter.MaximumYear + ".";
+            return "We predict that a party of type " + CurrentRuler.PartyClassification + "\n will rule after " + YearCounter.MaximumYear + ".";
         }
 
         public bool IsReady()

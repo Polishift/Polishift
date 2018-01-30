@@ -1,5 +1,4 @@
 ﻿using DefaultNamespace.Map_Displaying.UI;
-using DefaultNamespace.Map_Displaying.UI.Country_Info_Popup;
 using Map_Displaying.Reference_Scripts;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -36,7 +35,7 @@ namespace Map_Displaying.Handlers
 
         private void RemoveAllOtherInformationPanels()
         {
-            foreach (Transform childUIPanel in GenericPanel.UI_CANVAS.transform)
+            foreach (Transform childUIPanel in GameObject.Find("UI_Canvas").transform)
             {
                 Destroy(childUIPanel.gameObject);
             }

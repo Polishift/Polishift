@@ -5,7 +5,7 @@ using Dataformatter.Dataprocessing.Entities;
 using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using Dataformatter.Misc;
-using DefaultNamespace.Map_Displaying.UI.Country_Info_Popup;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,28 +33,15 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private void CreateBasicInfoPanel()
         {
-            GenericPanel newPanel = new GenericPanel();
-
-            //This isn't inited anymore? 
-            string name = _countryInformation.Iso3166Country.Name + "_InfoPanel";
-            Debug.Log("_countryInformation.Iso3166Country = " + _countryInformation.Iso3166Country);
-            Font defaultFont = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
-            Material defaultMaterial = new Material(Shader.Find("UI/Default_Overlay"));
             Sprite defaultSprite = Resources.Load<Sprite>("Square");
+
+            UICreator.AddBackgroundPanelToCanvas(defaultSprite, new Vector3(0, 0), new Vector3(5.5f, 4.2f));
+            
+            UICreator.AddTextToCanvas("CountryName", GetCountryName(), 35, new Vector3(-100, 60), new Vector2(100, 200));
+            UICreator.AddTextToCanvas("RulerInfo", GetCurrentRulerText(), 20, new Vector3(-100, 0), new Vector2(100, 200));
+
             Sprite buttonSprite = Resources.Load<Sprite>("Sprites/ExitButton");
-
-            //todo: set width height
-            var textLabels = new List<TextLabelInfo> {new TextLabelInfo(GetCountryName(), defaultFont, 35, defaultMaterial, 
-                                                                        Color.black, new Vector3(0, 60), new Vector2(300, 200)), 
-                                                      new TextLabelInfo(GetCurrentRulerText(), defaultFont, 20, defaultMaterial, 
-                                                                        Color.black, new Vector3(0, 0), new Vector2(300, 200))};
-
-            var buttons = new List<ButtonInfo> {new ButtonInfo(new Vector3(150, 150), new Vector3(0.3f, 0.3f), buttonSprite, () => newPanel.Destroy())};
-            
-            
-            ImageInfo backgroundImageInfo = new ImageInfo(new Vector3(0, 0), new Vector3(4.2f, 4.2f), defaultSprite);
-
-            newPanel.Create(new Vector2(0, 0), name, backgroundImageInfo, textLabels, buttons);
+            UICreator.AddChildButtonToCanvas("CloseButton", buttonSprite, buttonSprite, UICreator.DestroyUI, new Vector3(220, 150), 0.3f);
         }
 
         private string GetCountryName()

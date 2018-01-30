@@ -593,6 +593,46 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 716777023}
   m_Script: {fileID: 11500000, guid: 8ee54d4efa224ec0ab96f6b4148a3e40, type: 3}
+--- !u!1 &724392481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 724392482}
+  - component: {fileID: 724392483}
+  m_Layer: 0
+  m_Name: PauseMenuCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724392482
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724392481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 387, y: 870.99994, z: -790}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &724392483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724392481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e719bbb25f4fb5a7bec6a12e64528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1420678886
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +644,7 @@ GameObject:
   - component: {fileID: 1420678889}
   - component: {fileID: 1420678888}
   - component: {fileID: 1420678887}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UI_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,8 +715,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420678886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.6503906, y: -271.39423, z: -217.66284}
-  m_LocalScale: {x: 0.43833333, y: 0.43833333, z: 0.43833333}
+  m_LocalPosition: {x: 234.8496, y: -136.39423, z: -217.66284}
+  m_LocalScale: {x: 0.8883333, y: 0.8883333, z: 0.8883333}
   m_Children: []
   m_Father: {fileID: 1592355906}
   m_RootOrder: 0
