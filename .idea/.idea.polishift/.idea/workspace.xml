@@ -25,17 +25,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PredictionParametersButtonHandler.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/PredictionParametersButtonHandler.cs">
+      <file leaf-file-name="PredictionRulerHandler.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="566">
+              <caret line="93" column="53" lean-forward="true" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="54" />
               <folding>
-                <marker date="1517361298575" expanded="true" signature="6:75" ph="..." />
-                <marker date="1517361298575" expanded="true" signature="91:398" ph="{...}" />
-                <marker date="1517361298575" expanded="true" signature="160:396" ph="{...}" />
-                <marker date="1517361298575" expanded="true" signature="187:287" ph="{...}" />
-                <marker date="1517361298575" expanded="true" signature="315:390" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="6:346" ph="..." />
+                <marker date="1517400611933" expanded="true" signature="368:4768" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="433:4766" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="508:751" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="795:4455" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="1281:2950" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="2143:2286" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="2335:2432" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="2989:3188" ph="/* Creating the classifier, plus the record for the current (to be predicted) state of this country ... */" />
+                <marker date="1517400611933" expanded="true" signature="3518:3618" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="3684:3801" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="3818:3906" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="4509:4675" ph="{...}" />
+                <marker date="1517400611933" expanded="true" signature="4706:4760" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaiveBayes.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-288">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <marker date="1517400622527" expanded="false" signature="6:103" ph="..." />
+                <marker date="1517400622527" expanded="true" signature="135:4897" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="196:4895" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="603:786" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="805:855" ph="/* Classification creation ... */" />
+                <marker date="1517400622527" expanded="true" signature="934:1669" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="1125:1395" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="1796:2412" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="2068:2365" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="2423:2461" ph="/* Table creation ... */" />
+                <marker date="1517400622527" expanded="true" signature="2529:3570" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="2588:3560" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="2721:2830" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="3115:3546" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="3386:3528" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="3616:4476" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="3692:4466" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="3903:4452" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="4575:4653" ph="{...}" />
+                <marker date="1517400622527" expanded="true" signature="4664:4707" ph="/* Formula computation ... */" />
+                <marker date="1517400622527" expanded="true" signature="4779:4889" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassifierOptions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ClassifierOptions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <marker date="1517360721588" expanded="true" signature="6:66" ph="..." />
+                <marker date="1517360721588" expanded="true" signature="88:457" ph="{...}" />
+                <marker date="1517360721588" expanded="true" signature="191:455" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassifierChoosingUI.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/ClassifierChoosingUI.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              <folding>
+                <marker date="1517400546028" expanded="true" signature="6:126" ph="..." />
+                <marker date="1517400546028" expanded="true" signature="172:2453" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="228:2451" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="514:1344" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="1389:2224" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="1548:1713" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="1827:2087" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="2104:2214" ph="{...}" />
+                <marker date="1517400546028" expanded="true" signature="2316:2445" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,7 +140,6 @@
       <find>CurrentRuler</find>
       <find>GetRunnersUpText()</find>
       <find>float</find>
-      <find>Log</find>
       <find>[,]</find>
       <find>new do</find>
       <find>-1</find>
@@ -75,6 +149,7 @@
       <find>name</find>
       <find>Color</find>
       <find>agrarian/centre</find>
+      <find>Log</find>
     </findStrings>
     <replaceStrings>
       <replace>Vector3</replace>
@@ -214,7 +289,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/AbstractClassifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/ID3 Classifier/Node.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/SimulationButtonHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/QuitButtonHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs" />
@@ -237,10 +311,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/ClassifierChooser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/ClassifierOptions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PredictionButtonHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/ClassifierChoosingUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/PredictionParametersButtonHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/ClassifierChoosingUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs" />
       </list>
     </option>
   </component>
@@ -250,7 +325,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -339,7 +414,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcessedData/PartyFamilies_POL.json" />
-    <property name="SearchEverywhereHistoryKey" value="Pre&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Naiv&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs&#10;PRed&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/PredictionCountriesSpawner.cs&#10;Moveme&#9;null&#9;null&#10;Ele&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/36/572388a7/ElectionEntity.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Ruler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Dictator&#9;null&#9;null&#10;RulerHa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Paus&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Menu/PauseMenuCreator.cs&#10;UI&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UICreator.cs&#10;T&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/TimeUIController.cs&#10;Gene&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/Country Info Popup/GenericPanel.cs&#10;Pau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Menu/PauseMenuCreator.cs&#10;Tim e&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/TimeUIController.cs&#10;Butto&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/Country Info Popup/ButtonInfo.cs&#10;OnCl&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Repo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Repository/RepositoryHub.cs&#10;CountriesSpa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Defau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;CountryColo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;Node&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/ID3 Classifier/Node.cs&#10;Neu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Ope&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Op&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Neur&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Prefa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Predic&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Def&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Pred&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Predi&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Pr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Oncli&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;CountryInfo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Mesh&#9;null&#9;null&#10;CountriesSp&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;C&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;CountryInfor&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Sim&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Abs&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Decorator&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;Si&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;CountryInf&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Simul&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs&#10;CountryCo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;OnClick&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Deco&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs" />
+    <property name="SearchEverywhereHistoryKey" value="Naiv&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs&#10;Class&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/ClassifierOptions.cs&#10;Pre&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;PRed&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/PredictionCountriesSpawner.cs&#10;Moveme&#9;null&#9;null&#10;Ele&#9;FILE&#9;file://C:/Users/Kraaijeveld/.Rider2017.2/config/resharper-host/DecompilerCache/decompiler/76B81900-A083-4377-906E-61F048C47757/36/572388a7/ElectionEntity.cs&#10;Count&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Ruler&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Dictator&#9;null&#9;null&#10;RulerHa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Paus&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Menu/PauseMenuCreator.cs&#10;UI&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UICreator.cs&#10;T&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/TimeUIController.cs&#10;Gene&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/Country Info Popup/GenericPanel.cs&#10;Pau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Menu/PauseMenuCreator.cs&#10;Tim e&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/TimeUIController.cs&#10;Butto&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/Country Info Popup/ButtonInfo.cs&#10;OnCl&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;Repo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Repository/RepositoryHub.cs&#10;CountriesSpa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Defau&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;CountryColo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;Node&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/ID3 Classifier/Node.cs&#10;Neu&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Ope&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Op&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/Operators.cs&#10;Neur&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Predicting/Neural Network Classifier/NeuralMatrix.cs&#10;Prefa&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/PredictionCountryPrefabDecorator.cs&#10;Predic&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Def&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/DefaultCountryPrefab.cs&#10;Pred&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Predi&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Pr&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs&#10;Cou&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;Country&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Oncli&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs&#10;CountryInfo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;Mesh&#9;null&#9;null&#10;CountriesSp&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Spawners/CountriesSpawner.cs&#10;C&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/UI/UI Controllers/CountryInfoDisplayer.cs&#10;CountryInfor&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Sim&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;Ab&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Abs&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/AbstractRulerHandler.cs&#10;Decorator&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/CountryPrefabDecorator.cs&#10;Si&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/SimulationRulerHandler.cs&#10;CountryInf&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs&#10;Simul&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Startup/Prefabs/SimulationCountryPrefabDecoratoer.cs&#10;CountryCo&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Game Logic/Country Coloring/CountryColorer.cs&#10;OnClick&#9;FILE&#9;file://E:/Hogeschool/Polishift Organization/polishift/Assets/Scripts/Map Displaying/Handlers/OnClickHandler.cs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -520,6 +595,7 @@
       <workItem from="1517350503099" duration="1021000" />
       <workItem from="1517351717688" duration="27000" />
       <workItem from="1517352631306" duration="8548000" />
+      <workItem from="1517397620718" duration="2060000" />
     </task>
     <task id="LOCAL-00001" summary="Working on restructuring so that we can easily spawn all Countries in 1 prefab">
       <created>1510647774808</created>
@@ -693,7 +769,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="639696000" />
+    <option name="totallyTimeSpent" value="641756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,22 +781,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -738,18 +814,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34030837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -985,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3358" lean-forward="false" selection-start-line="0" selection-start-column="3358" selection-end-line="0" selection-end-column="3358" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="0" column="1119" lean-forward="false" selection-start-line="0" selection-start-column="1119" selection-end-line="0" selection-end-column="1119" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,27 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <marker date="1517354967839" expanded="true" signature="6:338" ph="..." />
-            <marker date="1517354967839" expanded="true" signature="94:293" ph="/* Credit to damien_oconnell from http://forum.unity3d.com/threads/39513-Click-drag-camera-movement ... */" />
-            <marker date="1517354967839" expanded="true" signature="383:4349" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="390:416" ph="/* VARIABLES ... */" />
-            <marker date="1517354967839" expanded="true" signature="930:953" ph="/* UPDATE ... */" />
-            <marker date="1517354967839" expanded="true" signature="972:4347" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="1057:1154" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="1235:1332" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="1621:1918" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="1986:3436" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="2215:2482" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="2570:2735" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="2797:2960" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="3047:3210" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="3267:3426" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="3509:4341" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="3624:3879" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="3942:4107" ph="{...}" />
-            <marker date="1517354967839" expanded="true" signature="4165:4331" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,13 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <marker date="1517233545073" expanded="false" signature="6:80" ph="..." />
-            <marker date="1517233545073" expanded="true" signature="102:827" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="149:825" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="304:819" ph="{...}" />
-            <marker date="1517233545073" expanded="true" signature="452:618" ph="/* if all training set records are unknown, thje trainingsetWithoutUnknowns would be empty. ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,12 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="13" column="50" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding>
-            <marker date="1517232830550" expanded="false" signature="6:107" ph="..." />
-            <marker date="1517232830550" expanded="true" signature="134:699" ph="{...}" />
-            <marker date="1517232830550" expanded="true" signature="199:697" ph="{...}" />
-            <marker date="1517232830550" expanded="true" signature="324:691" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,13 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding>
-            <marker date="1517357594555" expanded="false" signature="6:160" ph="..." />
-            <marker date="1517357594555" expanded="true" signature="187:906" ph="{...}" />
-            <marker date="1517357594555" expanded="true" signature="280:904" ph="{...}" />
-            <marker date="1517357594555" expanded="true" signature="405:535" ph="{...}" />
-            <marker date="1517357594555" expanded="true" signature="620:898" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,45 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <marker date="1517357555775" expanded="false" signature="6:80" ph="..." />
-            <marker date="1517357555775" expanded="true" signature="132:1891" ph="{...}" />
-            <marker date="1517357555775" expanded="true" signature="176:1889" ph="{...}" />
-            <marker date="1517357555775" expanded="true" signature="318:432" ph="{...}" />
-            <marker date="1517357555775" expanded="true" signature="512:1883" ph="{...}" />
-            <marker date="1517357555775" expanded="true" signature="725:980" ph="{...}" />
-            <marker date="1517357555775" expanded="true" signature="1315:1682" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1517233568019" expanded="false" signature="6:103" ph="..." />
-            <marker date="1517233568019" expanded="true" signature="135:5026" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="196:5024" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="603:915" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="934:984" ph="/* Classification creation ... */" />
-            <marker date="1517233568019" expanded="true" signature="1063:1798" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="1254:1524" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="1925:2541" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2197:2494" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2552:2590" ph="/* Table creation ... */" />
-            <marker date="1517233568019" expanded="true" signature="2658:3699" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2717:3689" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="2850:2959" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3244:3675" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3515:3657" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3745:4605" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="3821:4595" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4032:4581" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4704:4782" ph="{...}" />
-            <marker date="1517233568019" expanded="true" signature="4793:4836" ph="/* Formula computation ... */" />
-            <marker date="1517233568019" expanded="true" signature="4908:5018" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,48 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="33" column="58" lean-forward="false" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding>
-            <marker date="1517357597308" expanded="false" signature="6:291" ph="..." />
-            <marker date="1517357597308" expanded="true" signature="337:2641" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="474:2639" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="720:1305" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="1350:2084" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="2123:2182" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="2223:2506" ph="{...}" />
-            <marker date="1517357597308" expanded="true" signature="2552:2633" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ClassifierOptions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <marker date="1517360721588" expanded="false" signature="6:66" ph="..." />
-            <marker date="1517360721588" expanded="true" signature="88:457" ph="{...}" />
-            <marker date="1517360721588" expanded="true" signature="191:455" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="71" column="83" lean-forward="true" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
-          <folding>
-            <marker date="1517361195632" expanded="false" signature="6:327" ph="..." />
-            <marker date="1517361195632" expanded="true" signature="349:4694" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="414:4692" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="489:732" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="776:4381" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="1262:2931" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="2124:2267" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="2316:2413" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="2970:3169" ph="/* Creating the classifier, plus the record for the current (to be predicted) state of this country ... */" />
-            <marker date="1517361195632" expanded="true" signature="4435:4601" ph="{...}" />
-            <marker date="1517361195632" expanded="true" signature="4632:4686" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,42 +1131,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/PredictionParametersButtonHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <marker date="1517361237504" expanded="false" signature="6:75" ph="..." />
-            <marker date="1517361237504" expanded="true" signature="91:398" ph="{...}" />
-            <marker date="1517361237504" expanded="true" signature="150:396" ph="{...}" />
-            <marker date="1517361237504" expanded="true" signature="177:277" ph="{...}" />
-            <marker date="1517361237504" expanded="true" signature="305:390" ph="{...}" />
+            <marker date="1517361298575" expanded="false" signature="6:75" ph="..." />
+            <marker date="1517361298575" expanded="true" signature="91:398" ph="{...}" />
+            <marker date="1517361298575" expanded="true" signature="160:396" ph="{...}" />
+            <marker date="1517361298575" expanded="true" signature="187:287" ph="{...}" />
+            <marker date="1517361298575" expanded="true" signature="315:390" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/ClassifierOptions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <marker date="1517360721588" expanded="true" signature="6:66" ph="..." />
+            <marker date="1517360721588" expanded="true" signature="88:457" ph="{...}" />
+            <marker date="1517360721588" expanded="true" signature="191:455" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/UI Controllers/ClassifierChoosingUI.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <marker date="1517361322640" expanded="false" signature="6:126" ph="..." />
-            <marker date="1517361322640" expanded="true" signature="172:1591" ph="{...}" />
-            <marker date="1517361322640" expanded="true" signature="230:1588" ph="{...}" />
-            <marker date="1517361322640" expanded="true" signature="453:795" ph="{...}" />
-            <marker date="1517361322640" expanded="true" signature="856:1581" ph="{...}" />
-            <marker date="1517361322640" expanded="true" signature="1172:1438" ph="{...}" />
-            <marker date="1517361322640" expanded="true" signature="1456:1570" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="6:126" ph="..." />
+            <marker date="1517400546028" expanded="true" signature="172:2453" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="228:2451" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="514:1344" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="1389:2224" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="1548:1713" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="1827:2087" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="2104:2214" ph="{...}" />
+            <marker date="1517400546028" expanded="true" signature="2316:2445" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Menu/PredictionParametersButtonHandler.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="566">
+          <caret line="93" column="53" lean-forward="true" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="54" />
           <folding>
-            <marker date="1517361298575" expanded="true" signature="6:75" ph="..." />
-            <marker date="1517361298575" expanded="true" signature="91:398" ph="{...}" />
-            <marker date="1517361298575" expanded="true" signature="160:396" ph="{...}" />
-            <marker date="1517361298575" expanded="true" signature="187:287" ph="{...}" />
-            <marker date="1517361298575" expanded="true" signature="315:390" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="6:346" ph="..." />
+            <marker date="1517400611933" expanded="true" signature="368:4768" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="433:4766" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="508:751" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="795:4455" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="1281:2950" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="2143:2286" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="2335:2432" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="2989:3188" ph="/* Creating the classifier, plus the record for the current (to be predicted) state of this country ... */" />
+            <marker date="1517400611933" expanded="true" signature="3518:3618" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="3684:3801" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="3818:3906" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="4509:4675" ph="{...}" />
+            <marker date="1517400611933" expanded="true" signature="4706:4760" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Predicting/Naive Bayes Classifier/NaiveBayes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1517400622527" expanded="false" signature="6:103" ph="..." />
+            <marker date="1517400622527" expanded="true" signature="135:4897" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="196:4895" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="603:786" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="805:855" ph="/* Classification creation ... */" />
+            <marker date="1517400622527" expanded="true" signature="934:1669" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="1125:1395" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="1796:2412" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="2068:2365" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="2423:2461" ph="/* Table creation ... */" />
+            <marker date="1517400622527" expanded="true" signature="2529:3570" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="2588:3560" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="2721:2830" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="3115:3546" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="3386:3528" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="3616:4476" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="3692:4466" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="3903:4452" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="4575:4653" ph="{...}" />
+            <marker date="1517400622527" expanded="true" signature="4664:4707" ph="/* Formula computation ... */" />
+            <marker date="1517400622527" expanded="true" signature="4779:4889" ph="{...}" />
           </folding>
         </state>
       </provider>

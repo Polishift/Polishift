@@ -17,9 +17,6 @@ namespace NaiveBayesClassifier
 
         public NaiveBayesClassifier(List<Record> trainingSet)
         {
-            foreach (var r in trainingSet)
-                Debug.Log("Record from training set has class " + r.Classification);
-
             _trainingSet = base.SanitizeTrainingSet(trainingSet);
 
             CreateFrequencyTableAndCountClassifications();
