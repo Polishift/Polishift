@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Classifiers;
 using Dataformatter.Dataprocessing.Entities;
@@ -8,13 +7,17 @@ using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using NaiveBayesClassifier;
 using Predicting.Nearest_Neighbours_Classifier;
-using NaiveBayesClassifier;
 using UnityEngine;
 
 namespace Predicting
 {
     public class PredictionRulerHandler : AbstractRulerHandler
     {
+        //This static var is used to display the global accuracy of the current classifier in the UI.
+        public static decimal CorrectClassifications;
+        public static decimal TotalRecordCount;
+        
+        
         public int CurrentYear;
 
         public override void Init()
@@ -25,6 +28,7 @@ namespace Predicting
             IsInitialized = true;
         }
 
+        //This should only be called once when dealing with the prediction handler!
         public override void HandleRuler()
         {
             //If we are either not ready yet, or done predicting, we dont do anything.            
@@ -65,6 +69,9 @@ namespace Predicting
                 //Adding the combination of current ruling family + predictor values to the training set
                 trainingSet.Add(new Record(currentCountrysPoliticalFamily, 
                                 ThisCountriesInfo.GetPredictorFactors(previousYear, currentYear)));
+                
+                //Making sure the classification doesnt go on forever
+                IsDone = true;
             }
             
             
@@ -93,19 +100,52 @@ namespace Predicting
             var predictedClassification = classifier.GetClassification(classificationRecordForThisCountry);
             CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             CurrentRuler.PartyClassification = predictedClassification;
+            
+            //Updating static (!) correctness percentage here, by comparing  predictedClassification to actual classification
+            UpdateCorrectnessPercentage(predictedClassification, ThisCountriesInfo.FutureRulerClassification);
 
+            //And finally finally, setting the color to be that of the predicted classification.
             gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRuler.PartyClassification);
         }
+
+        private static void UpdateCorrectnessPercentage(string predicted, string actual)
+        {
+            var predictedLower = predicted.ToLower();
+            var actualLower = actual.ToLower();
+
+            //Bit hacky, but used to balance out the dictatorships which the classifier cant reasonably predict.
+            if (!actualLower.Equals("unknown"))
+            {
+                TotalRecordCount++;
+
+                if (predictedLower.Equals(actualLower))
+                    CorrectClassifications += 1;
+            }
+        }
+        
+        
+        
+        /*
+            UI METHODS 
+        */
         
         public override string RulerToText()
         {
             var lowerClassification = CurrentRuler.PartyClassification.ToLower();
-            return "We predict that a party of type \n\n'" + PrettifiedPartyClassifications.prettifiedPartyClassifications[lowerClassification]+ "'\n\n will rule after " + YearCounter.MaximumYear + ".";
+            var prettifiedPredictedClassification = PrettifiedPartyClassifications.prettifiedPartyClassifications[lowerClassification];
+            var prettifiedActualClassification = PrettifiedPartyClassifications.prettifiedPartyClassifications[ThisCountriesInfo.FutureRulerClassification];
+            
+            return "We predict that a party of type \n\n'" + prettifiedPredictedClassification + "'\n\n will rule after " + YearCounter.MaximumYear + ".\n"
+                    + GetClassificationCorrectnessText(prettifiedPredictedClassification, prettifiedActualClassification);
         }
 
-        public bool IsReady()
+        private string GetClassificationCorrectnessText(string predicted, string actual)
         {
-            return IsInitialized;
+            if (predicted.Equals(actual))
+                return "This prediction is correct.";
+            return "This prediction is incorrect,\n the actual ruling party is " + actual;
         }
+        
+        
     }
 }

@@ -8,11 +8,12 @@ namespace Game_Logic.Country_Coloring
     {
         public ICountryRuler CurrentRuler; 
         protected bool IsInitialized;
+        protected bool IsDone;
         protected CountryInformationReference ThisCountriesInfo;
 
         private void Update()
         {
-            if(IsInitialized)
+            if(IsInitialized && !IsDone)
                 HandleRuler();
         }
 

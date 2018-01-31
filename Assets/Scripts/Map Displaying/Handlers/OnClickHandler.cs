@@ -7,11 +7,12 @@ namespace Map_Displaying.Handlers
 {
     public class OnClickHandler : MonoBehaviour
     {
-        private readonly string UI_CANVAS = "UI";
+        private GameObject UI_Canvas;
         private EventSystem _theEventSystem;
 
         private void Start()
         {
+            UI_Canvas = GameObject.Find("UI_Canvas");
             _theEventSystem = EventSystem.current;
         }
 
@@ -25,19 +26,11 @@ namespace Map_Displaying.Handlers
                 //ignore if the raycast is over an UI element, or if it's not a country 
                 if (Physics.Raycast(ray, out hit) 
                     && !_theEventSystem.IsPointerOverGameObject()
-                    && hit.transform.gameObject.GetComponent<CountryInformationReference>() != null)
+                    && hit.transform.gameObject.GetComponent<CountryInformationReference>() != null
+                    && NoOtherInformationPanelsAlreadyOpen())
                 {
-                    RemoveAllOtherInformationPanels();
                     AddInformationPanelForHitCountry(hit);
                 }
-            }
-        }
-
-        private void RemoveAllOtherInformationPanels()
-        {
-            foreach (Transform childUIPanel in GameObject.Find("UI_Canvas").transform)
-            {
-                Destroy(childUIPanel.gameObject);
             }
         }
 
@@ -45,6 +38,17 @@ namespace Map_Displaying.Handlers
         {
             hit.transform.gameObject.AddComponent<CountryInfoDisplayer>();
             hit.transform.gameObject.GetComponent<CountryInfoDisplayer>().Init();
+        }
+
+        private bool NoOtherInformationPanelsAlreadyOpen()
+        {
+            int informationPanelsCount = 0;
+            
+            foreach(Transform child in UI_Canvas.transform)
+                if (child.name.Contains(CountryInfoDisplayer.PREFIX))
+                    informationPanelsCount++;
+
+            return informationPanelsCount == 0;
         }
     }
 }

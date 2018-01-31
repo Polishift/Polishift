@@ -16,6 +16,7 @@ namespace Repository
         public static CountryBordersRepository CountryBordersRepository;
         public static ElectionsRepository ElectionsRepository;
         public static DictatorShipsRepository DictatorShipsRepository;
+        public static FutureRulersRepository FutureRulersRepository;
         
         public static WarRepository WarRepository;
         public static GdpPerCapitaRepository GdpPerCapitaRepository;
@@ -38,6 +39,7 @@ namespace Repository
             CountryBordersRepository = new CountryBordersRepository();
             ElectionsRepository = new ElectionsRepository();
             DictatorShipsRepository = new DictatorShipsRepository();
+            FutureRulersRepository = new FutureRulersRepository();
             WarRepository = new WarRepository();
             GdpPerCapitaRepository = new GdpPerCapitaRepository();
             GdpTotalRepository = new GdpTotalRepository();

@@ -20,6 +20,7 @@ namespace Map_Displaying.Reference_Scripts
 
         public List<ElectionEntity> AllElectionsEverForThisCountry = new List<ElectionEntity>();
         public List<DictatorshipEntity> AllDictatorshipsEverForThisCountry = new List<DictatorshipEntity>();
+        public string FutureRulerClassification; 
 
         //TODO FIX THIS AND INTEREST
         private List<WarEntity> _allWarsEverForThisCountry = new List<WarEntity>();
@@ -38,6 +39,9 @@ namespace Map_Displaying.Reference_Scripts
 
             AllElectionsEverForThisCountry = RepositoryHub.ElectionsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             AllDictatorshipsEverForThisCountry = RepositoryHub.DictatorShipsRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
+
+            FutureRulerClassification = RepositoryHub.FutureRulersRepository.GetByCountry(Iso3166Country.Alpha3).First().FutureRulingPartyClassification;
+            
             _allWarsEverForThisCountry = RepositoryHub.WarRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allGdpPerCapitaEverForThisCountry = RepositoryHub.GdpPerCapitaRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allGdpTotalEverForThisCountry = RepositoryHub.GdpTotalRepository.GetByCountry(Iso3166Country.Alpha3).ToList();

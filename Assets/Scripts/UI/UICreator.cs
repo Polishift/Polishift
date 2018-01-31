@@ -6,19 +6,18 @@ namespace UI
 {
     public static class UICreator
     {
-        private static GameObject UI_Canvas;
+        public static void AddBackgroundPanelToCanvas(string name, Sprite sprite, Vector3 anchoredPosition, Vector3 scale)
+        {
+            GameObject backgroundGameObject = new GameObject(name);
+            backgroundGameObject.transform.SetParent(GameObject.Find("UI_Canvas").transform);
+            
+            //Setting transform
+            RectTransform trans = backgroundGameObject.AddComponent<RectTransform>();
+            trans.anchoredPosition = anchoredPosition;
+            trans.localScale = scale;
 
-        static UICreator()
-        {
-            UI_Canvas = GameObject.Find("UI_Canvas");
-        }
-        
-        public static void DestroyUI()
-        {
-            foreach (Transform child in GameObject.Find("UI_Canvas").transform)
-            {
-                GameObject.Destroy(child.gameObject);
-            }
+            //setting sprite
+            backgroundGameObject.AddComponent<Image>().sprite = sprite;
         }
         
         public static void AddChildButtonToCanvas(string name, Sprite buttonSprite, Sprite pressedButtonSprite, Action buttonAction, Vector3 anchoredPosition, float scale)
@@ -48,7 +47,7 @@ namespace UI
         {
             GameObject textObject = new GameObject(name);
             textObject.tag = "UI";
-            textObject.transform.SetParent(UI_Canvas.transform);
+            textObject.transform.SetParent(GameObject.Find("UI_Canvas").transform);
 
             //Setting transform
             RectTransform trans = textObject.AddComponent<RectTransform>();
@@ -66,21 +65,6 @@ namespace UI
 
             text.horizontalOverflow = HorizontalWrapMode.Overflow;
             text.verticalOverflow = VerticalWrapMode.Overflow;
-        }
-
-        
-        public static void AddBackgroundPanelToCanvas(Sprite sprite, Vector3 anchoredPosition, Vector3 scale)
-        {
-            GameObject backgroundGameObject = new GameObject("Background image");
-            backgroundGameObject.transform.SetParent(UI_Canvas.transform);
-            
-            //Setting transform
-            RectTransform trans = backgroundGameObject.AddComponent<RectTransform>();
-            trans.anchoredPosition = anchoredPosition;
-            trans.localScale = scale;
-
-            //setting sprite
-            backgroundGameObject.AddComponent<Image>().sprite = sprite;
         }
     }
 }
