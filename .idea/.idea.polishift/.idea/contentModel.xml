@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Kraaijeveld\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_polishift.-507998281.00" t="ExcludeRecursive" />
+    <e p="E:\Hogeschool\Polishift Organization\polishift" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CameraMovementScript.cs" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="PivotManager.cs" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="On Top Shader" t="Include">
+            <e p="onTopShader.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Game Logic" t="Include">
+            <e p="Country Coloring" t="Include">
+              <e p="CountryColorer.cs" t="Include" />
+              <e p="PoliticalFamilyRecords.cs" t="Include" />
+              <e p="Ruler Handlers" t="Include">
+                <e p="AbstractRulerHandler.cs" t="Include" />
+                <e p="PredictionRulerHandler.cs" t="Include" />
+                <e p="SimulationRulerHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Time" t="Include">
+              <e p="YearCounter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Map Displaying" t="Include">
+            <e p="Country Meshes Generation" t="Include">
+              <e p="Meshing" t="Include">
+                <e p="BorderOutlineCreator.cs" t="Include" />
+                <e p="MeshCreator.cs" t="Include" />
+                <e p="MeshesGenerator.cs" t="Include" />
+                <e p="MeshHelpers.cs" t="Include" />
+                <e p="PivotOffsetter.cs" t="Include" />
+              </e>
+              <e p="Triangulator" t="Include">
+                <e p="Poly2Mesh.cs" t="Include" />
+                <e p="Poly2Tri" t="Include">
+                  <e p="AUTHORS.txt" t="Include" />
+                  <e p="LICENSE.txt" t="Include" />
+                  <e p="Triangulation" t="Include">
+                    <e p="Delaunay" t="Include">
+                      <e p="DelaunayTriangle.cs" t="Include" />
+                      <e p="Sweep" t="Include">
+                        <e p="AdvancingFront.cs" t="Include" />
+                        <e p="AdvancingFrontNode.cs" t="Include" />
+                        <e p="DTSweep.cs" t="Include" />
+                        <e p="DTSweepBasin.cs" t="Include" />
+                        <e p="DTSweepConstraint.cs" t="Include" />
+                        <e p="DTSweepContext.cs" t="Include" />
+                        <e p="DTSweepDebugContext.cs" t="Include" />
+                        <e p="DTSweepEdgeEvent.cs" t="Include" />
+                        <e p="DTSweepPointComparator.cs" t="Include" />
+                        <e p="PointOnEdgeException.cs" t="Include" />
+                      </e>
+                    </e>
+                    <e p="ITriangulatable.cs" t="Include" />
+                    <e p="Orientation.cs" t="Include" />
+                    <e p="Polygon" t="Include">
+                      <e p="Contour.cs" t="Include" />
+                      <e p="Polygon.cs" t="Include" />
+                      <e p="PolygonPoint.cs" t="Include" />
+                      <e p="PolygonSet.cs" t="Include" />
+                      <e p="PolygonUtil.cs" t="Include" />
+                    </e>
+                    <e p="Sets" t="Include">
+                      <e p="ConstrainedPointSet.cs" t="Include" />
+                      <e p="PointSet.cs" t="Include" />
+                    </e>
+                    <e p="TriangulationAlgorithm.cs" t="Include" />
+                    <e p="TriangulationConstraint.cs" t="Include" />
+                    <e p="TriangulationContext.cs" t="Include" />
+                    <e p="TriangulationDebugContext.cs" t="Include" />
+                    <e p="TriangulationMode.cs" t="Include" />
+                    <e p="TriangulationPoint.cs" t="Include" />
+                    <e p="Util" t="Include">
+                      <e p="PointGenerator.cs" t="Include" />
+                      <e p="PolygonGenerator.cs" t="Include" />
+                      <e p="TriangulationUtil.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Utility" t="Include">
+                    <e p="FixedArray3.cs" t="Include" />
+                    <e p="FixedBitArray3.cs" t="Include" />
+                    <e p="MathUtil.cs" t="Include" />
+                    <e p="Point2D.cs" t="Include" />
+                    <e p="Point2DList.cs" t="Include" />
+                    <e p="Rect2D.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Handlers" t="Include">
+              <e p="OnClickHandler.cs" t="Include" />
+            </e>
+            <e p="Reference Scripts" t="Include">
+              <e p="CountryInformationReference.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Menu" t="Include">
+            <e p="PauseMenuCreator.cs" t="Include" />
+            <e p="PredictionButtonHandler.cs" t="Include" />
+            <e p="PredictionParametersButtonHandler.cs" t="Include" />
+            <e p="QuitButtonHandler.cs" t="Include" />
+            <e p="SimulationButtonHandler.cs" t="Include" />
+          </e>
+          <e p="Predicting" t="Include">
+            <e p="AbstractClassifier.cs" t="Include" />
+            <e p="ClassifierOptions.cs" t="Include" />
+            <e p="ID3 Classifier" t="Include">
+              <e p="ID3.cs" t="Include" />
+              <e p="Node.cs" t="Include" />
+            </e>
+            <e p="KNN Classifier" t="Include">
+              <e p="KNN.cs" t="Include" />
+            </e>
+            <e p="Naive Bayes Classifier" t="Include">
+              <e p="NaiveBayes.cs" t="Include" />
+              <e p="Table.cs" t="Include" />
+            </e>
+            <e p="Record.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="RepositoryHub.cs" t="Include" />
+          </e>
+          <e p="Startup" t="Include">
+            <e p="Prefabs" t="Include">
+              <e p="AbstractCountryPrefab.cs" t="Include" />
+              <e p="CountryPrefabDecorator.cs" t="Include" />
+              <e p="DefaultCountryPrefab.cs" t="Include" />
+              <e p="PredictionCountryPrefabDecorator.cs" t="Include" />
+              <e p="SimulationCountryPrefabDecoratoer.cs" t="Include" />
+            </e>
+            <e p="Spawners" t="Include">
+              <e p="CountriesSpawner.cs" t="Include" />
+              <e p="DefaultCountriesSpawner.cs" t="Include" />
+              <e p="PredictionCountriesSpawner.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="UI Controllers" t="Include">
+              <e p="ClassifierChoosingUI.cs" t="Include" />
+              <e p="CountryInfoDisplayer.cs" t="Include" />
+              <e p="TimeUIController.cs" t="Include" />
+            </e>
+            <e p="UICreator.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="polishift.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

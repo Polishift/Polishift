@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 m_EditorVersion: 2017.3.0b5
+=======
+m_EditorVersion: 2017.2.0b2
+>>>>>>> net3.5-version

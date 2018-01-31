@@ -5,6 +5,9 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 
+# File that sets paths
+/Assets/Scripts/Map Displaying/Repository/RepositoryHub.cs
+
 # Visual Studio 2015 cache directory
 /.vscode/
 
