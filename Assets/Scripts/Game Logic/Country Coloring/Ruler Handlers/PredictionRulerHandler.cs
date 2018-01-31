@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Classifiers;
 using Dataformatter.Dataprocessing.Entities;
+using Game_Logic;
+using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using NaiveBayesClassifier;
 using Predicting.Nearest_Neighbours_Classifier;
-using UnityEngine;
+using NaiveBayesClassifier;
 
-namespace Game_Logic.Country_Coloring
+namespace Predicting
 {
     public class PredictionRulerHandler : AbstractRulerHandler
     {
@@ -63,10 +66,23 @@ namespace Game_Logic.Country_Coloring
                                 ThisCountriesInfo.GetPredictorFactors(previousYear, currentYear)));
             }
             
+            
             //Creating the classifier, plus the record for the current (to be predicted) state of this country
             //var naiveBayesClassifier = new NaiveBayesClassifier.NaiveBayesClassifier(trainingSet);
             var classificationRecordForThisCountry = new Record("Unknown", ThisCountriesInfo.GetPredictorFactors(YearCounter.MaximumYear - 1, YearCounter.MaximumYear));
-            var classifier = new KNN(trainingSet);
+
+            AbstractClassifier classifier;
+            
+            //Todo: Make this cleaner and generic
+            if(ClassifierOptions.Classifier == "KNN")
+                classifier = new KNN(trainingSet, ClassifierOptions.K);
+            else if(ClassifierOptions.Classifier == "NaiveBayes")
+                classifier = new NaiveBayesClassifier.NaiveBayesClassifier(trainingSet);
+            else
+                classifier = new ID3(trainingSet);            
+            
+            
+            
             
             //Finally, getting the most likely future classification and setting the ruler to be of that family.
             var predictedClassification = classifier.GetClassification(classificationRecordForThisCountry);

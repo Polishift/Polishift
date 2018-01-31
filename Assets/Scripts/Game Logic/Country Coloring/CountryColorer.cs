@@ -21,7 +21,8 @@ namespace Game_Logic.Country_Coloring
             }
             catch (Exception e)
             {
-                Debug.Log("Classification " + classification + " caused an exception");
+                Debug.Log("Classification " + classification + " caused an exception in country " + 
+                          gameObject.GetComponent<CountryInformationReference>().Iso3166Country.Name);
             }
         }
     }

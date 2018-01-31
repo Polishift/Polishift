@@ -5,20 +5,26 @@ using Dataformatter.Dataprocessing.Entities;
 using Game_Logic.Country_Coloring;
 using Map_Displaying.Reference_Scripts;
 using Dataformatter.Misc;
+using Predicting;
 using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace DefaultNamespace.Map_Displaying.UI
 {
-    [RequireComponent(typeof(CountryInformationReference))]
+    [RequireComponent(typeof(CountryInformationReference), typeof(AudioSource))]
     public class CountryInfoDisplayer : MonoBehaviour
     {
         private CountryInformationReference _countryInformation;
         private AbstractRulerHandler _thisCountriesRulerHandler;
 
+        //onClick sound
+        AudioSource onClickSoundSource;
+        
+        
         public void Init()
         {
+            onClickSoundSource = GameObject.Find("CountrySelectSound").GetComponent<AudioSource>();
             _countryInformation = gameObject.GetComponent<CountryInformationReference>();
             
             //Getting the correct handler
@@ -33,6 +39,9 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private void CreateBasicInfoPanel()
         {
+            PlayClickSound();
+            
+            
             Sprite defaultSprite = Resources.Load<Sprite>("Square");
 
             UICreator.AddBackgroundPanelToCanvas(defaultSprite, new Vector3(0, 0), new Vector3(5.5f, 4.2f));
@@ -42,6 +51,11 @@ namespace DefaultNamespace.Map_Displaying.UI
 
             Sprite buttonSprite = Resources.Load<Sprite>("Sprites/ExitButton");
             UICreator.AddChildButtonToCanvas("CloseButton", buttonSprite, buttonSprite, UICreator.DestroyUI, new Vector3(220, 150), 0.3f);
+        }
+
+        private void PlayClickSound()
+        {
+            onClickSoundSource.Play();
         }
 
         private string GetCountryName()

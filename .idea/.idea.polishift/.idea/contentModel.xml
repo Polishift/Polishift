@@ -10,6 +10,7 @@
         <e p="Editor" t="Include">
           <e p="PivotManager.cs" t="Include" />
         </e>
+        <e p="MovementScript.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -119,11 +120,13 @@
           <e p="Menu" t="Include">
             <e p="PauseMenuCreator.cs" t="Include" />
             <e p="PredictionButtonHandler.cs" t="Include" />
+            <e p="PredictionParametersButtonHandler.cs" t="Include" />
             <e p="QuitButtonHandler.cs" t="Include" />
             <e p="SimulationButtonHandler.cs" t="Include" />
           </e>
           <e p="Predicting" t="Include">
             <e p="AbstractClassifier.cs" t="Include" />
+            <e p="ClassifierOptions.cs" t="Include" />
             <e p="ID3 Classifier" t="Include">
               <e p="ID3.cs" t="Include" />
               <e p="Node.cs" t="Include" />
@@ -156,6 +159,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="UI Controllers" t="Include">
+              <e p="ClassifierChoosingUI.cs" t="Include" />
               <e p="CountryInfoDisplayer.cs" t="Include" />
               <e p="TimeUIController.cs" t="Include" />
             </e>

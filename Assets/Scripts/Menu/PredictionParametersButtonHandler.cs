@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Menu
 {
-    public class PredictionButtonHandler : MonoBehaviour
+    public class PredictionParametersButtonHandler : MonoBehaviour
     {
         void Start()
         {
@@ -13,7 +13,7 @@ namespace Menu
 
         void TaskOnClick()
         {
-            SceneManager.LoadScene("PredictionParametersScene");
+            SceneManager.LoadScene("PredictionScene");
         }
     }
 }

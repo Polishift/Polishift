@@ -9,9 +9,9 @@ namespace Predicting.Nearest_Neighbours_Classifier
         private List<Record> _trainingSet;
         private readonly int K;
         
-        public KNN(List<Record> trainingSet)
+        public KNN(List<Record> trainingSet, int K)
         {
-            K = 7;
+            this.K = K;
             _trainingSet = base.SanitizeTrainingSet(trainingSet);    
         }
             
