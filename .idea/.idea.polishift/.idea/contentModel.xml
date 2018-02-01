@@ -155,7 +155,11 @@
             <e p="UI Controllers" t="Include">
               <e p="ClassifierChoosingUI.cs" t="Include" />
               <e p="CorrectnessDisplayerUI.cs" t="Include" />
-              <e p="CountryInfoDisplayer.cs" t="Include" />
+              <e p="Country Info displayers" t="Include">
+                <e p="AbstractDisplayer.cs" t="Include" />
+                <e p="CountryDetailsDisplayer.cs" t="Include" />
+                <e p="CountryInfoDisplayer.cs" t="Include" />
+              </e>
               <e p="TimeUIController.cs" t="Include" />
             </e>
             <e p="UICreator.cs" t="Include" />

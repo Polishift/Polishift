@@ -49,7 +49,7 @@ namespace Game_Logic.Country_Coloring
                 base.CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             }
 
-            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(base.CurrentRuler.PartyClassification);
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(base.CurrentRuler.PartyClassification, 0);
         }
 
         public override string RulerToText()

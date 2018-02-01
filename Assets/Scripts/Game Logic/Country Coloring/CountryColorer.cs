@@ -11,7 +11,7 @@ namespace Game_Logic.Country_Coloring
 {
     public class CountryColorer : MonoBehaviour
     {
-        public void UpdateCountryColorForNewRuler(string classification)
+        public void UpdateCountryColorForNewRuler(string classification, double turnout)
         {
             try
             {

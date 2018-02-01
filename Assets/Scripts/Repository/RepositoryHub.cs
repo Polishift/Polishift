@@ -25,6 +25,7 @@ namespace Repository
         public static TvRepository TvRepository;
         public static ReligionRepository ReligionRepository;
         public static InterestRepository InterestRepository;
+        public static TurnoutRepository TurnoutRepository;
         
         public static void Init()
         {
@@ -47,6 +48,7 @@ namespace Repository
             TvRepository = new TvRepository();
             ReligionRepository = new ReligionRepository();
             InterestRepository = new InterestRepository();
+            TurnoutRepository = new TurnoutRepository();
         }
 
         private static void SetDataPaths()
