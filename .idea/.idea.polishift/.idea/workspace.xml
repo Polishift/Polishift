@@ -28,11 +28,10 @@
       <file leaf-file-name="CountryInformationReference.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="1248">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <marker date="1517502944287" expanded="false" signature="6:405" ph="..." />
-                <marker date="1517502944287" expanded="true" signature="449:7255" ph="{...}" />
                 <marker date="1517502944287" expanded="true" signature="512:7253" ph="{...}" />
                 <marker date="1517502944287" expanded="true" signature="1653:3125" ph="{...}" />
                 <marker date="1517502944287" expanded="true" signature="3220:4810" ph="{...}" />
@@ -48,8 +47,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -62,7 +61,6 @@
               <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding>
                 <marker date="1517502483031" expanded="false" signature="6:90" ph="..." />
-                <marker date="1517502483031" expanded="true" signature="129:2039" ph="{...}" />
                 <marker date="1517502483031" expanded="true" signature="179:2037" ph="{...}" />
                 <marker date="1517502483031" expanded="true" signature="297:1418" ph="{...}" />
                 <marker date="1517502483031" expanded="true" signature="323:1171" ph="{...}" />
@@ -84,7 +82,6 @@
               <caret line="29" column="92" lean-forward="false" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
               <folding>
                 <marker date="1517489210862" expanded="false" signature="6:28" ph="..." />
-                <marker date="1517489210862" expanded="true" signature="74:1875" ph="{...}" />
                 <marker date="1517489210862" expanded="true" signature="137:1873" ph="{...}" />
                 <marker date="1517489210862" expanded="true" signature="582:743" ph="{...}" />
                 <marker date="1517489210862" expanded="true" signature="795:1574" ph="{...}" />
@@ -97,11 +94,10 @@
       <file leaf-file-name="PredictionRulerHandler.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
+            <state relative-caret-position="1568">
               <caret line="107" column="125" lean-forward="false" selection-start-line="107" selection-start-column="125" selection-end-line="107" selection-end-column="125" />
               <folding>
                 <marker date="1517502268801" expanded="false" signature="6:304" ph="..." />
-                <marker date="1517502268801" expanded="true" signature="326:6927" ph="{...}" />
                 <marker date="1517502268801" expanded="true" signature="391:6925" ph="{...}" />
                 <marker date="1517502268801" expanded="true" signature="688:931" ph="{...}" />
                 <marker date="1517502268801" expanded="true" signature="1059:5246" ph="{...}" />
@@ -129,7 +125,6 @@
               <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
               <folding>
                 <marker date="1517502272894" expanded="false" signature="6:206" ph="..." />
-                <marker date="1517502272894" expanded="true" signature="245:4413" ph="{...}" />
                 <marker date="1517502272894" expanded="true" signature="310:4411" ph="{...}" />
                 <marker date="1517502272894" expanded="true" signature="609:1106" ph="{...}" />
                 <marker date="1517502272894" expanded="true" signature="1150:2499" ph="{...}" />
@@ -221,7 +216,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshHelpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/PivotOffsetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4EE56D5B-4823-478D-A0C5-407318350F79/37/29d79a56/Component.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../ProcessedData/Election_GBR.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/MeshesGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Country Meshes Generation/Meshing/BorderOutlineCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55CD0C11-48FC-425E-885F-1D5F84E4564C/a7/8eb5ea1d/Iso3166Country.cs" root0="SKIP_INSPECTION" />
@@ -383,6 +377,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -390,48 +385,12 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="UI" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="polishift (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="UI" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="UI Controllers" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,7 +584,8 @@
       <workItem from="1517479403955" duration="6320000" />
       <workItem from="1517487026172" duration="620000" />
       <workItem from="1517487821639" duration="7756000" />
-      <workItem from="1517501866488" duration="1694000" />
+      <workItem from="1517501866488" duration="2293000" />
+      <workItem from="1517506828931" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Working on restructuring so that we can easily spawn all Countries in 1 prefab">
       <created>1510647774808</created>
@@ -799,7 +759,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671900000" />
+    <option name="totallyTimeSpent" value="672514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,15 +778,15 @@
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32142857" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33777776" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -961,41 +921,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessedData/Election_GBR.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="0" column="3476" lean-forward="false" selection-start-line="0" selection-start-column="3475" selection-end-line="0" selection-end-column="3476" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_GBR.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13124">
-          <caret line="0" column="89116" lean-forward="false" selection-start-line="0" selection-start-column="89116" selection-end-line="0" selection-end-column="89116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_ESP.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3358" lean-forward="false" selection-start-line="0" selection-start-column="3358" selection-end-line="0" selection-end-column="3358" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_FIN.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_POL.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="0" column="1119" lean-forward="false" selection-start-line="0" selection-start-column="1119" selection-end-line="0" selection-end-column="1119" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/Election_GBR.json" />
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_GBR.json" />
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_ESP.json" />
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_FIN.json" />
+    <entry file="file://$PROJECT_DIR$/../ProcessedData/PartyFamilies_POL.json" />
     <entry file="file://$PROJECT_DIR$/Assembly-CSharp.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1185,7 +1115,6 @@
           <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <marker date="1517501915480" expanded="false" signature="6:110" ph="..." />
-            <marker date="1517501915480" expanded="true" signature="156:1426" ph="{...}" />
             <marker date="1517501915480" expanded="true" signature="214:1424" ph="{...}" />
             <marker date="1517501915480" expanded="true" signature="335:482" ph="{...}" />
             <marker date="1517501915480" expanded="true" signature="514:1418" ph="{...}" />
@@ -1201,7 +1130,6 @@
           <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <marker date="1517401320803" expanded="false" signature="6:66" ph="..." />
-            <marker date="1517401320803" expanded="true" signature="105:1040" ph="{...}" />
             <marker date="1517401320803" expanded="true" signature="154:1038" ph="{...}" />
             <marker date="1517401320803" expanded="true" signature="275:1031" ph="{...}" />
           </folding>
@@ -1214,7 +1142,6 @@
           <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
           <folding>
             <marker date="1517502272894" expanded="false" signature="6:206" ph="..." />
-            <marker date="1517502272894" expanded="true" signature="245:4413" ph="{...}" />
             <marker date="1517502272894" expanded="true" signature="310:4411" ph="{...}" />
             <marker date="1517502272894" expanded="true" signature="609:1106" ph="{...}" />
             <marker date="1517502272894" expanded="true" signature="1150:2499" ph="{...}" />
@@ -1235,11 +1162,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game Logic/Country Coloring/Ruler Handlers/PredictionRulerHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
+        <state relative-caret-position="1568">
           <caret line="107" column="125" lean-forward="false" selection-start-line="107" selection-start-column="125" selection-end-line="107" selection-end-column="125" />
           <folding>
             <marker date="1517502268801" expanded="false" signature="6:304" ph="..." />
-            <marker date="1517502268801" expanded="true" signature="326:6927" ph="{...}" />
             <marker date="1517502268801" expanded="true" signature="391:6925" ph="{...}" />
             <marker date="1517502268801" expanded="true" signature="688:931" ph="{...}" />
             <marker date="1517502268801" expanded="true" signature="1059:5246" ph="{...}" />
@@ -1265,7 +1191,6 @@
           <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <marker date="1517502483031" expanded="false" signature="6:90" ph="..." />
-            <marker date="1517502483031" expanded="true" signature="129:2039" ph="{...}" />
             <marker date="1517502483031" expanded="true" signature="179:2037" ph="{...}" />
             <marker date="1517502483031" expanded="true" signature="297:1418" ph="{...}" />
             <marker date="1517502483031" expanded="true" signature="323:1171" ph="{...}" />
@@ -1285,7 +1210,6 @@
           <caret line="29" column="92" lean-forward="false" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
           <folding>
             <marker date="1517489210862" expanded="false" signature="6:28" ph="..." />
-            <marker date="1517489210862" expanded="true" signature="74:1875" ph="{...}" />
             <marker date="1517489210862" expanded="true" signature="137:1873" ph="{...}" />
             <marker date="1517489210862" expanded="true" signature="582:743" ph="{...}" />
             <marker date="1517489210862" expanded="true" signature="795:1574" ph="{...}" />
@@ -1296,11 +1220,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Map Displaying/Reference Scripts/CountryInformationReference.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="1248">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <marker date="1517502944287" expanded="false" signature="6:405" ph="..." />
-            <marker date="1517502944287" expanded="true" signature="449:7255" ph="{...}" />
             <marker date="1517502944287" expanded="true" signature="512:7253" ph="{...}" />
             <marker date="1517502944287" expanded="true" signature="1653:3125" ph="{...}" />
             <marker date="1517502944287" expanded="true" signature="3220:4810" ph="{...}" />
@@ -1314,8 +1237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
