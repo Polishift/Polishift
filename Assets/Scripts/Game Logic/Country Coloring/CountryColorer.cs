@@ -7,7 +7,7 @@ namespace Game_Logic.Country_Coloring
 {
     public class CountryColorer : MonoBehaviour
     {
-        public void UpdateCountryColorForNewRuler(string classification, double turnout)
+        public void UpdateCountryColorForNewRuler(string classification, bool useTurnout, double turnout = 100)
         {
             try
             {
@@ -20,8 +20,8 @@ namespace Game_Logic.Country_Coloring
                 float v;
                 Color.RGBToHSV(colorForRulingParty, out h, out s, out v);
 
-                //Converting
-                if (s > 0)
+                //Converting (if we want to use the turnout)
+                if (useTurnout && s > 0)
                     s = CalculateTurnoutSaturation(s, turnout);
 
 

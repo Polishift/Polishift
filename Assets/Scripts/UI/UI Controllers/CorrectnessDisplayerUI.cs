@@ -13,7 +13,7 @@ namespace DefaultNamespace.Map_Displaying.UI
 
         private void Start()
         {
-            UICreator.AddTextToCanvas(GameObjectName, "Correctness: 0.0%.", 15, new Vector3(-300, 150), new Vector2(100, 100));
+            UICreator.AddTextToCanvas(GameObjectName, "Correctness: 0.0%.", 15, new Vector3(299, 150), new Vector2(100, 100));
         }
 
 
