@@ -21,6 +21,7 @@ namespace Map_Displaying.Reference_Scripts
 
         public List<ElectionEntity> AllElectionsEverForThisCountry = new List<ElectionEntity>();
         public List<DictatorshipEntity> AllDictatorshipsEverForThisCountry = new List<DictatorshipEntity>();
+        public List<TurnoutEntity> AllTurnoutEverForThisCountry = new List<TurnoutEntity>();        
         public string FutureRulerClassification; 
 
         private List<WarEntity> _allWarsEverForThisCountry = new List<WarEntity>();
@@ -30,7 +31,6 @@ namespace Map_Displaying.Reference_Scripts
         private List<TvEntity> _allTvEverForThisCountry = new List<TvEntity>();
         private List<ReligionEntity> _allReligionEverForThisCountry = new List<ReligionEntity>();
         private List<InterestEntity> _allInterestEverForThisCountry = new List<InterestEntity>();
-        private List<TurnoutEntity> _allTurnoutEverForThisCountry = new List<TurnoutEntity>();        
 
 
         public void Init(Iso3166Country iso3166Country)
@@ -49,7 +49,7 @@ namespace Map_Displaying.Reference_Scripts
             _allTvEverForThisCountry = RepositoryHub.TvRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allReligionEverForThisCountry = RepositoryHub.ReligionRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
             _allInterestEverForThisCountry = RepositoryHub.InterestRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
-            _allTurnoutEverForThisCountry = RepositoryHub.TurnoutRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
+            AllTurnoutEverForThisCountry = RepositoryHub.TurnoutRepository.GetByCountry(Iso3166Country.Alpha3).ToList();
         }
 
         public Dictionary<string, int> GetPredictorFactors(int previousYear, int currentYear)
@@ -84,7 +84,7 @@ namespace Map_Displaying.Reference_Scripts
             var currentGdpTotal = _allGdpTotalEverForThisCountry.FirstOrDefault(g => g.Year == currentYear);
             var currentPopSize = _allPopulationEverForThisCountry.FirstOrDefault(g => g.Year == currentYear);
             var currentInterest = _allInterestEverForThisCountry.FirstOrDefault(g => g.Year == currentYear);
-            var currentTurnout = _allTurnoutEverForThisCountry.FirstOrDefault(g => g.Year == currentYear);
+            var currentTurnout = AllTurnoutEverForThisCountry.FirstOrDefault(g => g.Year == currentYear);
             
             
             //Quite dirty
@@ -112,13 +112,13 @@ namespace Map_Displaying.Reference_Scripts
             
             returnString += ("Current interest rate: ");
             if(currentInterest != null)
-                returnString += currentInterest.Value.ToString("P1", CultureInfo.InvariantCulture) + "\n";
+                returnString += currentInterest.Value.ToString("P", CultureInfo.InvariantCulture) + "\n";
             else
                 returnString += "unknown" + "\n";
            
             returnString += ("Current election turnout (if any): ");
             if(currentTurnout != null)
-                returnString += currentTurnout.VoterTurnout.ToString("P1", CultureInfo.InvariantCulture) + "\n";
+                returnString += currentTurnout.VoterTurnout + "% \n";
             else
                 returnString += "unknown" + "\n";
             

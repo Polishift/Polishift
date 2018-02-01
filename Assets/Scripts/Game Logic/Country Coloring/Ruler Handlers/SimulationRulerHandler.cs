@@ -8,12 +8,12 @@ using UnityEngine;
 
 namespace Game_Logic.Country_Coloring
 {
-    //Todo: make this extend a common interface
     public class SimulationRulerHandler : AbstractRulerHandler
     {
         private int _currentYear = YearCounter.MinimumYear;
 
         public ElectionEntity[] LastElection;
+        private double LastElectionTurnout = 100;
 
         //We dont use start(), since the CountryInformationReference is not filled in immediately.
         public override void Init()
@@ -36,6 +36,9 @@ namespace Game_Logic.Country_Coloring
             if (currentElections.Length > 0)
             {
                 LastElection = currentElections;
+                
+                if(ThisCountriesInfo.AllTurnoutEverForThisCountry.FirstOrDefault(t => t.Year == _currentYear) != null)
+                    LastElectionTurnout = ThisCountriesInfo.AllTurnoutEverForThisCountry.First(t => t.Year == _currentYear).VoterTurnout;
 
                 var biggestParty = currentElections.OrderByDescending(e => e.TotalVotePercentage).First();
                 base.CurrentRuler = biggestParty;
@@ -49,7 +52,7 @@ namespace Game_Logic.Country_Coloring
                 base.CurrentRuler = ElectionEntity.GetEmptyElectionEntity(ThisCountriesInfo.Iso3166Country);
             }
 
-            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(base.CurrentRuler.PartyClassification, 0);
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(base.CurrentRuler.PartyClassification, LastElectionTurnout);
         }
 
         public override string RulerToText()

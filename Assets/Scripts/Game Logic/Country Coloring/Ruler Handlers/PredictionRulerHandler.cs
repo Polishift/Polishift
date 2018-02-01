@@ -104,8 +104,8 @@ namespace Predicting
             //Updating static (!) correctness percentage here, by comparing  predictedClassification to actual classification
             UpdateCorrectnessPercentage(predictedClassification, ThisCountriesInfo.FutureRulerClassification);
 
-            //And finally finally, setting the color to be that of the predicted classification.
-            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRuler.PartyClassification, 0);
+            //And finally finally, setting the color to be that of the predicted classification. (Turnout is always 100 because its a prediction, baby)
+            gameObject.GetComponent<CountryColorer>().UpdateCountryColorForNewRuler(CurrentRuler.PartyClassification, 100);
         }
 
         private static void UpdateCorrectnessPercentage(string predicted, string actual)
