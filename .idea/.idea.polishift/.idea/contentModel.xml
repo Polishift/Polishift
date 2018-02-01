@@ -159,7 +159,10 @@
                 <e p="AbstractDisplayer.cs" t="Include" />
                 <e p="CountryDetailsDisplayer.cs" t="Include" />
                 <e p="CountryInfoDisplayer.cs" t="Include" />
+                <e p="PopUpDisplayer.cs" t="Include" />
               </e>
+              <e p="PopupCreator.cs" t="Include" />
+              <e p="PopupListener.cs" t="Include" />
               <e p="TimeUIController.cs" t="Include" />
             </e>
             <e p="UICreator.cs" t="Include" />

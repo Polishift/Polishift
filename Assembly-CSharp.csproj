@@ -129,6 +129,9 @@
     <Compile Include="Assets\Scripts\UI\UI Controllers\Country Info displayers\AbstractDisplayer.cs" />
     <Compile Include="Assets\Scripts\UI\UI Controllers\Country Info displayers\CountryDetailsDisplayer.cs" />
     <Compile Include="Assets\Scripts\UI\UI Controllers\Country Info displayers\CountryInfoDisplayer.cs" />
+    <Compile Include="Assets\Scripts\UI\UI Controllers\Country Info displayers\PopUpDisplayer.cs" />
+    <Compile Include="Assets\Scripts\UI\UI Controllers\PopupCreator.cs" />
+    <Compile Include="Assets\Scripts\UI\UI Controllers\PopupListener.cs" />
     <Compile Include="Assets\Scripts\UI\UI Controllers\TimeUIController.cs" />
     <Compile Include="Assets\Scripts\UI\UICreator.cs" />
     <None Include="Assets\Scripts\Map Displaying\Country Meshes Generation\Triangulator\Poly2Tri\AUTHORS.txt" />

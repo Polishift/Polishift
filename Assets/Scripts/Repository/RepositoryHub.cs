@@ -17,6 +17,7 @@ namespace Repository
         public static ElectionsRepository ElectionsRepository;
         public static DictatorShipsRepository DictatorShipsRepository;
         public static FutureRulersRepository FutureRulersRepository;
+        public static PopUpRepository PopUpRepository;
         
         public static WarRepository WarRepository;
         public static GdpPerCapitaRepository GdpPerCapitaRepository;
@@ -41,6 +42,7 @@ namespace Repository
             ElectionsRepository = new ElectionsRepository();
             DictatorShipsRepository = new DictatorShipsRepository();
             FutureRulersRepository = new FutureRulersRepository();
+            PopUpRepository = new PopUpRepository();
             WarRepository = new WarRepository();
             GdpPerCapitaRepository = new GdpPerCapitaRepository();
             GdpTotalRepository = new GdpTotalRepository();
