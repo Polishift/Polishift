@@ -112,7 +112,7 @@ namespace Map_Displaying.Reference_Scripts
             
             returnString += ("Current interest rate: ");
             if(currentInterest != null)
-                returnString += currentInterest.Value.ToString("P", CultureInfo.InvariantCulture) + "\n";
+                returnString += currentInterest.Value + "% \n";
             else
                 returnString += "unknown" + "\n";
            
